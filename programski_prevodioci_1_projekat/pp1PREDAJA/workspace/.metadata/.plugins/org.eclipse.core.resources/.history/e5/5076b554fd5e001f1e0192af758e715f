@@ -1,0 +1,119 @@
+package rs.ac.bg.etf.pp1;
+
+import org.apache.log4j.Logger;
+
+import rs.ac.bg.etf.pp1.ast.*;
+import rs.etf.pp1.symboltable.*;
+import rs.etf.pp1.symboltable.concepts.*;
+
+public class SemanticAnalyzer extends VisitorAdaptor {
+	
+	int printSimpleCallCount = 0;
+	int VarDeclSimpleCount = 0;
+	
+	boolean errorDetected = false;
+	
+	Logger log = Logger.getLogger(getClass());
+	
+	public void report_error(String message, SyntaxNode info) {
+		errorDetected = true;
+		StringBuilder msg = new StringBuilder(message);
+		int line = (info == null) ? 0: info.getLine();
+		if (line != 0)
+			msg.append (" na liniji ").append(line);
+		log.error(msg.toString());
+	}
+
+	public void report_info(String message, SyntaxNode info) {
+		StringBuilder msg = new StringBuilder(message); 
+		int line = (info == null) ? 0: info.getLine();
+		if (line != 0)
+			msg.append (" na liniji ").append(line);
+		log.info(msg.toString());
+	}
+	
+	//------------------------------------------------------------------------------------------------VISIT METODE
+	
+	// **** PROGRAM ************
+	public void visit(ProgramName programName) {
+		Tab.insert(Obj.Prog, programName.getProgramName(), Tab.noType); 
+		Tab.openScope(); 
+		// otvara se Scope i vezuje se kasnije za programName objekat koji smo sad kreirali
+	}
+	
+	public void visit(Program program) {
+		Tab.chainLocalSymbols(program.getProgramName().obj); 
+		// vezujemo za programName objekat koji iz programa koji je i sam objekat dohvatamo kao objekat
+		Tab.closeScope();
+	}
+	// **************************
+	
+	
+	/*
+	 public void visit(Type type){
+    	Obj typeNode = Tab.find(type.getTypeName());
+    	if(typeNode == Tab.noObj){
+    		report_error("Nije pronadjen tip " + type.getTypeName() + " u tabeli simbola! ", null);
+    		type.struct = Tab.noType;
+    	}else{
+    		if(Obj.Type == typeNode.getKind()){
+    			type.struct = typeNode.getType();
+    		}else{
+    			report_error("Greska: Ime " + type.getTypeName() + " ne predstavlja tip!", type);
+    			type.struct = Tab.noType;
+    		}
+    	}
+    }
+	 */
+	
+	// **** TYPE ****************
+	public void visit(TypeSimple typeSimple) {
+		
+		Obj typeNode = Tab.find(typeSimple.getTypeNameSimple());
+		
+		if (typeNode == Tab.noObj) { 
+			report_error("Nije pronadjen tip " + typeSimple.getTypeNameSimple() + " u tabeli simbola! ", null);
+			typeSimple.struct = Tab.noType;
+		}
+		else {
+			if (Obj.Type == typeNode.getKind()) {
+				typeSimple.struct = typeNode.getType();
+			}
+			else {
+				report_error("Greska: Ime " + typeSimple.getTypeNameSimple() + " ne predstavlja tip!", type);
+    			typeSimple.struct = Tab.noType;
+			}
+		}
+		
+	}
+	
+	public void visit(TypeNamespaceResolution typeNamespaceResolution) {
+		
+		Obj typeNode = Tab.find(typeNamespaceResolution.getTypeNameNSR());
+		
+		if (typeNode == Tab.noObj) { 
+			report_error("Nije pronadjen tip " + typeNamespaceResolution.getTypeNameNSR() + " u tabeli simbola! ", null);
+			typeNamespaceResolution.struct = Tab.noType;
+		}
+		else {
+			if (Obj.Type == typeNode.getKind()) {
+				typeNamespaceResolution.struct = typeNode.getType();
+			}
+			else {
+				report_error("Greska: Ime " + typeNamespaceResolution.getTypeNameNSR() + " ne predstavlja tip!", type);
+				typeNamespaceResolution.struct = Tab.noType;
+			}
+		}
+		
+	}
+	// **************************
+
+	public void visit(VarDeclSimple varDeclSimple){
+		VarDeclSimpleCount++;
+	}
+	
+    public void visit(MatchedPrintSimple printSimple) {
+		printSimpleCallCount++;
+	}
+
+}

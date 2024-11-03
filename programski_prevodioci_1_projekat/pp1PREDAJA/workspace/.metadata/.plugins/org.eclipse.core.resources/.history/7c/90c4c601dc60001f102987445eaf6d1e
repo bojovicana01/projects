@@ -1,0 +1,23 @@
+package rs.ac.bg.etf.pp1;
+
+import rs.ac.bg.etf.pp1.ast.*;
+import rs.etf.pp1.symboltable.Tab;
+import rs.etf.pp1.symboltable.concepts.*;
+
+public class CodeGenerator extends VisitorAdaptor {
+	
+	private int mainPC;
+	
+	public int getMainPC() {
+		return mainPC;
+	}
+	
+	public void visit(NumConst cnst){
+		Obj con = Tab.insert(Obj.Con, "$", cnst.struct);
+		con.setLevel(0);
+		con.setAdr(cnst.getN1());
+		
+		Code.load(con);
+	}
+
+}

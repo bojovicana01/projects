@@ -1,0 +1,16 @@
+program MJProgram
+	int x; int y;
+	char z; boolean w;
+{
+	int main() {
+		
+		print(1);
+		
+		z = 'z';
+		w = true;
+		y = -1 + 4*5 + 9/7 - 2;
+		x = y++ + 5;
+		
+		print(2);
+	}
+}

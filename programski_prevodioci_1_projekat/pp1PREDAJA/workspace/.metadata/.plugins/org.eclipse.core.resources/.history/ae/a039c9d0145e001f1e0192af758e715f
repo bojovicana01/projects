@@ -1,0 +1,62 @@
+package rs.ac.bg.etf.pp1;
+
+import org.apache.log4j.Logger;
+import rs.ac.bg.etf.pp1.ast.*;
+
+public class RuleVisitor extends VisitorAdaptor{
+
+	int printCallCount = 0;
+	int varDeclCount = 0;
+	int programDeclCount = 0;
+	int nExprDeclCount = 0;
+	int pExprDeclCount = 0;
+	int designatorStatementEQUALCount = 0;
+	int designatorStatementINCREMENTCount = 0;
+	int designatorStatementDECREMENTCount = 0;
+	
+	Logger log = Logger.getLogger(getClass());
+
+	public void visit(VarDecl vardecl){
+		varDeclCount++;
+	}
+	
+    public void visit(PrintStmt print) {
+		printCallCount++;
+	}
+    
+    public void visit(Program program) {
+		programDeclCount++;
+	}
+    
+    public void visit(NegativeStartExpr negativeStartExpr) {
+    	nExprDeclCount++;
+	}
+    
+    public void visit(PositiveStartExpr positiveStartExpr) {
+    	pExprDeclCount++;
+	}
+    
+    
+    
+    
+    public void visit(DesignatorStatementEQUAL designatorStatementEQUAL){
+		varDeclCount++;
+	}
+	
+    public void visit(DesignatorStatementINCREMENT designatorStatementINCREMENT) {
+		printCallCount++;
+	}
+    
+    public void visit(DesignatorStatementDECREMENT designatorStatementDECREMENT) {
+		programDeclCount++;
+	}
+    
+    public void visit(NegativeStartExpr negativeStartExpr) {
+    	nExprDeclCount++;
+	}
+    
+    public void visit(PositiveStartExpr positiveStartExpr) {
+    	pExprDeclCount++;
+	}
+
+}

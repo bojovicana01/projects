@@ -1,0 +1,14 @@
+program MJProgram
+
+	namespace sizes {
+		const int tableSize = 10;
+		{}
+	}
+	
+	int x; int y;
+	char z; boolean w;
+{
+	int main() {
+		return 1;
+	}
+}

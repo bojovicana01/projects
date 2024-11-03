@@ -1,0 +1,48 @@
+// Test301
+
+program test301
+
+	namespace sizes{
+		const int tableSize = 10;
+		{}
+	}
+	
+	namespace sizes{
+		const int tableSize2 = 10;
+		{}
+	}
+
+	const int p = 'a', q = 2;
+	bool boolVar;
+
+	int mat[][];
+	int nizErr[];
+
+	int a;
+	int a;
+	
+{
+	void main()	
+		int bodovi;
+		bool bt;
+	{
+		bodovi = 0;
+		print(bodovi);
+		
+		
+		a=1;
+		read(1);
+		print(bodovi);
+		
+		//mat = new int['a'][3];
+		
+		boolVar = 'a';
+		print(boolVar);
+		
+		//nizErr = new int['a'];
+		
+		print(sizes::tableSize);
+	}
+}
+
+

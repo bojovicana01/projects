@@ -1,0 +1,361 @@
+INFO  20:30:27,661 - Compiling source file: C:\pp1_domaci_avg\workspace\MJCompiler\test\program.mj
+INFO  20:30:27,693 - #2 program
+INFO  20:30:27,693 - #37 MJProgram
+INFO  20:30:27,693 - #7 const
+INFO  20:30:27,694 - #37 bool
+INFO  20:30:27,695 - #37 w
+INFO  20:30:27,695 - #21 =
+INFO  20:30:27,695 - #39 true
+INFO  20:30:27,695 - #13 ;
+INFO  20:30:27,696 - #7 const
+INFO  20:30:27,696 - #37 char
+INFO  20:30:27,696 - #37 z
+INFO  20:30:27,696 - #21 =
+INFO  20:30:27,696 - #40 '
+INFO  20:30:27,696 - #13 ;
+INFO  20:30:27,696 - #7 const
+INFO  20:30:27,697 - #37 int
+INFO  20:30:27,697 - #37 q
+INFO  20:30:27,697 - #21 =
+INFO  20:30:27,697 - #38 4
+INFO  20:30:27,697 - #12 ,
+INFO  20:30:27,697 - #37 m
+INFO  20:30:27,697 - #21 =
+INFO  20:30:27,700 - #38 5
+INFO  20:30:27,700 - #13 ;
+INFO  20:30:27,700 - #37 int
+INFO  20:30:27,700 - #37 x
+INFO  20:30:27,700 - #13 ;
+INFO  20:30:27,701 - #37 int
+INFO  20:30:27,701 - #37 y
+INFO  20:30:27,701 - #13 ;
+INFO  20:30:27,701 - #15 {
+INFO  20:30:27,701 - #37 int
+INFO  20:30:27,702 - #37 main
+INFO  20:30:27,702 - #17 (
+INFO  20:30:27,702 - #18 )
+INFO  20:30:27,702 - #15 {
+INFO  20:30:27,702 - #37 x
+INFO  20:30:27,703 - #21 =
+INFO  20:30:27,703 - #38 3
+INFO  20:30:27,703 - #13 ;
+INFO  20:30:27,705 - #4 print
+INFO  20:30:27,705 - #17 (
+INFO  20:30:27,705 - #38 1
+INFO  20:30:27,705 - #24 *
+INFO  20:30:27,705 - #37 q
+INFO  20:30:27,706 - #18 )
+INFO  20:30:27,706 - #13 ;
+INFO  20:30:27,706 - #37 y
+INFO  20:30:27,707 - #21 =
+INFO  20:30:27,707 - #38 4
+INFO  20:30:27,707 - #22 +
+INFO  20:30:27,707 - #38 9
+INFO  20:30:27,707 - #13 ;
+INFO  20:30:27,707 - #4 print
+INFO  20:30:27,708 - #17 (
+INFO  20:30:27,708 - #37 x
+INFO  20:30:27,708 - #18 )
+INFO  20:30:27,708 - #13 ;
+INFO  20:30:27,708 - #4 print
+INFO  20:30:27,708 - #17 (
+INFO  20:30:27,708 - #37 y
+INFO  20:30:27,708 - #18 )
+INFO  20:30:27,708 - #13 ;
+INFO  20:30:27,708 - #3 return
+INFO  20:30:27,708 - #38 1
+INFO  20:30:27,708 - #13 ;
+INFO  20:30:27,708 - #16 }
+INFO  20:30:27,708 - #16 }
+INFO  20:30:27,713 - Program(
+  ProgramName(
+   MJProgram
+  ) [ProgramName]
+  NoNamespaceList(
+  ) [NoNamespaceList]
+  EDeclList(
+    EDeclList(
+      EDeclList(
+        EDeclList(
+          EDeclList(
+            NoDeclList(
+            ) [NoDeclList]
+            DeclConst(
+              EConstDecl(
+                ConstantTypeName(
+                  TypeSimple(
+                   bool
+                  ) [TypeSimple]
+                 w
+                ) [ConstantTypeName]
+                CBoolConst(
+                 true
+                ) [CBoolConst]
+                NoConstDeclListSingleType(
+                ) [NoConstDeclListSingleType]
+              ) [EConstDecl]
+            ) [DeclConst]
+          ) [EDeclList]
+          DeclConst(
+            EConstDecl(
+              ConstantTypeName(
+                TypeSimple(
+                 char
+                ) [TypeSimple]
+               z
+              ) [ConstantTypeName]
+              CCharConst(
+               '
+              ) [CCharConst]
+              NoConstDeclListSingleType(
+              ) [NoConstDeclListSingleType]
+            ) [EConstDecl]
+          ) [DeclConst]
+        ) [EDeclList]
+        DeclConst(
+          EConstDecl(
+            ConstantTypeName(
+              TypeSimple(
+               int
+              ) [TypeSimple]
+             q
+            ) [ConstantTypeName]
+            CNumConst(
+             4
+            ) [CNumConst]
+            EConstDeclListSingleType(
+              NoConstDeclListSingleType(
+              ) [NoConstDeclListSingleType]
+             m
+              CNumConst(
+               5
+              ) [CNumConst]
+            ) [EConstDeclListSingleType]
+          ) [EConstDecl]
+        ) [DeclConst]
+      ) [EDeclList]
+      DeclVar(
+        VarDeclSimple(
+          VarTypeName(
+            TypeSimple(
+             int
+            ) [TypeSimple]
+           x
+          ) [VarTypeName]
+          NoVarDeclListSingleType(
+          ) [NoVarDeclListSingleType]
+        ) [VarDeclSimple]
+      ) [DeclVar]
+    ) [EDeclList]
+    DeclVar(
+      VarDeclSimple(
+        VarTypeName(
+          TypeSimple(
+           int
+          ) [TypeSimple]
+         y
+        ) [VarTypeName]
+        NoVarDeclListSingleType(
+        ) [NoVarDeclListSingleType]
+      ) [VarDeclSimple]
+    ) [DeclVar]
+  ) [EDeclList]
+  EMethodDeclList(
+    NoMethodDeclList(
+    ) [NoMethodDeclList]
+    MethodDecl(
+      EMethodTypeName(
+        TypeSimple(
+         int
+        ) [TypeSimple]
+       main
+      ) [EMethodTypeName]
+      NoFormPars(
+      ) [NoFormPars]
+      NoVarDeclList(
+      ) [NoVarDeclList]
+      EStatementList(
+        EStatementList(
+          EStatementList(
+            EStatementList(
+              EStatementList(
+                EStatementList(
+                  NoStatementList(
+                  ) [NoStatementList]
+                  StatementMatched(
+                    MatchedDesignatorStatement(
+                      DesignatorStatementEQUAL(
+                        EDesignatorStatementAssigment(
+                          DesignatorSimple(
+                           x
+                            NoArrayTypeOptional(
+                            ) [NoArrayTypeOptional]
+                          ) [DesignatorSimple]
+                          PositiveStartExpr(
+                            Term(
+                              FactorNumConst(
+                                NumConst(
+                                 3
+                                ) [NumConst]
+                              ) [FactorNumConst]
+                              NoMulopFactorList(
+                              ) [NoMulopFactorList]
+                            ) [Term]
+                            NoAddopTermList(
+                            ) [NoAddopTermList]
+                          ) [PositiveStartExpr]
+                        ) [EDesignatorStatementAssigment]
+                      ) [DesignatorStatementEQUAL]
+                    ) [MatchedDesignatorStatement]
+                  ) [StatementMatched]
+                ) [EStatementList]
+                StatementMatched(
+                  MatchedPrintSimple(
+                    PositiveStartExpr(
+                      Term(
+                        FactorNumConst(
+                          NumConst(
+                           1
+                          ) [NumConst]
+                        ) [FactorNumConst]
+                        MultipleMulopFactorList(
+                          NoMulopFactorList(
+                          ) [NoMulopFactorList]
+                          Times(
+                          ) [Times]
+                          FactorDesignatorVar(
+                            DesignatorSimple(
+                             q
+                              NoArrayTypeOptional(
+                              ) [NoArrayTypeOptional]
+                            ) [DesignatorSimple]
+                          ) [FactorDesignatorVar]
+                        ) [MultipleMulopFactorList]
+                      ) [Term]
+                      NoAddopTermList(
+                      ) [NoAddopTermList]
+                    ) [PositiveStartExpr]
+                  ) [MatchedPrintSimple]
+                ) [StatementMatched]
+              ) [EStatementList]
+              StatementMatched(
+                MatchedDesignatorStatement(
+                  DesignatorStatementEQUAL(
+                    EDesignatorStatementAssigment(
+                      DesignatorSimple(
+                       y
+                        NoArrayTypeOptional(
+                        ) [NoArrayTypeOptional]
+                      ) [DesignatorSimple]
+                      PositiveStartExpr(
+                        Term(
+                          FactorNumConst(
+                            NumConst(
+                             4
+                            ) [NumConst]
+                          ) [FactorNumConst]
+                          NoMulopFactorList(
+                          ) [NoMulopFactorList]
+                        ) [Term]
+                        MultipleAddopTermList(
+                          NoAddopTermList(
+                          ) [NoAddopTermList]
+                          Plus(
+                          ) [Plus]
+                          Term(
+                            FactorNumConst(
+                              NumConst(
+                               9
+                              ) [NumConst]
+                            ) [FactorNumConst]
+                            NoMulopFactorList(
+                            ) [NoMulopFactorList]
+                          ) [Term]
+                        ) [MultipleAddopTermList]
+                      ) [PositiveStartExpr]
+                    ) [EDesignatorStatementAssigment]
+                  ) [DesignatorStatementEQUAL]
+                ) [MatchedDesignatorStatement]
+              ) [StatementMatched]
+            ) [EStatementList]
+            StatementMatched(
+              MatchedPrintSimple(
+                PositiveStartExpr(
+                  Term(
+                    FactorDesignatorVar(
+                      DesignatorSimple(
+                       x
+                        NoArrayTypeOptional(
+                        ) [NoArrayTypeOptional]
+                      ) [DesignatorSimple]
+                    ) [FactorDesignatorVar]
+                    NoMulopFactorList(
+                    ) [NoMulopFactorList]
+                  ) [Term]
+                  NoAddopTermList(
+                  ) [NoAddopTermList]
+                ) [PositiveStartExpr]
+              ) [MatchedPrintSimple]
+            ) [StatementMatched]
+          ) [EStatementList]
+          StatementMatched(
+            MatchedPrintSimple(
+              PositiveStartExpr(
+                Term(
+                  FactorDesignatorVar(
+                    DesignatorSimple(
+                     y
+                      NoArrayTypeOptional(
+                      ) [NoArrayTypeOptional]
+                    ) [DesignatorSimple]
+                  ) [FactorDesignatorVar]
+                  NoMulopFactorList(
+                  ) [NoMulopFactorList]
+                ) [Term]
+                NoAddopTermList(
+                ) [NoAddopTermList]
+              ) [PositiveStartExpr]
+            ) [MatchedPrintSimple]
+          ) [StatementMatched]
+        ) [EStatementList]
+        StatementMatched(
+          MatchedReturn(
+            PositiveStartExpr(
+              Term(
+                FactorNumConst(
+                  NumConst(
+                   1
+                  ) [NumConst]
+                ) [FactorNumConst]
+                NoMulopFactorList(
+                ) [NoMulopFactorList]
+              ) [Term]
+              NoAddopTermList(
+              ) [NoAddopTermList]
+            ) [PositiveStartExpr]
+          ) [MatchedReturn]
+        ) [StatementMatched]
+      ) [EStatementList]
+    ) [MethodDecl]
+  ) [EMethodDeclList]
+) [Program]
+INFO  20:30:27,713 - ===================================
+INFO  20:30:27,716 -  PrintSimple = 3
+INFO  20:30:27,716 -  VarDecl = 2
+INFO  20:30:27,716 - Program = 1
+INFO  20:30:27,716 - NegativeStartExpr = 0
+INFO  20:30:27,717 - PositiveStartExpr = 6
+INFO  20:30:27,717 - DesignatorStatementEQUAL = 2
+INFO  20:30:27,717 - DesignatorStatementINCREMENT = 0
+INFO  20:30:27,717 - DesignatorStatementDECREMENT = 0
+INFO  20:30:27,717 - NumConst = 5
+INFO  20:30:27,717 - BoolConst = 0
+INFO  20:30:27,717 - CharConst = 0
+INFO  20:30:27,717 - Namespace = 0
+INFO  20:30:27,717 - ===================================
+INFO  20:30:27,719 - Deklarisana promenljiva x na liniji 5
+INFO  20:30:27,719 - Deklarisana promenljiva y na liniji 5
+INFO  20:30:27,719 - Obradjuje se funkcija main na liniji 8
+INFO  20:30:27,719 - Linija: 22 : tip izraza u return naredbi se SLAZE sa tipom povratne vrednosti funkcije main
+INFO  20:30:27,719 - ===================================
+INFO  20:30:27,724 - Parsiranje uspesno zavrseno

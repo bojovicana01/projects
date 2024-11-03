@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<!--Ana Bojovic-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Placanje / preuzimanje paketa</h1>
+
+    <div class="flex-containerA">
+
+        
+        <div>
+            <font size="+2"><b>Nacin placanja:</b></font>
+            <input type="radio" name="placanje"> po preuzimanju
+            <input type="radio" name="placanje"> online placanje
+            <br>
+
+            <font size="-1"><b>*Polje ispod popuniti ukoliko je izabrana opcija online placanja</b></font><br>
+            <font size="+2"><b>Racun:</b></font><input type="text" name="textbox" placeholder="Broj ziro racuna">
+        </div>
+        <br>
+    
+        <div>
+            <font size="+2"><b>Nacin preuzimanja proizvoda:</b></font>
+            <input type="radio" name="preuzimanje"> dostava na adresu
+            <input type="radio" name="preuzimanje"> preuzimanje u radnji
+            <br>
+
+            <font size="-1"><b>*Polja ispod popuniti ukoliko je izabrana opcija dostave na adresu</b></font><br>
+            <font size="+2"><b>Adresa:</b></font><input type="text" name="textbox" placeholder="Adresa boravista">
+            <font size="+2"><b>Telefon:</b></font><input type="text" name="textbox" placeholder="Broj telefona">
+        </div>
+        
+
+        <br>
+
+        <div>
+            <font size="+2"><b>Radnja:</b></font>
+            <select name="radnja">
+            <option>HomeCentre - Beograd</option>
+            <option>HomeCentre - Novi sad</option>
+            <option>HomeCentre - Nis</option>
+            </select>
+        </div>
+        <br>
+
+        <div>
+            <!--input type="button" value="Potvrdi" class="dugmeA"-->
+            <button class="button-arounder">Potvrdi</button>
+        </div>
+        <br>
+    </div>
+</body>
+</html>

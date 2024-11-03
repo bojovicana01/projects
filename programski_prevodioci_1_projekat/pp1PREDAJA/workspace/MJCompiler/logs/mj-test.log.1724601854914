@@ -1,0 +1,2400 @@
+INFO  16:07:19,867 - Compiling source file: C:\pp1_domaci_avg\workspace\MJCompiler\test\program.mj
+INFO  16:07:19,912 - #2 program
+INFO  16:07:19,912 - #37 test301
+INFO  16:07:19,912 - #7 const
+INFO  16:07:19,913 - #37 int
+INFO  16:07:19,913 - #37 nula
+INFO  16:07:19,914 - #21 =
+INFO  16:07:19,914 - #38 0
+INFO  16:07:19,914 - #13 ;
+INFO  16:07:19,915 - #7 const
+INFO  16:07:19,915 - #37 int
+INFO  16:07:19,915 - #37 jedan
+INFO  16:07:19,915 - #21 =
+INFO  16:07:19,915 - #38 1
+INFO  16:07:19,915 - #13 ;
+INFO  16:07:19,915 - #7 const
+INFO  16:07:19,915 - #37 int
+INFO  16:07:19,915 - #37 pet
+INFO  16:07:19,915 - #21 =
+INFO  16:07:19,915 - #38 5
+INFO  16:07:19,915 - #13 ;
+INFO  16:07:19,915 - #37 int
+INFO  16:07:19,916 - #37 niz
+INFO  16:07:19,918 - #19 [
+INFO  16:07:19,918 - #20 ]
+INFO  16:07:19,918 - #13 ;
+INFO  16:07:19,919 - #37 char
+INFO  16:07:19,920 - #37 nizch
+INFO  16:07:19,920 - #19 [
+INFO  16:07:19,920 - #20 ]
+INFO  16:07:19,920 - #13 ;
+INFO  16:07:19,920 - #37 int
+INFO  16:07:19,920 - #37 mat
+INFO  16:07:19,920 - #19 [
+INFO  16:07:19,920 - #20 ]
+INFO  16:07:19,920 - #19 [
+INFO  16:07:19,920 - #20 ]
+INFO  16:07:19,920 - #13 ;
+INFO  16:07:19,921 - #37 int
+INFO  16:07:19,921 - #37 a
+INFO  16:07:19,921 - #13 ;
+INFO  16:07:19,922 - #15 {
+INFO  16:07:19,922 - #6 void
+INFO  16:07:19,923 - #37 main
+INFO  16:07:19,923 - #17 (
+INFO  16:07:19,923 - #18 )
+INFO  16:07:19,923 - #37 int
+INFO  16:07:19,925 - #37 bodovi
+INFO  16:07:19,925 - #13 ;
+INFO  16:07:19,925 - #37 bool
+INFO  16:07:19,925 - #37 bt
+INFO  16:07:19,925 - #13 ;
+INFO  16:07:19,925 - #15 {
+INFO  16:07:19,925 - #37 bodovi
+INFO  16:07:19,926 - #21 =
+INFO  16:07:19,927 - #38 0
+INFO  16:07:19,927 - #13 ;
+INFO  16:07:19,930 - #37 bodovi
+INFO  16:07:19,930 - #29 ++
+INFO  16:07:19,930 - #13 ;
+INFO  16:07:19,931 - #37 bodovi
+INFO  16:07:19,931 - #21 =
+INFO  16:07:19,931 - #37 bodovi
+INFO  16:07:19,931 - #22 +
+INFO  16:07:19,931 - #37 jedan
+INFO  16:07:19,931 - #13 ;
+INFO  16:07:19,931 - #37 bodovi
+INFO  16:07:19,931 - #21 =
+INFO  16:07:19,931 - #37 bodovi
+INFO  16:07:19,931 - #24 *
+INFO  16:07:19,931 - #37 pet
+INFO  16:07:19,932 - #13 ;
+INFO  16:07:19,932 - #37 bodovi
+INFO  16:07:19,932 - #30 --
+INFO  16:07:19,932 - #13 ;
+INFO  16:07:19,932 - #4 print
+INFO  16:07:19,932 - #17 (
+INFO  16:07:19,932 - #37 bodovi
+INFO  16:07:19,932 - #18 )
+INFO  16:07:19,932 - #13 ;
+INFO  16:07:19,932 - #37 niz
+INFO  16:07:19,932 - #21 =
+INFO  16:07:19,932 - #8 new
+INFO  16:07:19,933 - #37 int
+INFO  16:07:19,933 - #19 [
+INFO  16:07:19,933 - #38 3
+INFO  16:07:19,933 - #20 ]
+INFO  16:07:19,933 - #13 ;
+INFO  16:07:19,936 - #37 niz
+INFO  16:07:19,936 - #19 [
+INFO  16:07:19,936 - #37 nula
+INFO  16:07:19,936 - #20 ]
+INFO  16:07:19,936 - #21 =
+INFO  16:07:19,937 - #37 jedan
+INFO  16:07:19,937 - #13 ;
+INFO  16:07:19,937 - #37 niz
+INFO  16:07:19,937 - #19 [
+INFO  16:07:19,937 - #38 1
+INFO  16:07:19,937 - #20 ]
+INFO  16:07:19,937 - #21 =
+INFO  16:07:19,937 - #38 2
+INFO  16:07:19,937 - #13 ;
+INFO  16:07:19,937 - #37 niz
+INFO  16:07:19,937 - #19 [
+INFO  16:07:19,937 - #37 niz
+INFO  16:07:19,937 - #19 [
+INFO  16:07:19,937 - #37 jedan
+INFO  16:07:19,937 - #20 ]
+INFO  16:07:19,938 - #20 ]
+INFO  16:07:19,938 - #21 =
+INFO  16:07:19,938 - #37 niz
+INFO  16:07:19,938 - #19 [
+INFO  16:07:19,938 - #37 niz
+INFO  16:07:19,938 - #19 [
+INFO  16:07:19,938 - #38 0
+INFO  16:07:19,938 - #20 ]
+INFO  16:07:19,938 - #20 ]
+INFO  16:07:19,938 - #24 *
+INFO  16:07:19,938 - #38 3
+INFO  16:07:19,938 - #13 ;
+INFO  16:07:19,938 - #37 bodovi
+INFO  16:07:19,938 - #21 =
+INFO  16:07:19,938 - #37 niz
+INFO  16:07:19,939 - #19 [
+INFO  16:07:19,939 - #38 2
+INFO  16:07:19,939 - #20 ]
+INFO  16:07:19,939 - #25 /
+INFO  16:07:19,939 - #37 niz
+INFO  16:07:19,939 - #19 [
+INFO  16:07:19,939 - #38 0
+INFO  16:07:19,939 - #20 ]
+INFO  16:07:19,940 - #13 ;
+INFO  16:07:19,940 - #4 print
+INFO  16:07:19,940 - #17 (
+INFO  16:07:19,941 - #37 bodovi
+INFO  16:07:19,941 - #18 )
+INFO  16:07:19,941 - #13 ;
+INFO  16:07:19,941 - #4 print
+INFO  16:07:19,941 - #17 (
+INFO  16:07:19,941 - #37 niz
+INFO  16:07:19,941 - #19 [
+INFO  16:07:19,941 - #38 2
+INFO  16:07:19,941 - #20 ]
+INFO  16:07:19,941 - #18 )
+INFO  16:07:19,941 - #13 ;
+INFO  16:07:19,941 - #37 nizch
+INFO  16:07:19,941 - #21 =
+INFO  16:07:19,942 - #8 new
+INFO  16:07:19,942 - #37 char
+INFO  16:07:19,942 - #19 [
+INFO  16:07:19,942 - #38 3
+INFO  16:07:19,942 - #20 ]
+INFO  16:07:19,942 - #13 ;
+INFO  16:07:19,942 - #37 nizch
+INFO  16:07:19,942 - #19 [
+INFO  16:07:19,942 - #38 0
+INFO  16:07:19,942 - #20 ]
+INFO  16:07:19,942 - #21 =
+INFO  16:07:19,943 - #40 a
+INFO  16:07:19,943 - #13 ;
+INFO  16:07:19,943 - #37 nizch
+INFO  16:07:19,943 - #19 [
+INFO  16:07:19,943 - #37 jedan
+INFO  16:07:19,943 - #20 ]
+INFO  16:07:19,943 - #21 =
+INFO  16:07:19,943 - #40 b
+INFO  16:07:19,943 - #13 ;
+INFO  16:07:19,944 - #37 nizch
+INFO  16:07:19,944 - #19 [
+INFO  16:07:19,944 - #37 pet
+INFO  16:07:19,944 - #23 -
+INFO  16:07:19,944 - #38 3
+INFO  16:07:19,945 - #20 ]
+INFO  16:07:19,946 - #21 =
+INFO  16:07:19,946 - #40 c
+INFO  16:07:19,946 - #13 ;
+INFO  16:07:19,946 - #4 print
+INFO  16:07:19,946 - #17 (
+INFO  16:07:19,946 - #37 nizch
+INFO  16:07:19,946 - #19 [
+INFO  16:07:19,946 - #38 1
+INFO  16:07:19,946 - #20 ]
+INFO  16:07:19,946 - #18 )
+INFO  16:07:19,946 - #13 ;
+INFO  16:07:19,946 - #4 print
+INFO  16:07:19,946 - #17 (
+INFO  16:07:19,946 - #37 nizch
+INFO  16:07:19,946 - #19 [
+INFO  16:07:19,946 - #37 jedan
+INFO  16:07:19,946 - #24 *
+INFO  16:07:19,947 - #38 2
+INFO  16:07:19,947 - #20 ]
+INFO  16:07:19,947 - #18 )
+INFO  16:07:19,947 - #13 ;
+INFO  16:07:19,947 - #37 a
+INFO  16:07:19,947 - #21 =
+INFO  16:07:19,947 - #38 1
+INFO  16:07:19,947 - #13 ;
+INFO  16:07:19,947 - #37 bodovi
+INFO  16:07:19,947 - #21 =
+INFO  16:07:19,947 - #23 -
+INFO  16:07:19,948 - #37 bodovi
+INFO  16:07:19,948 - #22 +
+INFO  16:07:19,948 - #17 (
+INFO  16:07:19,948 - #37 pet
+INFO  16:07:19,948 - #24 *
+INFO  16:07:19,948 - #37 a
+INFO  16:07:19,948 - #25 /
+INFO  16:07:19,948 - #38 2
+INFO  16:07:19,948 - #23 -
+INFO  16:07:19,948 - #37 jedan
+INFO  16:07:19,948 - #18 )
+INFO  16:07:19,948 - #24 *
+INFO  16:07:19,948 - #37 bodovi
+INFO  16:07:19,948 - #23 -
+INFO  16:07:19,948 - #17 (
+INFO  16:07:19,949 - #38 3
+INFO  16:07:19,949 - #26 %
+INFO  16:07:19,949 - #38 2
+INFO  16:07:19,951 - #22 +
+INFO  16:07:19,951 - #38 3
+INFO  16:07:19,951 - #24 *
+INFO  16:07:19,951 - #38 2
+INFO  16:07:19,951 - #23 -
+INFO  16:07:19,951 - #38 3
+INFO  16:07:19,951 - #18 )
+INFO  16:07:19,951 - #13 ;
+INFO  16:07:19,951 - #4 print
+INFO  16:07:19,951 - #17 (
+INFO  16:07:19,951 - #37 bodovi
+INFO  16:07:19,951 - #18 )
+INFO  16:07:19,951 - #13 ;
+INFO  16:07:19,951 - #37 mat
+INFO  16:07:19,951 - #21 =
+INFO  16:07:19,951 - #8 new
+INFO  16:07:19,951 - #37 int
+INFO  16:07:19,952 - #19 [
+INFO  16:07:19,952 - #38 2
+INFO  16:07:19,952 - #20 ]
+INFO  16:07:19,952 - #19 [
+INFO  16:07:19,952 - #38 3
+INFO  16:07:19,952 - #20 ]
+INFO  16:07:19,952 - #13 ;
+INFO  16:07:19,952 - #37 mat
+INFO  16:07:19,952 - #19 [
+INFO  16:07:19,952 - #37 nula
+INFO  16:07:19,952 - #20 ]
+INFO  16:07:19,952 - #19 [
+INFO  16:07:19,952 - #37 jedan
+INFO  16:07:19,952 - #23 -
+INFO  16:07:19,952 - #38 1
+INFO  16:07:19,952 - #20 ]
+INFO  16:07:19,952 - #21 =
+INFO  16:07:19,952 - #37 jedan
+INFO  16:07:19,952 - #13 ;
+INFO  16:07:19,953 - #37 mat
+INFO  16:07:19,953 - #19 [
+INFO  16:07:19,953 - #38 0
+INFO  16:07:19,953 - #20 ]
+INFO  16:07:19,953 - #19 [
+INFO  16:07:19,953 - #37 mat
+INFO  16:07:19,953 - #19 [
+INFO  16:07:19,953 - #38 0
+INFO  16:07:19,953 - #20 ]
+INFO  16:07:19,953 - #19 [
+INFO  16:07:19,953 - #38 0
+INFO  16:07:19,953 - #20 ]
+INFO  16:07:19,953 - #20 ]
+INFO  16:07:19,953 - #21 =
+INFO  16:07:19,953 - #38 2
+INFO  16:07:19,953 - #13 ;
+INFO  16:07:19,953 - #37 mat
+INFO  16:07:19,953 - #19 [
+INFO  16:07:19,953 - #38 0
+INFO  16:07:19,953 - #20 ]
+INFO  16:07:19,953 - #19 [
+INFO  16:07:19,953 - #37 mat
+INFO  16:07:19,953 - #19 [
+INFO  16:07:19,953 - #38 0
+INFO  16:07:19,953 - #20 ]
+INFO  16:07:19,953 - #19 [
+INFO  16:07:19,953 - #38 1
+INFO  16:07:19,953 - #20 ]
+INFO  16:07:19,953 - #20 ]
+INFO  16:07:19,954 - #21 =
+INFO  16:07:19,954 - #38 0
+INFO  16:07:19,954 - #13 ;
+INFO  16:07:19,954 - #37 mat
+INFO  16:07:19,954 - #19 [
+INFO  16:07:19,954 - #38 1
+INFO  16:07:19,954 - #20 ]
+INFO  16:07:19,954 - #19 [
+INFO  16:07:19,954 - #37 mat
+INFO  16:07:19,954 - #19 [
+INFO  16:07:19,954 - #38 0
+INFO  16:07:19,954 - #20 ]
+INFO  16:07:19,954 - #19 [
+INFO  16:07:19,954 - #38 0
+INFO  16:07:19,954 - #20 ]
+INFO  16:07:19,954 - #24 *
+INFO  16:07:19,954 - #38 2
+INFO  16:07:19,954 - #20 ]
+INFO  16:07:19,954 - #21 =
+INFO  16:07:19,954 - #38 4
+INFO  16:07:19,954 - #13 ;
+INFO  16:07:19,954 - #37 mat
+INFO  16:07:19,954 - #19 [
+INFO  16:07:19,954 - #37 mat
+INFO  16:07:19,954 - #19 [
+INFO  16:07:19,954 - #38 0
+INFO  16:07:19,954 - #20 ]
+INFO  16:07:19,954 - #19 [
+INFO  16:07:19,954 - #38 0
+INFO  16:07:19,954 - #20 ]
+INFO  16:07:19,954 - #20 ]
+INFO  16:07:19,954 - #19 [
+INFO  16:07:19,954 - #38 1
+INFO  16:07:19,955 - #20 ]
+INFO  16:07:19,955 - #21 =
+INFO  16:07:19,955 - #38 3
+INFO  16:07:19,955 - #13 ;
+INFO  16:07:19,955 - #37 mat
+INFO  16:07:19,955 - #19 [
+INFO  16:07:19,955 - #38 1
+INFO  16:07:19,955 - #20 ]
+INFO  16:07:19,955 - #19 [
+INFO  16:07:19,955 - #38 0
+INFO  16:07:19,955 - #20 ]
+INFO  16:07:19,955 - #21 =
+INFO  16:07:19,955 - #38 2
+INFO  16:07:19,955 - #13 ;
+INFO  16:07:19,955 - #4 print
+INFO  16:07:19,955 - #17 (
+INFO  16:07:19,955 - #37 mat
+INFO  16:07:19,955 - #19 [
+INFO  16:07:19,955 - #38 0
+INFO  16:07:19,955 - #20 ]
+INFO  16:07:19,955 - #19 [
+INFO  16:07:19,955 - #38 0
+INFO  16:07:19,955 - #20 ]
+INFO  16:07:19,955 - #18 )
+INFO  16:07:19,955 - #13 ;
+INFO  16:07:19,955 - #4 print
+INFO  16:07:19,955 - #17 (
+INFO  16:07:19,955 - #37 mat
+INFO  16:07:19,955 - #19 [
+INFO  16:07:19,955 - #38 0
+INFO  16:07:19,956 - #20 ]
+INFO  16:07:19,956 - #19 [
+INFO  16:07:19,956 - #38 1
+INFO  16:07:19,956 - #20 ]
+INFO  16:07:19,956 - #18 )
+INFO  16:07:19,956 - #13 ;
+INFO  16:07:19,956 - #4 print
+INFO  16:07:19,956 - #17 (
+INFO  16:07:19,956 - #37 mat
+INFO  16:07:19,956 - #19 [
+INFO  16:07:19,956 - #38 0
+INFO  16:07:19,956 - #20 ]
+INFO  16:07:19,956 - #19 [
+INFO  16:07:19,956 - #38 2
+INFO  16:07:19,956 - #20 ]
+INFO  16:07:19,956 - #18 )
+INFO  16:07:19,956 - #13 ;
+INFO  16:07:19,956 - #4 print
+INFO  16:07:19,956 - #17 (
+INFO  16:07:19,956 - #37 mat
+INFO  16:07:19,956 - #19 [
+INFO  16:07:19,956 - #38 1
+INFO  16:07:19,956 - #20 ]
+INFO  16:07:19,956 - #19 [
+INFO  16:07:19,956 - #38 2
+INFO  16:07:19,956 - #20 ]
+INFO  16:07:19,956 - #18 )
+INFO  16:07:19,956 - #13 ;
+INFO  16:07:19,956 - #4 print
+INFO  16:07:19,956 - #17 (
+INFO  16:07:19,956 - #37 mat
+INFO  16:07:19,956 - #19 [
+INFO  16:07:19,956 - #38 1
+INFO  16:07:19,956 - #20 ]
+INFO  16:07:19,956 - #19 [
+INFO  16:07:19,956 - #38 1
+INFO  16:07:19,956 - #20 ]
+INFO  16:07:19,956 - #18 )
+INFO  16:07:19,956 - #13 ;
+INFO  16:07:19,957 - #4 print
+INFO  16:07:19,957 - #17 (
+INFO  16:07:19,957 - #37 mat
+INFO  16:07:19,957 - #19 [
+INFO  16:07:19,957 - #38 1
+INFO  16:07:19,957 - #20 ]
+INFO  16:07:19,957 - #19 [
+INFO  16:07:19,957 - #38 0
+INFO  16:07:19,957 - #20 ]
+INFO  16:07:19,957 - #18 )
+INFO  16:07:19,957 - #13 ;
+INFO  16:07:19,957 - #16 }
+INFO  16:07:19,957 - #16 }
+INFO  16:07:19,974 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  NoNamespaceList(
+  ) [NoNamespaceList]
+  EDeclList(
+    EDeclList(
+      EDeclList(
+        EDeclList(
+          EDeclList(
+            EDeclList(
+              EDeclList(
+                NoDeclList(
+                ) [NoDeclList]
+                DeclConst(
+                  EConstDecl(
+                    ConstantTypeName(
+                      TypeSimple(
+                       int
+                      ) [TypeSimple]
+                     nula
+                    ) [ConstantTypeName]
+                    CNumConst(
+                     0
+                    ) [CNumConst]
+                    NoConstDeclListSingleType(
+                    ) [NoConstDeclListSingleType]
+                  ) [EConstDecl]
+                ) [DeclConst]
+              ) [EDeclList]
+              DeclConst(
+                EConstDecl(
+                  ConstantTypeName(
+                    TypeSimple(
+                     int
+                    ) [TypeSimple]
+                   jedan
+                  ) [ConstantTypeName]
+                  CNumConst(
+                   1
+                  ) [CNumConst]
+                  NoConstDeclListSingleType(
+                  ) [NoConstDeclListSingleType]
+                ) [EConstDecl]
+              ) [DeclConst]
+            ) [EDeclList]
+            DeclConst(
+              EConstDecl(
+                ConstantTypeName(
+                  TypeSimple(
+                   int
+                  ) [TypeSimple]
+                 pet
+                ) [ConstantTypeName]
+                CNumConst(
+                 5
+                ) [CNumConst]
+                NoConstDeclListSingleType(
+                ) [NoConstDeclListSingleType]
+              ) [EConstDecl]
+            ) [DeclConst]
+          ) [EDeclList]
+          DeclVar(
+            EVarDecl(
+              VarTypeName(
+                TypeSimple(
+                 int
+                ) [TypeSimple]
+               niz
+                EOptSquareBrackets(
+                  NoOptSquareBracketsMatrix(
+                  ) [NoOptSquareBracketsMatrix]
+                ) [EOptSquareBrackets]
+              ) [VarTypeName]
+              NoVarDeclListSingleType(
+              ) [NoVarDeclListSingleType]
+            ) [EVarDecl]
+          ) [DeclVar]
+        ) [EDeclList]
+        DeclVar(
+          EVarDecl(
+            VarTypeName(
+              TypeSimple(
+               char
+              ) [TypeSimple]
+             nizch
+              EOptSquareBrackets(
+                NoOptSquareBracketsMatrix(
+                ) [NoOptSquareBracketsMatrix]
+              ) [EOptSquareBrackets]
+            ) [VarTypeName]
+            NoVarDeclListSingleType(
+            ) [NoVarDeclListSingleType]
+          ) [EVarDecl]
+        ) [DeclVar]
+      ) [EDeclList]
+      DeclVar(
+        EVarDecl(
+          VarTypeName(
+            TypeSimple(
+             int
+            ) [TypeSimple]
+           mat
+            EOptSquareBrackets(
+              EOptSquareBracketsMatrix(
+              ) [EOptSquareBracketsMatrix]
+            ) [EOptSquareBrackets]
+          ) [VarTypeName]
+          NoVarDeclListSingleType(
+          ) [NoVarDeclListSingleType]
+        ) [EVarDecl]
+      ) [DeclVar]
+    ) [EDeclList]
+    DeclVar(
+      EVarDecl(
+        VarTypeName(
+          TypeSimple(
+           int
+          ) [TypeSimple]
+         a
+          NoOptSquareBrackets(
+          ) [NoOptSquareBrackets]
+        ) [VarTypeName]
+        NoVarDeclListSingleType(
+        ) [NoVarDeclListSingleType]
+      ) [EVarDecl]
+    ) [DeclVar]
+  ) [EDeclList]
+  EMethodDeclList(
+    NoMethodDeclList(
+    ) [NoMethodDeclList]
+    MethodDecl(
+      VoidMethodTypeName(
+       main
+      ) [VoidMethodTypeName]
+      NoFormPars(
+      ) [NoFormPars]
+      EVarDeclList(
+        EVarDeclList(
+          NoVarDeclList(
+          ) [NoVarDeclList]
+          EVarDecl(
+            VarTypeName(
+              TypeSimple(
+               int
+              ) [TypeSimple]
+             bodovi
+              NoOptSquareBrackets(
+              ) [NoOptSquareBrackets]
+            ) [VarTypeName]
+            NoVarDeclListSingleType(
+            ) [NoVarDeclListSingleType]
+          ) [EVarDecl]
+        ) [EVarDeclList]
+        EVarDecl(
+          VarTypeName(
+            TypeSimple(
+             bool
+            ) [TypeSimple]
+           bt
+            NoOptSquareBrackets(
+            ) [NoOptSquareBrackets]
+          ) [VarTypeName]
+          NoVarDeclListSingleType(
+          ) [NoVarDeclListSingleType]
+        ) [EVarDecl]
+      ) [EVarDeclList]
+      EStatementList(
+        EStatementList(
+          EStatementList(
+            EStatementList(
+              EStatementList(
+                EStatementList(
+                  EStatementList(
+                    EStatementList(
+                      EStatementList(
+                        EStatementList(
+                          EStatementList(
+                            EStatementList(
+                              EStatementList(
+                                EStatementList(
+                                  EStatementList(
+                                    EStatementList(
+                                      EStatementList(
+                                        EStatementList(
+                                          EStatementList(
+                                            EStatementList(
+                                              EStatementList(
+                                                EStatementList(
+                                                  EStatementList(
+                                                    EStatementList(
+                                                      EStatementList(
+                                                        EStatementList(
+                                                          EStatementList(
+                                                            EStatementList(
+                                                              EStatementList(
+                                                                EStatementList(
+                                                                  EStatementList(
+                                                                    EStatementList(
+                                                                      EStatementList(
+                                                                        EStatementList(
+                                                                          EStatementList(
+                                                                            NoStatementList(
+                                                                            ) [NoStatementList]
+                                                                            StatementMatched(
+                                                                              MatchedDesignatorStatement(
+                                                                                DesignatorStatementEQUAL(
+                                                                                  EDesignatorStatementAssigment(
+                                                                                    DesignatorSimple(
+                                                                                      DesignatorName(
+                                                                                       bodovi
+                                                                                      ) [DesignatorName]
+                                                                                      NoArrayTypeOptional(
+                                                                                      ) [NoArrayTypeOptional]
+                                                                                    ) [DesignatorSimple]
+                                                                                    PositiveStartTermOnlyExpr(
+                                                                                      Term(
+                                                                                        FactorNumConst(
+                                                                                          NumConst(
+                                                                                           0
+                                                                                          ) [NumConst]
+                                                                                        ) [FactorNumConst]
+                                                                                        NoMulopFactorList(
+                                                                                        ) [NoMulopFactorList]
+                                                                                      ) [Term]
+                                                                                    ) [PositiveStartTermOnlyExpr]
+                                                                                  ) [EDesignatorStatementAssigment]
+                                                                                ) [DesignatorStatementEQUAL]
+                                                                              ) [MatchedDesignatorStatement]
+                                                                            ) [StatementMatched]
+                                                                          ) [EStatementList]
+                                                                          StatementMatched(
+                                                                            MatchedDesignatorStatement(
+                                                                              DesignatorStatementINCREMENT(
+                                                                                DesignatorSimple(
+                                                                                  DesignatorName(
+                                                                                   bodovi
+                                                                                  ) [DesignatorName]
+                                                                                  NoArrayTypeOptional(
+                                                                                  ) [NoArrayTypeOptional]
+                                                                                ) [DesignatorSimple]
+                                                                              ) [DesignatorStatementINCREMENT]
+                                                                            ) [MatchedDesignatorStatement]
+                                                                          ) [StatementMatched]
+                                                                        ) [EStatementList]
+                                                                        StatementMatched(
+                                                                          MatchedDesignatorStatement(
+                                                                            DesignatorStatementEQUAL(
+                                                                              EDesignatorStatementAssigment(
+                                                                                DesignatorSimple(
+                                                                                  DesignatorName(
+                                                                                   bodovi
+                                                                                  ) [DesignatorName]
+                                                                                  NoArrayTypeOptional(
+                                                                                  ) [NoArrayTypeOptional]
+                                                                                ) [DesignatorSimple]
+                                                                                PositiveStartExpr(
+                                                                                  PositiveStartTermOnlyExpr(
+                                                                                    Term(
+                                                                                      FactorDesignatorVar(
+                                                                                        DesignatorSimple(
+                                                                                          DesignatorName(
+                                                                                           bodovi
+                                                                                          ) [DesignatorName]
+                                                                                          NoArrayTypeOptional(
+                                                                                          ) [NoArrayTypeOptional]
+                                                                                        ) [DesignatorSimple]
+                                                                                      ) [FactorDesignatorVar]
+                                                                                      NoMulopFactorList(
+                                                                                      ) [NoMulopFactorList]
+                                                                                    ) [Term]
+                                                                                  ) [PositiveStartTermOnlyExpr]
+                                                                                  Plus(
+                                                                                  ) [Plus]
+                                                                                  Term(
+                                                                                    FactorDesignatorVar(
+                                                                                      DesignatorSimple(
+                                                                                        DesignatorName(
+                                                                                         jedan
+                                                                                        ) [DesignatorName]
+                                                                                        NoArrayTypeOptional(
+                                                                                        ) [NoArrayTypeOptional]
+                                                                                      ) [DesignatorSimple]
+                                                                                    ) [FactorDesignatorVar]
+                                                                                    NoMulopFactorList(
+                                                                                    ) [NoMulopFactorList]
+                                                                                  ) [Term]
+                                                                                ) [PositiveStartExpr]
+                                                                              ) [EDesignatorStatementAssigment]
+                                                                            ) [DesignatorStatementEQUAL]
+                                                                          ) [MatchedDesignatorStatement]
+                                                                        ) [StatementMatched]
+                                                                      ) [EStatementList]
+                                                                      StatementMatched(
+                                                                        MatchedDesignatorStatement(
+                                                                          DesignatorStatementEQUAL(
+                                                                            EDesignatorStatementAssigment(
+                                                                              DesignatorSimple(
+                                                                                DesignatorName(
+                                                                                 bodovi
+                                                                                ) [DesignatorName]
+                                                                                NoArrayTypeOptional(
+                                                                                ) [NoArrayTypeOptional]
+                                                                              ) [DesignatorSimple]
+                                                                              PositiveStartTermOnlyExpr(
+                                                                                Term(
+                                                                                  FactorDesignatorVar(
+                                                                                    DesignatorSimple(
+                                                                                      DesignatorName(
+                                                                                       bodovi
+                                                                                      ) [DesignatorName]
+                                                                                      NoArrayTypeOptional(
+                                                                                      ) [NoArrayTypeOptional]
+                                                                                    ) [DesignatorSimple]
+                                                                                  ) [FactorDesignatorVar]
+                                                                                  MultipleMulopFactorList(
+                                                                                    NoMulopFactorList(
+                                                                                    ) [NoMulopFactorList]
+                                                                                    Times(
+                                                                                    ) [Times]
+                                                                                    FactorDesignatorVar(
+                                                                                      DesignatorSimple(
+                                                                                        DesignatorName(
+                                                                                         pet
+                                                                                        ) [DesignatorName]
+                                                                                        NoArrayTypeOptional(
+                                                                                        ) [NoArrayTypeOptional]
+                                                                                      ) [DesignatorSimple]
+                                                                                    ) [FactorDesignatorVar]
+                                                                                  ) [MultipleMulopFactorList]
+                                                                                ) [Term]
+                                                                              ) [PositiveStartTermOnlyExpr]
+                                                                            ) [EDesignatorStatementAssigment]
+                                                                          ) [DesignatorStatementEQUAL]
+                                                                        ) [MatchedDesignatorStatement]
+                                                                      ) [StatementMatched]
+                                                                    ) [EStatementList]
+                                                                    StatementMatched(
+                                                                      MatchedDesignatorStatement(
+                                                                        DesignatorStatementDECREMENT(
+                                                                          DesignatorSimple(
+                                                                            DesignatorName(
+                                                                             bodovi
+                                                                            ) [DesignatorName]
+                                                                            NoArrayTypeOptional(
+                                                                            ) [NoArrayTypeOptional]
+                                                                          ) [DesignatorSimple]
+                                                                        ) [DesignatorStatementDECREMENT]
+                                                                      ) [MatchedDesignatorStatement]
+                                                                    ) [StatementMatched]
+                                                                  ) [EStatementList]
+                                                                  StatementMatched(
+                                                                    MatchedPrintSimple(
+                                                                      PositiveStartTermOnlyExpr(
+                                                                        Term(
+                                                                          FactorDesignatorVar(
+                                                                            DesignatorSimple(
+                                                                              DesignatorName(
+                                                                               bodovi
+                                                                              ) [DesignatorName]
+                                                                              NoArrayTypeOptional(
+                                                                              ) [NoArrayTypeOptional]
+                                                                            ) [DesignatorSimple]
+                                                                          ) [FactorDesignatorVar]
+                                                                          NoMulopFactorList(
+                                                                          ) [NoMulopFactorList]
+                                                                        ) [Term]
+                                                                      ) [PositiveStartTermOnlyExpr]
+                                                                    ) [MatchedPrintSimple]
+                                                                  ) [StatementMatched]
+                                                                ) [EStatementList]
+                                                                StatementMatched(
+                                                                  MatchedDesignatorStatement(
+                                                                    DesignatorStatementEQUAL(
+                                                                      EDesignatorStatementAssigment(
+                                                                        DesignatorSimple(
+                                                                          DesignatorName(
+                                                                           niz
+                                                                          ) [DesignatorName]
+                                                                          NoArrayTypeOptional(
+                                                                          ) [NoArrayTypeOptional]
+                                                                        ) [DesignatorSimple]
+                                                                        PositiveStartTermOnlyExpr(
+                                                                          Term(
+                                                                            FactorNew(
+                                                                              TypeSimple(
+                                                                               int
+                                                                              ) [TypeSimple]
+                                                                              PositiveStartTermOnlyExpr(
+                                                                                Term(
+                                                                                  FactorNumConst(
+                                                                                    NumConst(
+                                                                                     3
+                                                                                    ) [NumConst]
+                                                                                  ) [FactorNumConst]
+                                                                                  NoMulopFactorList(
+                                                                                  ) [NoMulopFactorList]
+                                                                                ) [Term]
+                                                                              ) [PositiveStartTermOnlyExpr]
+                                                                              NoFactorMatrixTypeOptional(
+                                                                              ) [NoFactorMatrixTypeOptional]
+                                                                            ) [FactorNew]
+                                                                            NoMulopFactorList(
+                                                                            ) [NoMulopFactorList]
+                                                                          ) [Term]
+                                                                        ) [PositiveStartTermOnlyExpr]
+                                                                      ) [EDesignatorStatementAssigment]
+                                                                    ) [DesignatorStatementEQUAL]
+                                                                  ) [MatchedDesignatorStatement]
+                                                                ) [StatementMatched]
+                                                              ) [EStatementList]
+                                                              StatementMatched(
+                                                                MatchedDesignatorStatement(
+                                                                  DesignatorStatementEQUAL(
+                                                                    EDesignatorStatementAssigment(
+                                                                      DesignatorSimple(
+                                                                        DesignatorName(
+                                                                         niz
+                                                                        ) [DesignatorName]
+                                                                        EArrayTypeOptional(
+                                                                          PositiveStartTermOnlyExpr(
+                                                                            Term(
+                                                                              FactorDesignatorVar(
+                                                                                DesignatorSimple(
+                                                                                  DesignatorName(
+                                                                                   nula
+                                                                                  ) [DesignatorName]
+                                                                                  NoArrayTypeOptional(
+                                                                                  ) [NoArrayTypeOptional]
+                                                                                ) [DesignatorSimple]
+                                                                              ) [FactorDesignatorVar]
+                                                                              NoMulopFactorList(
+                                                                              ) [NoMulopFactorList]
+                                                                            ) [Term]
+                                                                          ) [PositiveStartTermOnlyExpr]
+                                                                          NoMatrixTypeOptional(
+                                                                          ) [NoMatrixTypeOptional]
+                                                                        ) [EArrayTypeOptional]
+                                                                      ) [DesignatorSimple]
+                                                                      PositiveStartTermOnlyExpr(
+                                                                        Term(
+                                                                          FactorDesignatorVar(
+                                                                            DesignatorSimple(
+                                                                              DesignatorName(
+                                                                               jedan
+                                                                              ) [DesignatorName]
+                                                                              NoArrayTypeOptional(
+                                                                              ) [NoArrayTypeOptional]
+                                                                            ) [DesignatorSimple]
+                                                                          ) [FactorDesignatorVar]
+                                                                          NoMulopFactorList(
+                                                                          ) [NoMulopFactorList]
+                                                                        ) [Term]
+                                                                      ) [PositiveStartTermOnlyExpr]
+                                                                    ) [EDesignatorStatementAssigment]
+                                                                  ) [DesignatorStatementEQUAL]
+                                                                ) [MatchedDesignatorStatement]
+                                                              ) [StatementMatched]
+                                                            ) [EStatementList]
+                                                            StatementMatched(
+                                                              MatchedDesignatorStatement(
+                                                                DesignatorStatementEQUAL(
+                                                                  EDesignatorStatementAssigment(
+                                                                    DesignatorSimple(
+                                                                      DesignatorName(
+                                                                       niz
+                                                                      ) [DesignatorName]
+                                                                      EArrayTypeOptional(
+                                                                        PositiveStartTermOnlyExpr(
+                                                                          Term(
+                                                                            FactorNumConst(
+                                                                              NumConst(
+                                                                               1
+                                                                              ) [NumConst]
+                                                                            ) [FactorNumConst]
+                                                                            NoMulopFactorList(
+                                                                            ) [NoMulopFactorList]
+                                                                          ) [Term]
+                                                                        ) [PositiveStartTermOnlyExpr]
+                                                                        NoMatrixTypeOptional(
+                                                                        ) [NoMatrixTypeOptional]
+                                                                      ) [EArrayTypeOptional]
+                                                                    ) [DesignatorSimple]
+                                                                    PositiveStartTermOnlyExpr(
+                                                                      Term(
+                                                                        FactorNumConst(
+                                                                          NumConst(
+                                                                           2
+                                                                          ) [NumConst]
+                                                                        ) [FactorNumConst]
+                                                                        NoMulopFactorList(
+                                                                        ) [NoMulopFactorList]
+                                                                      ) [Term]
+                                                                    ) [PositiveStartTermOnlyExpr]
+                                                                  ) [EDesignatorStatementAssigment]
+                                                                ) [DesignatorStatementEQUAL]
+                                                              ) [MatchedDesignatorStatement]
+                                                            ) [StatementMatched]
+                                                          ) [EStatementList]
+                                                          StatementMatched(
+                                                            MatchedDesignatorStatement(
+                                                              DesignatorStatementEQUAL(
+                                                                EDesignatorStatementAssigment(
+                                                                  DesignatorSimple(
+                                                                    DesignatorName(
+                                                                     niz
+                                                                    ) [DesignatorName]
+                                                                    EArrayTypeOptional(
+                                                                      PositiveStartTermOnlyExpr(
+                                                                        Term(
+                                                                          FactorDesignatorVar(
+                                                                            DesignatorSimple(
+                                                                              DesignatorName(
+                                                                               niz
+                                                                              ) [DesignatorName]
+                                                                              EArrayTypeOptional(
+                                                                                PositiveStartTermOnlyExpr(
+                                                                                  Term(
+                                                                                    FactorDesignatorVar(
+                                                                                      DesignatorSimple(
+                                                                                        DesignatorName(
+                                                                                         jedan
+                                                                                        ) [DesignatorName]
+                                                                                        NoArrayTypeOptional(
+                                                                                        ) [NoArrayTypeOptional]
+                                                                                      ) [DesignatorSimple]
+                                                                                    ) [FactorDesignatorVar]
+                                                                                    NoMulopFactorList(
+                                                                                    ) [NoMulopFactorList]
+                                                                                  ) [Term]
+                                                                                ) [PositiveStartTermOnlyExpr]
+                                                                                NoMatrixTypeOptional(
+                                                                                ) [NoMatrixTypeOptional]
+                                                                              ) [EArrayTypeOptional]
+                                                                            ) [DesignatorSimple]
+                                                                          ) [FactorDesignatorVar]
+                                                                          NoMulopFactorList(
+                                                                          ) [NoMulopFactorList]
+                                                                        ) [Term]
+                                                                      ) [PositiveStartTermOnlyExpr]
+                                                                      NoMatrixTypeOptional(
+                                                                      ) [NoMatrixTypeOptional]
+                                                                    ) [EArrayTypeOptional]
+                                                                  ) [DesignatorSimple]
+                                                                  PositiveStartTermOnlyExpr(
+                                                                    Term(
+                                                                      FactorDesignatorVar(
+                                                                        DesignatorSimple(
+                                                                          DesignatorName(
+                                                                           niz
+                                                                          ) [DesignatorName]
+                                                                          EArrayTypeOptional(
+                                                                            PositiveStartTermOnlyExpr(
+                                                                              Term(
+                                                                                FactorDesignatorVar(
+                                                                                  DesignatorSimple(
+                                                                                    DesignatorName(
+                                                                                     niz
+                                                                                    ) [DesignatorName]
+                                                                                    EArrayTypeOptional(
+                                                                                      PositiveStartTermOnlyExpr(
+                                                                                        Term(
+                                                                                          FactorNumConst(
+                                                                                            NumConst(
+                                                                                             0
+                                                                                            ) [NumConst]
+                                                                                          ) [FactorNumConst]
+                                                                                          NoMulopFactorList(
+                                                                                          ) [NoMulopFactorList]
+                                                                                        ) [Term]
+                                                                                      ) [PositiveStartTermOnlyExpr]
+                                                                                      NoMatrixTypeOptional(
+                                                                                      ) [NoMatrixTypeOptional]
+                                                                                    ) [EArrayTypeOptional]
+                                                                                  ) [DesignatorSimple]
+                                                                                ) [FactorDesignatorVar]
+                                                                                NoMulopFactorList(
+                                                                                ) [NoMulopFactorList]
+                                                                              ) [Term]
+                                                                            ) [PositiveStartTermOnlyExpr]
+                                                                            NoMatrixTypeOptional(
+                                                                            ) [NoMatrixTypeOptional]
+                                                                          ) [EArrayTypeOptional]
+                                                                        ) [DesignatorSimple]
+                                                                      ) [FactorDesignatorVar]
+                                                                      MultipleMulopFactorList(
+                                                                        NoMulopFactorList(
+                                                                        ) [NoMulopFactorList]
+                                                                        Times(
+                                                                        ) [Times]
+                                                                        FactorNumConst(
+                                                                          NumConst(
+                                                                           3
+                                                                          ) [NumConst]
+                                                                        ) [FactorNumConst]
+                                                                      ) [MultipleMulopFactorList]
+                                                                    ) [Term]
+                                                                  ) [PositiveStartTermOnlyExpr]
+                                                                ) [EDesignatorStatementAssigment]
+                                                              ) [DesignatorStatementEQUAL]
+                                                            ) [MatchedDesignatorStatement]
+                                                          ) [StatementMatched]
+                                                        ) [EStatementList]
+                                                        StatementMatched(
+                                                          MatchedDesignatorStatement(
+                                                            DesignatorStatementEQUAL(
+                                                              EDesignatorStatementAssigment(
+                                                                DesignatorSimple(
+                                                                  DesignatorName(
+                                                                   bodovi
+                                                                  ) [DesignatorName]
+                                                                  NoArrayTypeOptional(
+                                                                  ) [NoArrayTypeOptional]
+                                                                ) [DesignatorSimple]
+                                                                PositiveStartTermOnlyExpr(
+                                                                  Term(
+                                                                    FactorDesignatorVar(
+                                                                      DesignatorSimple(
+                                                                        DesignatorName(
+                                                                         niz
+                                                                        ) [DesignatorName]
+                                                                        EArrayTypeOptional(
+                                                                          PositiveStartTermOnlyExpr(
+                                                                            Term(
+                                                                              FactorNumConst(
+                                                                                NumConst(
+                                                                                 2
+                                                                                ) [NumConst]
+                                                                              ) [FactorNumConst]
+                                                                              NoMulopFactorList(
+                                                                              ) [NoMulopFactorList]
+                                                                            ) [Term]
+                                                                          ) [PositiveStartTermOnlyExpr]
+                                                                          NoMatrixTypeOptional(
+                                                                          ) [NoMatrixTypeOptional]
+                                                                        ) [EArrayTypeOptional]
+                                                                      ) [DesignatorSimple]
+                                                                    ) [FactorDesignatorVar]
+                                                                    MultipleMulopFactorList(
+                                                                      NoMulopFactorList(
+                                                                      ) [NoMulopFactorList]
+                                                                      Slash(
+                                                                      ) [Slash]
+                                                                      FactorDesignatorVar(
+                                                                        DesignatorSimple(
+                                                                          DesignatorName(
+                                                                           niz
+                                                                          ) [DesignatorName]
+                                                                          EArrayTypeOptional(
+                                                                            PositiveStartTermOnlyExpr(
+                                                                              Term(
+                                                                                FactorNumConst(
+                                                                                  NumConst(
+                                                                                   0
+                                                                                  ) [NumConst]
+                                                                                ) [FactorNumConst]
+                                                                                NoMulopFactorList(
+                                                                                ) [NoMulopFactorList]
+                                                                              ) [Term]
+                                                                            ) [PositiveStartTermOnlyExpr]
+                                                                            NoMatrixTypeOptional(
+                                                                            ) [NoMatrixTypeOptional]
+                                                                          ) [EArrayTypeOptional]
+                                                                        ) [DesignatorSimple]
+                                                                      ) [FactorDesignatorVar]
+                                                                    ) [MultipleMulopFactorList]
+                                                                  ) [Term]
+                                                                ) [PositiveStartTermOnlyExpr]
+                                                              ) [EDesignatorStatementAssigment]
+                                                            ) [DesignatorStatementEQUAL]
+                                                          ) [MatchedDesignatorStatement]
+                                                        ) [StatementMatched]
+                                                      ) [EStatementList]
+                                                      StatementMatched(
+                                                        MatchedPrintSimple(
+                                                          PositiveStartTermOnlyExpr(
+                                                            Term(
+                                                              FactorDesignatorVar(
+                                                                DesignatorSimple(
+                                                                  DesignatorName(
+                                                                   bodovi
+                                                                  ) [DesignatorName]
+                                                                  NoArrayTypeOptional(
+                                                                  ) [NoArrayTypeOptional]
+                                                                ) [DesignatorSimple]
+                                                              ) [FactorDesignatorVar]
+                                                              NoMulopFactorList(
+                                                              ) [NoMulopFactorList]
+                                                            ) [Term]
+                                                          ) [PositiveStartTermOnlyExpr]
+                                                        ) [MatchedPrintSimple]
+                                                      ) [StatementMatched]
+                                                    ) [EStatementList]
+                                                    StatementMatched(
+                                                      MatchedPrintSimple(
+                                                        PositiveStartTermOnlyExpr(
+                                                          Term(
+                                                            FactorDesignatorVar(
+                                                              DesignatorSimple(
+                                                                DesignatorName(
+                                                                 niz
+                                                                ) [DesignatorName]
+                                                                EArrayTypeOptional(
+                                                                  PositiveStartTermOnlyExpr(
+                                                                    Term(
+                                                                      FactorNumConst(
+                                                                        NumConst(
+                                                                         2
+                                                                        ) [NumConst]
+                                                                      ) [FactorNumConst]
+                                                                      NoMulopFactorList(
+                                                                      ) [NoMulopFactorList]
+                                                                    ) [Term]
+                                                                  ) [PositiveStartTermOnlyExpr]
+                                                                  NoMatrixTypeOptional(
+                                                                  ) [NoMatrixTypeOptional]
+                                                                ) [EArrayTypeOptional]
+                                                              ) [DesignatorSimple]
+                                                            ) [FactorDesignatorVar]
+                                                            NoMulopFactorList(
+                                                            ) [NoMulopFactorList]
+                                                          ) [Term]
+                                                        ) [PositiveStartTermOnlyExpr]
+                                                      ) [MatchedPrintSimple]
+                                                    ) [StatementMatched]
+                                                  ) [EStatementList]
+                                                  StatementMatched(
+                                                    MatchedDesignatorStatement(
+                                                      DesignatorStatementEQUAL(
+                                                        EDesignatorStatementAssigment(
+                                                          DesignatorSimple(
+                                                            DesignatorName(
+                                                             nizch
+                                                            ) [DesignatorName]
+                                                            NoArrayTypeOptional(
+                                                            ) [NoArrayTypeOptional]
+                                                          ) [DesignatorSimple]
+                                                          PositiveStartTermOnlyExpr(
+                                                            Term(
+                                                              FactorNew(
+                                                                TypeSimple(
+                                                                 char
+                                                                ) [TypeSimple]
+                                                                PositiveStartTermOnlyExpr(
+                                                                  Term(
+                                                                    FactorNumConst(
+                                                                      NumConst(
+                                                                       3
+                                                                      ) [NumConst]
+                                                                    ) [FactorNumConst]
+                                                                    NoMulopFactorList(
+                                                                    ) [NoMulopFactorList]
+                                                                  ) [Term]
+                                                                ) [PositiveStartTermOnlyExpr]
+                                                                NoFactorMatrixTypeOptional(
+                                                                ) [NoFactorMatrixTypeOptional]
+                                                              ) [FactorNew]
+                                                              NoMulopFactorList(
+                                                              ) [NoMulopFactorList]
+                                                            ) [Term]
+                                                          ) [PositiveStartTermOnlyExpr]
+                                                        ) [EDesignatorStatementAssigment]
+                                                      ) [DesignatorStatementEQUAL]
+                                                    ) [MatchedDesignatorStatement]
+                                                  ) [StatementMatched]
+                                                ) [EStatementList]
+                                                StatementMatched(
+                                                  MatchedDesignatorStatement(
+                                                    DesignatorStatementEQUAL(
+                                                      EDesignatorStatementAssigment(
+                                                        DesignatorSimple(
+                                                          DesignatorName(
+                                                           nizch
+                                                          ) [DesignatorName]
+                                                          EArrayTypeOptional(
+                                                            PositiveStartTermOnlyExpr(
+                                                              Term(
+                                                                FactorNumConst(
+                                                                  NumConst(
+                                                                   0
+                                                                  ) [NumConst]
+                                                                ) [FactorNumConst]
+                                                                NoMulopFactorList(
+                                                                ) [NoMulopFactorList]
+                                                              ) [Term]
+                                                            ) [PositiveStartTermOnlyExpr]
+                                                            NoMatrixTypeOptional(
+                                                            ) [NoMatrixTypeOptional]
+                                                          ) [EArrayTypeOptional]
+                                                        ) [DesignatorSimple]
+                                                        PositiveStartTermOnlyExpr(
+                                                          Term(
+                                                            FactorCharConst(
+                                                              CharConst(
+                                                               a
+                                                              ) [CharConst]
+                                                            ) [FactorCharConst]
+                                                            NoMulopFactorList(
+                                                            ) [NoMulopFactorList]
+                                                          ) [Term]
+                                                        ) [PositiveStartTermOnlyExpr]
+                                                      ) [EDesignatorStatementAssigment]
+                                                    ) [DesignatorStatementEQUAL]
+                                                  ) [MatchedDesignatorStatement]
+                                                ) [StatementMatched]
+                                              ) [EStatementList]
+                                              StatementMatched(
+                                                MatchedDesignatorStatement(
+                                                  DesignatorStatementEQUAL(
+                                                    EDesignatorStatementAssigment(
+                                                      DesignatorSimple(
+                                                        DesignatorName(
+                                                         nizch
+                                                        ) [DesignatorName]
+                                                        EArrayTypeOptional(
+                                                          PositiveStartTermOnlyExpr(
+                                                            Term(
+                                                              FactorDesignatorVar(
+                                                                DesignatorSimple(
+                                                                  DesignatorName(
+                                                                   jedan
+                                                                  ) [DesignatorName]
+                                                                  NoArrayTypeOptional(
+                                                                  ) [NoArrayTypeOptional]
+                                                                ) [DesignatorSimple]
+                                                              ) [FactorDesignatorVar]
+                                                              NoMulopFactorList(
+                                                              ) [NoMulopFactorList]
+                                                            ) [Term]
+                                                          ) [PositiveStartTermOnlyExpr]
+                                                          NoMatrixTypeOptional(
+                                                          ) [NoMatrixTypeOptional]
+                                                        ) [EArrayTypeOptional]
+                                                      ) [DesignatorSimple]
+                                                      PositiveStartTermOnlyExpr(
+                                                        Term(
+                                                          FactorCharConst(
+                                                            CharConst(
+                                                             b
+                                                            ) [CharConst]
+                                                          ) [FactorCharConst]
+                                                          NoMulopFactorList(
+                                                          ) [NoMulopFactorList]
+                                                        ) [Term]
+                                                      ) [PositiveStartTermOnlyExpr]
+                                                    ) [EDesignatorStatementAssigment]
+                                                  ) [DesignatorStatementEQUAL]
+                                                ) [MatchedDesignatorStatement]
+                                              ) [StatementMatched]
+                                            ) [EStatementList]
+                                            StatementMatched(
+                                              MatchedDesignatorStatement(
+                                                DesignatorStatementEQUAL(
+                                                  EDesignatorStatementAssigment(
+                                                    DesignatorSimple(
+                                                      DesignatorName(
+                                                       nizch
+                                                      ) [DesignatorName]
+                                                      EArrayTypeOptional(
+                                                        PositiveStartExpr(
+                                                          PositiveStartTermOnlyExpr(
+                                                            Term(
+                                                              FactorDesignatorVar(
+                                                                DesignatorSimple(
+                                                                  DesignatorName(
+                                                                   pet
+                                                                  ) [DesignatorName]
+                                                                  NoArrayTypeOptional(
+                                                                  ) [NoArrayTypeOptional]
+                                                                ) [DesignatorSimple]
+                                                              ) [FactorDesignatorVar]
+                                                              NoMulopFactorList(
+                                                              ) [NoMulopFactorList]
+                                                            ) [Term]
+                                                          ) [PositiveStartTermOnlyExpr]
+                                                          Minus(
+                                                          ) [Minus]
+                                                          Term(
+                                                            FactorNumConst(
+                                                              NumConst(
+                                                               3
+                                                              ) [NumConst]
+                                                            ) [FactorNumConst]
+                                                            NoMulopFactorList(
+                                                            ) [NoMulopFactorList]
+                                                          ) [Term]
+                                                        ) [PositiveStartExpr]
+                                                        NoMatrixTypeOptional(
+                                                        ) [NoMatrixTypeOptional]
+                                                      ) [EArrayTypeOptional]
+                                                    ) [DesignatorSimple]
+                                                    PositiveStartTermOnlyExpr(
+                                                      Term(
+                                                        FactorCharConst(
+                                                          CharConst(
+                                                           c
+                                                          ) [CharConst]
+                                                        ) [FactorCharConst]
+                                                        NoMulopFactorList(
+                                                        ) [NoMulopFactorList]
+                                                      ) [Term]
+                                                    ) [PositiveStartTermOnlyExpr]
+                                                  ) [EDesignatorStatementAssigment]
+                                                ) [DesignatorStatementEQUAL]
+                                              ) [MatchedDesignatorStatement]
+                                            ) [StatementMatched]
+                                          ) [EStatementList]
+                                          StatementMatched(
+                                            MatchedPrintSimple(
+                                              PositiveStartTermOnlyExpr(
+                                                Term(
+                                                  FactorDesignatorVar(
+                                                    DesignatorSimple(
+                                                      DesignatorName(
+                                                       nizch
+                                                      ) [DesignatorName]
+                                                      EArrayTypeOptional(
+                                                        PositiveStartTermOnlyExpr(
+                                                          Term(
+                                                            FactorNumConst(
+                                                              NumConst(
+                                                               1
+                                                              ) [NumConst]
+                                                            ) [FactorNumConst]
+                                                            NoMulopFactorList(
+                                                            ) [NoMulopFactorList]
+                                                          ) [Term]
+                                                        ) [PositiveStartTermOnlyExpr]
+                                                        NoMatrixTypeOptional(
+                                                        ) [NoMatrixTypeOptional]
+                                                      ) [EArrayTypeOptional]
+                                                    ) [DesignatorSimple]
+                                                  ) [FactorDesignatorVar]
+                                                  NoMulopFactorList(
+                                                  ) [NoMulopFactorList]
+                                                ) [Term]
+                                              ) [PositiveStartTermOnlyExpr]
+                                            ) [MatchedPrintSimple]
+                                          ) [StatementMatched]
+                                        ) [EStatementList]
+                                        StatementMatched(
+                                          MatchedPrintSimple(
+                                            PositiveStartTermOnlyExpr(
+                                              Term(
+                                                FactorDesignatorVar(
+                                                  DesignatorSimple(
+                                                    DesignatorName(
+                                                     nizch
+                                                    ) [DesignatorName]
+                                                    EArrayTypeOptional(
+                                                      PositiveStartTermOnlyExpr(
+                                                        Term(
+                                                          FactorDesignatorVar(
+                                                            DesignatorSimple(
+                                                              DesignatorName(
+                                                               jedan
+                                                              ) [DesignatorName]
+                                                              NoArrayTypeOptional(
+                                                              ) [NoArrayTypeOptional]
+                                                            ) [DesignatorSimple]
+                                                          ) [FactorDesignatorVar]
+                                                          MultipleMulopFactorList(
+                                                            NoMulopFactorList(
+                                                            ) [NoMulopFactorList]
+                                                            Times(
+                                                            ) [Times]
+                                                            FactorNumConst(
+                                                              NumConst(
+                                                               2
+                                                              ) [NumConst]
+                                                            ) [FactorNumConst]
+                                                          ) [MultipleMulopFactorList]
+                                                        ) [Term]
+                                                      ) [PositiveStartTermOnlyExpr]
+                                                      NoMatrixTypeOptional(
+                                                      ) [NoMatrixTypeOptional]
+                                                    ) [EArrayTypeOptional]
+                                                  ) [DesignatorSimple]
+                                                ) [FactorDesignatorVar]
+                                                NoMulopFactorList(
+                                                ) [NoMulopFactorList]
+                                              ) [Term]
+                                            ) [PositiveStartTermOnlyExpr]
+                                          ) [MatchedPrintSimple]
+                                        ) [StatementMatched]
+                                      ) [EStatementList]
+                                      StatementMatched(
+                                        MatchedDesignatorStatement(
+                                          DesignatorStatementEQUAL(
+                                            EDesignatorStatementAssigment(
+                                              DesignatorSimple(
+                                                DesignatorName(
+                                                 a
+                                                ) [DesignatorName]
+                                                NoArrayTypeOptional(
+                                                ) [NoArrayTypeOptional]
+                                              ) [DesignatorSimple]
+                                              PositiveStartTermOnlyExpr(
+                                                Term(
+                                                  FactorNumConst(
+                                                    NumConst(
+                                                     1
+                                                    ) [NumConst]
+                                                  ) [FactorNumConst]
+                                                  NoMulopFactorList(
+                                                  ) [NoMulopFactorList]
+                                                ) [Term]
+                                              ) [PositiveStartTermOnlyExpr]
+                                            ) [EDesignatorStatementAssigment]
+                                          ) [DesignatorStatementEQUAL]
+                                        ) [MatchedDesignatorStatement]
+                                      ) [StatementMatched]
+                                    ) [EStatementList]
+                                    StatementMatched(
+                                      MatchedDesignatorStatement(
+                                        DesignatorStatementEQUAL(
+                                          EDesignatorStatementAssigment(
+                                            DesignatorSimple(
+                                              DesignatorName(
+                                               bodovi
+                                              ) [DesignatorName]
+                                              NoArrayTypeOptional(
+                                              ) [NoArrayTypeOptional]
+                                            ) [DesignatorSimple]
+                                            PositiveStartExpr(
+                                              PositiveStartExpr(
+                                                NegativeStartExpr(
+                                                  Term(
+                                                    FactorDesignatorVar(
+                                                      DesignatorSimple(
+                                                        DesignatorName(
+                                                         bodovi
+                                                        ) [DesignatorName]
+                                                        NoArrayTypeOptional(
+                                                        ) [NoArrayTypeOptional]
+                                                      ) [DesignatorSimple]
+                                                    ) [FactorDesignatorVar]
+                                                    NoMulopFactorList(
+                                                    ) [NoMulopFactorList]
+                                                  ) [Term]
+                                                ) [NegativeStartExpr]
+                                                Plus(
+                                                ) [Plus]
+                                                Term(
+                                                  FactorExprInParens(
+                                                    PositiveStartExpr(
+                                                      PositiveStartTermOnlyExpr(
+                                                        Term(
+                                                          FactorDesignatorVar(
+                                                            DesignatorSimple(
+                                                              DesignatorName(
+                                                               pet
+                                                              ) [DesignatorName]
+                                                              NoArrayTypeOptional(
+                                                              ) [NoArrayTypeOptional]
+                                                            ) [DesignatorSimple]
+                                                          ) [FactorDesignatorVar]
+                                                          MultipleMulopFactorList(
+                                                            MultipleMulopFactorList(
+                                                              NoMulopFactorList(
+                                                              ) [NoMulopFactorList]
+                                                              Times(
+                                                              ) [Times]
+                                                              FactorDesignatorVar(
+                                                                DesignatorSimple(
+                                                                  DesignatorName(
+                                                                   a
+                                                                  ) [DesignatorName]
+                                                                  NoArrayTypeOptional(
+                                                                  ) [NoArrayTypeOptional]
+                                                                ) [DesignatorSimple]
+                                                              ) [FactorDesignatorVar]
+                                                            ) [MultipleMulopFactorList]
+                                                            Slash(
+                                                            ) [Slash]
+                                                            FactorNumConst(
+                                                              NumConst(
+                                                               2
+                                                              ) [NumConst]
+                                                            ) [FactorNumConst]
+                                                          ) [MultipleMulopFactorList]
+                                                        ) [Term]
+                                                      ) [PositiveStartTermOnlyExpr]
+                                                      Minus(
+                                                      ) [Minus]
+                                                      Term(
+                                                        FactorDesignatorVar(
+                                                          DesignatorSimple(
+                                                            DesignatorName(
+                                                             jedan
+                                                            ) [DesignatorName]
+                                                            NoArrayTypeOptional(
+                                                            ) [NoArrayTypeOptional]
+                                                          ) [DesignatorSimple]
+                                                        ) [FactorDesignatorVar]
+                                                        NoMulopFactorList(
+                                                        ) [NoMulopFactorList]
+                                                      ) [Term]
+                                                    ) [PositiveStartExpr]
+                                                  ) [FactorExprInParens]
+                                                  MultipleMulopFactorList(
+                                                    NoMulopFactorList(
+                                                    ) [NoMulopFactorList]
+                                                    Times(
+                                                    ) [Times]
+                                                    FactorDesignatorVar(
+                                                      DesignatorSimple(
+                                                        DesignatorName(
+                                                         bodovi
+                                                        ) [DesignatorName]
+                                                        NoArrayTypeOptional(
+                                                        ) [NoArrayTypeOptional]
+                                                      ) [DesignatorSimple]
+                                                    ) [FactorDesignatorVar]
+                                                  ) [MultipleMulopFactorList]
+                                                ) [Term]
+                                              ) [PositiveStartExpr]
+                                              Minus(
+                                              ) [Minus]
+                                              Term(
+                                                FactorExprInParens(
+                                                  PositiveStartExpr(
+                                                    PositiveStartExpr(
+                                                      PositiveStartTermOnlyExpr(
+                                                        Term(
+                                                          FactorNumConst(
+                                                            NumConst(
+                                                             3
+                                                            ) [NumConst]
+                                                          ) [FactorNumConst]
+                                                          MultipleMulopFactorList(
+                                                            NoMulopFactorList(
+                                                            ) [NoMulopFactorList]
+                                                            Percent(
+                                                            ) [Percent]
+                                                            FactorNumConst(
+                                                              NumConst(
+                                                               2
+                                                              ) [NumConst]
+                                                            ) [FactorNumConst]
+                                                          ) [MultipleMulopFactorList]
+                                                        ) [Term]
+                                                      ) [PositiveStartTermOnlyExpr]
+                                                      Plus(
+                                                      ) [Plus]
+                                                      Term(
+                                                        FactorNumConst(
+                                                          NumConst(
+                                                           3
+                                                          ) [NumConst]
+                                                        ) [FactorNumConst]
+                                                        MultipleMulopFactorList(
+                                                          NoMulopFactorList(
+                                                          ) [NoMulopFactorList]
+                                                          Times(
+                                                          ) [Times]
+                                                          FactorNumConst(
+                                                            NumConst(
+                                                             2
+                                                            ) [NumConst]
+                                                          ) [FactorNumConst]
+                                                        ) [MultipleMulopFactorList]
+                                                      ) [Term]
+                                                    ) [PositiveStartExpr]
+                                                    Minus(
+                                                    ) [Minus]
+                                                    Term(
+                                                      FactorNumConst(
+                                                        NumConst(
+                                                         3
+                                                        ) [NumConst]
+                                                      ) [FactorNumConst]
+                                                      NoMulopFactorList(
+                                                      ) [NoMulopFactorList]
+                                                    ) [Term]
+                                                  ) [PositiveStartExpr]
+                                                ) [FactorExprInParens]
+                                                NoMulopFactorList(
+                                                ) [NoMulopFactorList]
+                                              ) [Term]
+                                            ) [PositiveStartExpr]
+                                          ) [EDesignatorStatementAssigment]
+                                        ) [DesignatorStatementEQUAL]
+                                      ) [MatchedDesignatorStatement]
+                                    ) [StatementMatched]
+                                  ) [EStatementList]
+                                  StatementMatched(
+                                    MatchedPrintSimple(
+                                      PositiveStartTermOnlyExpr(
+                                        Term(
+                                          FactorDesignatorVar(
+                                            DesignatorSimple(
+                                              DesignatorName(
+                                               bodovi
+                                              ) [DesignatorName]
+                                              NoArrayTypeOptional(
+                                              ) [NoArrayTypeOptional]
+                                            ) [DesignatorSimple]
+                                          ) [FactorDesignatorVar]
+                                          NoMulopFactorList(
+                                          ) [NoMulopFactorList]
+                                        ) [Term]
+                                      ) [PositiveStartTermOnlyExpr]
+                                    ) [MatchedPrintSimple]
+                                  ) [StatementMatched]
+                                ) [EStatementList]
+                                StatementMatched(
+                                  MatchedDesignatorStatement(
+                                    DesignatorStatementEQUAL(
+                                      EDesignatorStatementAssigment(
+                                        DesignatorSimple(
+                                          DesignatorName(
+                                           mat
+                                          ) [DesignatorName]
+                                          NoArrayTypeOptional(
+                                          ) [NoArrayTypeOptional]
+                                        ) [DesignatorSimple]
+                                        PositiveStartTermOnlyExpr(
+                                          Term(
+                                            FactorNew(
+                                              TypeSimple(
+                                               int
+                                              ) [TypeSimple]
+                                              PositiveStartTermOnlyExpr(
+                                                Term(
+                                                  FactorNumConst(
+                                                    NumConst(
+                                                     2
+                                                    ) [NumConst]
+                                                  ) [FactorNumConst]
+                                                  NoMulopFactorList(
+                                                  ) [NoMulopFactorList]
+                                                ) [Term]
+                                              ) [PositiveStartTermOnlyExpr]
+                                              EFactorMatrixTypeOptional(
+                                                PositiveStartTermOnlyExpr(
+                                                  Term(
+                                                    FactorNumConst(
+                                                      NumConst(
+                                                       3
+                                                      ) [NumConst]
+                                                    ) [FactorNumConst]
+                                                    NoMulopFactorList(
+                                                    ) [NoMulopFactorList]
+                                                  ) [Term]
+                                                ) [PositiveStartTermOnlyExpr]
+                                              ) [EFactorMatrixTypeOptional]
+                                            ) [FactorNew]
+                                            NoMulopFactorList(
+                                            ) [NoMulopFactorList]
+                                          ) [Term]
+                                        ) [PositiveStartTermOnlyExpr]
+                                      ) [EDesignatorStatementAssigment]
+                                    ) [DesignatorStatementEQUAL]
+                                  ) [MatchedDesignatorStatement]
+                                ) [StatementMatched]
+                              ) [EStatementList]
+                              StatementMatched(
+                                MatchedDesignatorStatement(
+                                  DesignatorStatementEQUAL(
+                                    EDesignatorStatementAssigment(
+                                      DesignatorSimple(
+                                        DesignatorName(
+                                         mat
+                                        ) [DesignatorName]
+                                        EArrayTypeOptional(
+                                          PositiveStartTermOnlyExpr(
+                                            Term(
+                                              FactorDesignatorVar(
+                                                DesignatorSimple(
+                                                  DesignatorName(
+                                                   nula
+                                                  ) [DesignatorName]
+                                                  NoArrayTypeOptional(
+                                                  ) [NoArrayTypeOptional]
+                                                ) [DesignatorSimple]
+                                              ) [FactorDesignatorVar]
+                                              NoMulopFactorList(
+                                              ) [NoMulopFactorList]
+                                            ) [Term]
+                                          ) [PositiveStartTermOnlyExpr]
+                                          EMatrixTypeOptional(
+                                            PositiveStartExpr(
+                                              PositiveStartTermOnlyExpr(
+                                                Term(
+                                                  FactorDesignatorVar(
+                                                    DesignatorSimple(
+                                                      DesignatorName(
+                                                       jedan
+                                                      ) [DesignatorName]
+                                                      NoArrayTypeOptional(
+                                                      ) [NoArrayTypeOptional]
+                                                    ) [DesignatorSimple]
+                                                  ) [FactorDesignatorVar]
+                                                  NoMulopFactorList(
+                                                  ) [NoMulopFactorList]
+                                                ) [Term]
+                                              ) [PositiveStartTermOnlyExpr]
+                                              Minus(
+                                              ) [Minus]
+                                              Term(
+                                                FactorNumConst(
+                                                  NumConst(
+                                                   1
+                                                  ) [NumConst]
+                                                ) [FactorNumConst]
+                                                NoMulopFactorList(
+                                                ) [NoMulopFactorList]
+                                              ) [Term]
+                                            ) [PositiveStartExpr]
+                                          ) [EMatrixTypeOptional]
+                                        ) [EArrayTypeOptional]
+                                      ) [DesignatorSimple]
+                                      PositiveStartTermOnlyExpr(
+                                        Term(
+                                          FactorDesignatorVar(
+                                            DesignatorSimple(
+                                              DesignatorName(
+                                               jedan
+                                              ) [DesignatorName]
+                                              NoArrayTypeOptional(
+                                              ) [NoArrayTypeOptional]
+                                            ) [DesignatorSimple]
+                                          ) [FactorDesignatorVar]
+                                          NoMulopFactorList(
+                                          ) [NoMulopFactorList]
+                                        ) [Term]
+                                      ) [PositiveStartTermOnlyExpr]
+                                    ) [EDesignatorStatementAssigment]
+                                  ) [DesignatorStatementEQUAL]
+                                ) [MatchedDesignatorStatement]
+                              ) [StatementMatched]
+                            ) [EStatementList]
+                            StatementMatched(
+                              MatchedDesignatorStatement(
+                                DesignatorStatementEQUAL(
+                                  EDesignatorStatementAssigment(
+                                    DesignatorSimple(
+                                      DesignatorName(
+                                       mat
+                                      ) [DesignatorName]
+                                      EArrayTypeOptional(
+                                        PositiveStartTermOnlyExpr(
+                                          Term(
+                                            FactorNumConst(
+                                              NumConst(
+                                               0
+                                              ) [NumConst]
+                                            ) [FactorNumConst]
+                                            NoMulopFactorList(
+                                            ) [NoMulopFactorList]
+                                          ) [Term]
+                                        ) [PositiveStartTermOnlyExpr]
+                                        EMatrixTypeOptional(
+                                          PositiveStartTermOnlyExpr(
+                                            Term(
+                                              FactorDesignatorVar(
+                                                DesignatorSimple(
+                                                  DesignatorName(
+                                                   mat
+                                                  ) [DesignatorName]
+                                                  EArrayTypeOptional(
+                                                    PositiveStartTermOnlyExpr(
+                                                      Term(
+                                                        FactorNumConst(
+                                                          NumConst(
+                                                           0
+                                                          ) [NumConst]
+                                                        ) [FactorNumConst]
+                                                        NoMulopFactorList(
+                                                        ) [NoMulopFactorList]
+                                                      ) [Term]
+                                                    ) [PositiveStartTermOnlyExpr]
+                                                    EMatrixTypeOptional(
+                                                      PositiveStartTermOnlyExpr(
+                                                        Term(
+                                                          FactorNumConst(
+                                                            NumConst(
+                                                             0
+                                                            ) [NumConst]
+                                                          ) [FactorNumConst]
+                                                          NoMulopFactorList(
+                                                          ) [NoMulopFactorList]
+                                                        ) [Term]
+                                                      ) [PositiveStartTermOnlyExpr]
+                                                    ) [EMatrixTypeOptional]
+                                                  ) [EArrayTypeOptional]
+                                                ) [DesignatorSimple]
+                                              ) [FactorDesignatorVar]
+                                              NoMulopFactorList(
+                                              ) [NoMulopFactorList]
+                                            ) [Term]
+                                          ) [PositiveStartTermOnlyExpr]
+                                        ) [EMatrixTypeOptional]
+                                      ) [EArrayTypeOptional]
+                                    ) [DesignatorSimple]
+                                    PositiveStartTermOnlyExpr(
+                                      Term(
+                                        FactorNumConst(
+                                          NumConst(
+                                           2
+                                          ) [NumConst]
+                                        ) [FactorNumConst]
+                                        NoMulopFactorList(
+                                        ) [NoMulopFactorList]
+                                      ) [Term]
+                                    ) [PositiveStartTermOnlyExpr]
+                                  ) [EDesignatorStatementAssigment]
+                                ) [DesignatorStatementEQUAL]
+                              ) [MatchedDesignatorStatement]
+                            ) [StatementMatched]
+                          ) [EStatementList]
+                          StatementMatched(
+                            MatchedDesignatorStatement(
+                              DesignatorStatementEQUAL(
+                                EDesignatorStatementAssigment(
+                                  DesignatorSimple(
+                                    DesignatorName(
+                                     mat
+                                    ) [DesignatorName]
+                                    EArrayTypeOptional(
+                                      PositiveStartTermOnlyExpr(
+                                        Term(
+                                          FactorNumConst(
+                                            NumConst(
+                                             0
+                                            ) [NumConst]
+                                          ) [FactorNumConst]
+                                          NoMulopFactorList(
+                                          ) [NoMulopFactorList]
+                                        ) [Term]
+                                      ) [PositiveStartTermOnlyExpr]
+                                      EMatrixTypeOptional(
+                                        PositiveStartTermOnlyExpr(
+                                          Term(
+                                            FactorDesignatorVar(
+                                              DesignatorSimple(
+                                                DesignatorName(
+                                                 mat
+                                                ) [DesignatorName]
+                                                EArrayTypeOptional(
+                                                  PositiveStartTermOnlyExpr(
+                                                    Term(
+                                                      FactorNumConst(
+                                                        NumConst(
+                                                         0
+                                                        ) [NumConst]
+                                                      ) [FactorNumConst]
+                                                      NoMulopFactorList(
+                                                      ) [NoMulopFactorList]
+                                                    ) [Term]
+                                                  ) [PositiveStartTermOnlyExpr]
+                                                  EMatrixTypeOptional(
+                                                    PositiveStartTermOnlyExpr(
+                                                      Term(
+                                                        FactorNumConst(
+                                                          NumConst(
+                                                           1
+                                                          ) [NumConst]
+                                                        ) [FactorNumConst]
+                                                        NoMulopFactorList(
+                                                        ) [NoMulopFactorList]
+                                                      ) [Term]
+                                                    ) [PositiveStartTermOnlyExpr]
+                                                  ) [EMatrixTypeOptional]
+                                                ) [EArrayTypeOptional]
+                                              ) [DesignatorSimple]
+                                            ) [FactorDesignatorVar]
+                                            NoMulopFactorList(
+                                            ) [NoMulopFactorList]
+                                          ) [Term]
+                                        ) [PositiveStartTermOnlyExpr]
+                                      ) [EMatrixTypeOptional]
+                                    ) [EArrayTypeOptional]
+                                  ) [DesignatorSimple]
+                                  PositiveStartTermOnlyExpr(
+                                    Term(
+                                      FactorNumConst(
+                                        NumConst(
+                                         0
+                                        ) [NumConst]
+                                      ) [FactorNumConst]
+                                      NoMulopFactorList(
+                                      ) [NoMulopFactorList]
+                                    ) [Term]
+                                  ) [PositiveStartTermOnlyExpr]
+                                ) [EDesignatorStatementAssigment]
+                              ) [DesignatorStatementEQUAL]
+                            ) [MatchedDesignatorStatement]
+                          ) [StatementMatched]
+                        ) [EStatementList]
+                        StatementMatched(
+                          MatchedDesignatorStatement(
+                            DesignatorStatementEQUAL(
+                              EDesignatorStatementAssigment(
+                                DesignatorSimple(
+                                  DesignatorName(
+                                   mat
+                                  ) [DesignatorName]
+                                  EArrayTypeOptional(
+                                    PositiveStartTermOnlyExpr(
+                                      Term(
+                                        FactorNumConst(
+                                          NumConst(
+                                           1
+                                          ) [NumConst]
+                                        ) [FactorNumConst]
+                                        NoMulopFactorList(
+                                        ) [NoMulopFactorList]
+                                      ) [Term]
+                                    ) [PositiveStartTermOnlyExpr]
+                                    EMatrixTypeOptional(
+                                      PositiveStartTermOnlyExpr(
+                                        Term(
+                                          FactorDesignatorVar(
+                                            DesignatorSimple(
+                                              DesignatorName(
+                                               mat
+                                              ) [DesignatorName]
+                                              EArrayTypeOptional(
+                                                PositiveStartTermOnlyExpr(
+                                                  Term(
+                                                    FactorNumConst(
+                                                      NumConst(
+                                                       0
+                                                      ) [NumConst]
+                                                    ) [FactorNumConst]
+                                                    NoMulopFactorList(
+                                                    ) [NoMulopFactorList]
+                                                  ) [Term]
+                                                ) [PositiveStartTermOnlyExpr]
+                                                EMatrixTypeOptional(
+                                                  PositiveStartTermOnlyExpr(
+                                                    Term(
+                                                      FactorNumConst(
+                                                        NumConst(
+                                                         0
+                                                        ) [NumConst]
+                                                      ) [FactorNumConst]
+                                                      NoMulopFactorList(
+                                                      ) [NoMulopFactorList]
+                                                    ) [Term]
+                                                  ) [PositiveStartTermOnlyExpr]
+                                                ) [EMatrixTypeOptional]
+                                              ) [EArrayTypeOptional]
+                                            ) [DesignatorSimple]
+                                          ) [FactorDesignatorVar]
+                                          MultipleMulopFactorList(
+                                            NoMulopFactorList(
+                                            ) [NoMulopFactorList]
+                                            Times(
+                                            ) [Times]
+                                            FactorNumConst(
+                                              NumConst(
+                                               2
+                                              ) [NumConst]
+                                            ) [FactorNumConst]
+                                          ) [MultipleMulopFactorList]
+                                        ) [Term]
+                                      ) [PositiveStartTermOnlyExpr]
+                                    ) [EMatrixTypeOptional]
+                                  ) [EArrayTypeOptional]
+                                ) [DesignatorSimple]
+                                PositiveStartTermOnlyExpr(
+                                  Term(
+                                    FactorNumConst(
+                                      NumConst(
+                                       4
+                                      ) [NumConst]
+                                    ) [FactorNumConst]
+                                    NoMulopFactorList(
+                                    ) [NoMulopFactorList]
+                                  ) [Term]
+                                ) [PositiveStartTermOnlyExpr]
+                              ) [EDesignatorStatementAssigment]
+                            ) [DesignatorStatementEQUAL]
+                          ) [MatchedDesignatorStatement]
+                        ) [StatementMatched]
+                      ) [EStatementList]
+                      StatementMatched(
+                        MatchedDesignatorStatement(
+                          DesignatorStatementEQUAL(
+                            EDesignatorStatementAssigment(
+                              DesignatorSimple(
+                                DesignatorName(
+                                 mat
+                                ) [DesignatorName]
+                                EArrayTypeOptional(
+                                  PositiveStartTermOnlyExpr(
+                                    Term(
+                                      FactorDesignatorVar(
+                                        DesignatorSimple(
+                                          DesignatorName(
+                                           mat
+                                          ) [DesignatorName]
+                                          EArrayTypeOptional(
+                                            PositiveStartTermOnlyExpr(
+                                              Term(
+                                                FactorNumConst(
+                                                  NumConst(
+                                                   0
+                                                  ) [NumConst]
+                                                ) [FactorNumConst]
+                                                NoMulopFactorList(
+                                                ) [NoMulopFactorList]
+                                              ) [Term]
+                                            ) [PositiveStartTermOnlyExpr]
+                                            EMatrixTypeOptional(
+                                              PositiveStartTermOnlyExpr(
+                                                Term(
+                                                  FactorNumConst(
+                                                    NumConst(
+                                                     0
+                                                    ) [NumConst]
+                                                  ) [FactorNumConst]
+                                                  NoMulopFactorList(
+                                                  ) [NoMulopFactorList]
+                                                ) [Term]
+                                              ) [PositiveStartTermOnlyExpr]
+                                            ) [EMatrixTypeOptional]
+                                          ) [EArrayTypeOptional]
+                                        ) [DesignatorSimple]
+                                      ) [FactorDesignatorVar]
+                                      NoMulopFactorList(
+                                      ) [NoMulopFactorList]
+                                    ) [Term]
+                                  ) [PositiveStartTermOnlyExpr]
+                                  EMatrixTypeOptional(
+                                    PositiveStartTermOnlyExpr(
+                                      Term(
+                                        FactorNumConst(
+                                          NumConst(
+                                           1
+                                          ) [NumConst]
+                                        ) [FactorNumConst]
+                                        NoMulopFactorList(
+                                        ) [NoMulopFactorList]
+                                      ) [Term]
+                                    ) [PositiveStartTermOnlyExpr]
+                                  ) [EMatrixTypeOptional]
+                                ) [EArrayTypeOptional]
+                              ) [DesignatorSimple]
+                              PositiveStartTermOnlyExpr(
+                                Term(
+                                  FactorNumConst(
+                                    NumConst(
+                                     3
+                                    ) [NumConst]
+                                  ) [FactorNumConst]
+                                  NoMulopFactorList(
+                                  ) [NoMulopFactorList]
+                                ) [Term]
+                              ) [PositiveStartTermOnlyExpr]
+                            ) [EDesignatorStatementAssigment]
+                          ) [DesignatorStatementEQUAL]
+                        ) [MatchedDesignatorStatement]
+                      ) [StatementMatched]
+                    ) [EStatementList]
+                    StatementMatched(
+                      MatchedDesignatorStatement(
+                        DesignatorStatementEQUAL(
+                          EDesignatorStatementAssigment(
+                            DesignatorSimple(
+                              DesignatorName(
+                               mat
+                              ) [DesignatorName]
+                              EArrayTypeOptional(
+                                PositiveStartTermOnlyExpr(
+                                  Term(
+                                    FactorNumConst(
+                                      NumConst(
+                                       1
+                                      ) [NumConst]
+                                    ) [FactorNumConst]
+                                    NoMulopFactorList(
+                                    ) [NoMulopFactorList]
+                                  ) [Term]
+                                ) [PositiveStartTermOnlyExpr]
+                                EMatrixTypeOptional(
+                                  PositiveStartTermOnlyExpr(
+                                    Term(
+                                      FactorNumConst(
+                                        NumConst(
+                                         0
+                                        ) [NumConst]
+                                      ) [FactorNumConst]
+                                      NoMulopFactorList(
+                                      ) [NoMulopFactorList]
+                                    ) [Term]
+                                  ) [PositiveStartTermOnlyExpr]
+                                ) [EMatrixTypeOptional]
+                              ) [EArrayTypeOptional]
+                            ) [DesignatorSimple]
+                            PositiveStartTermOnlyExpr(
+                              Term(
+                                FactorNumConst(
+                                  NumConst(
+                                   2
+                                  ) [NumConst]
+                                ) [FactorNumConst]
+                                NoMulopFactorList(
+                                ) [NoMulopFactorList]
+                              ) [Term]
+                            ) [PositiveStartTermOnlyExpr]
+                          ) [EDesignatorStatementAssigment]
+                        ) [DesignatorStatementEQUAL]
+                      ) [MatchedDesignatorStatement]
+                    ) [StatementMatched]
+                  ) [EStatementList]
+                  StatementMatched(
+                    MatchedPrintSimple(
+                      PositiveStartTermOnlyExpr(
+                        Term(
+                          FactorDesignatorVar(
+                            DesignatorSimple(
+                              DesignatorName(
+                               mat
+                              ) [DesignatorName]
+                              EArrayTypeOptional(
+                                PositiveStartTermOnlyExpr(
+                                  Term(
+                                    FactorNumConst(
+                                      NumConst(
+                                       0
+                                      ) [NumConst]
+                                    ) [FactorNumConst]
+                                    NoMulopFactorList(
+                                    ) [NoMulopFactorList]
+                                  ) [Term]
+                                ) [PositiveStartTermOnlyExpr]
+                                EMatrixTypeOptional(
+                                  PositiveStartTermOnlyExpr(
+                                    Term(
+                                      FactorNumConst(
+                                        NumConst(
+                                         0
+                                        ) [NumConst]
+                                      ) [FactorNumConst]
+                                      NoMulopFactorList(
+                                      ) [NoMulopFactorList]
+                                    ) [Term]
+                                  ) [PositiveStartTermOnlyExpr]
+                                ) [EMatrixTypeOptional]
+                              ) [EArrayTypeOptional]
+                            ) [DesignatorSimple]
+                          ) [FactorDesignatorVar]
+                          NoMulopFactorList(
+                          ) [NoMulopFactorList]
+                        ) [Term]
+                      ) [PositiveStartTermOnlyExpr]
+                    ) [MatchedPrintSimple]
+                  ) [StatementMatched]
+                ) [EStatementList]
+                StatementMatched(
+                  MatchedPrintSimple(
+                    PositiveStartTermOnlyExpr(
+                      Term(
+                        FactorDesignatorVar(
+                          DesignatorSimple(
+                            DesignatorName(
+                             mat
+                            ) [DesignatorName]
+                            EArrayTypeOptional(
+                              PositiveStartTermOnlyExpr(
+                                Term(
+                                  FactorNumConst(
+                                    NumConst(
+                                     0
+                                    ) [NumConst]
+                                  ) [FactorNumConst]
+                                  NoMulopFactorList(
+                                  ) [NoMulopFactorList]
+                                ) [Term]
+                              ) [PositiveStartTermOnlyExpr]
+                              EMatrixTypeOptional(
+                                PositiveStartTermOnlyExpr(
+                                  Term(
+                                    FactorNumConst(
+                                      NumConst(
+                                       1
+                                      ) [NumConst]
+                                    ) [FactorNumConst]
+                                    NoMulopFactorList(
+                                    ) [NoMulopFactorList]
+                                  ) [Term]
+                                ) [PositiveStartTermOnlyExpr]
+                              ) [EMatrixTypeOptional]
+                            ) [EArrayTypeOptional]
+                          ) [DesignatorSimple]
+                        ) [FactorDesignatorVar]
+                        NoMulopFactorList(
+                        ) [NoMulopFactorList]
+                      ) [Term]
+                    ) [PositiveStartTermOnlyExpr]
+                  ) [MatchedPrintSimple]
+                ) [StatementMatched]
+              ) [EStatementList]
+              StatementMatched(
+                MatchedPrintSimple(
+                  PositiveStartTermOnlyExpr(
+                    Term(
+                      FactorDesignatorVar(
+                        DesignatorSimple(
+                          DesignatorName(
+                           mat
+                          ) [DesignatorName]
+                          EArrayTypeOptional(
+                            PositiveStartTermOnlyExpr(
+                              Term(
+                                FactorNumConst(
+                                  NumConst(
+                                   0
+                                  ) [NumConst]
+                                ) [FactorNumConst]
+                                NoMulopFactorList(
+                                ) [NoMulopFactorList]
+                              ) [Term]
+                            ) [PositiveStartTermOnlyExpr]
+                            EMatrixTypeOptional(
+                              PositiveStartTermOnlyExpr(
+                                Term(
+                                  FactorNumConst(
+                                    NumConst(
+                                     2
+                                    ) [NumConst]
+                                  ) [FactorNumConst]
+                                  NoMulopFactorList(
+                                  ) [NoMulopFactorList]
+                                ) [Term]
+                              ) [PositiveStartTermOnlyExpr]
+                            ) [EMatrixTypeOptional]
+                          ) [EArrayTypeOptional]
+                        ) [DesignatorSimple]
+                      ) [FactorDesignatorVar]
+                      NoMulopFactorList(
+                      ) [NoMulopFactorList]
+                    ) [Term]
+                  ) [PositiveStartTermOnlyExpr]
+                ) [MatchedPrintSimple]
+              ) [StatementMatched]
+            ) [EStatementList]
+            StatementMatched(
+              MatchedPrintSimple(
+                PositiveStartTermOnlyExpr(
+                  Term(
+                    FactorDesignatorVar(
+                      DesignatorSimple(
+                        DesignatorName(
+                         mat
+                        ) [DesignatorName]
+                        EArrayTypeOptional(
+                          PositiveStartTermOnlyExpr(
+                            Term(
+                              FactorNumConst(
+                                NumConst(
+                                 1
+                                ) [NumConst]
+                              ) [FactorNumConst]
+                              NoMulopFactorList(
+                              ) [NoMulopFactorList]
+                            ) [Term]
+                          ) [PositiveStartTermOnlyExpr]
+                          EMatrixTypeOptional(
+                            PositiveStartTermOnlyExpr(
+                              Term(
+                                FactorNumConst(
+                                  NumConst(
+                                   2
+                                  ) [NumConst]
+                                ) [FactorNumConst]
+                                NoMulopFactorList(
+                                ) [NoMulopFactorList]
+                              ) [Term]
+                            ) [PositiveStartTermOnlyExpr]
+                          ) [EMatrixTypeOptional]
+                        ) [EArrayTypeOptional]
+                      ) [DesignatorSimple]
+                    ) [FactorDesignatorVar]
+                    NoMulopFactorList(
+                    ) [NoMulopFactorList]
+                  ) [Term]
+                ) [PositiveStartTermOnlyExpr]
+              ) [MatchedPrintSimple]
+            ) [StatementMatched]
+          ) [EStatementList]
+          StatementMatched(
+            MatchedPrintSimple(
+              PositiveStartTermOnlyExpr(
+                Term(
+                  FactorDesignatorVar(
+                    DesignatorSimple(
+                      DesignatorName(
+                       mat
+                      ) [DesignatorName]
+                      EArrayTypeOptional(
+                        PositiveStartTermOnlyExpr(
+                          Term(
+                            FactorNumConst(
+                              NumConst(
+                               1
+                              ) [NumConst]
+                            ) [FactorNumConst]
+                            NoMulopFactorList(
+                            ) [NoMulopFactorList]
+                          ) [Term]
+                        ) [PositiveStartTermOnlyExpr]
+                        EMatrixTypeOptional(
+                          PositiveStartTermOnlyExpr(
+                            Term(
+                              FactorNumConst(
+                                NumConst(
+                                 1
+                                ) [NumConst]
+                              ) [FactorNumConst]
+                              NoMulopFactorList(
+                              ) [NoMulopFactorList]
+                            ) [Term]
+                          ) [PositiveStartTermOnlyExpr]
+                        ) [EMatrixTypeOptional]
+                      ) [EArrayTypeOptional]
+                    ) [DesignatorSimple]
+                  ) [FactorDesignatorVar]
+                  NoMulopFactorList(
+                  ) [NoMulopFactorList]
+                ) [Term]
+              ) [PositiveStartTermOnlyExpr]
+            ) [MatchedPrintSimple]
+          ) [StatementMatched]
+        ) [EStatementList]
+        StatementMatched(
+          MatchedPrintSimple(
+            PositiveStartTermOnlyExpr(
+              Term(
+                FactorDesignatorVar(
+                  DesignatorSimple(
+                    DesignatorName(
+                     mat
+                    ) [DesignatorName]
+                    EArrayTypeOptional(
+                      PositiveStartTermOnlyExpr(
+                        Term(
+                          FactorNumConst(
+                            NumConst(
+                             1
+                            ) [NumConst]
+                          ) [FactorNumConst]
+                          NoMulopFactorList(
+                          ) [NoMulopFactorList]
+                        ) [Term]
+                      ) [PositiveStartTermOnlyExpr]
+                      EMatrixTypeOptional(
+                        PositiveStartTermOnlyExpr(
+                          Term(
+                            FactorNumConst(
+                              NumConst(
+                               0
+                              ) [NumConst]
+                            ) [FactorNumConst]
+                            NoMulopFactorList(
+                            ) [NoMulopFactorList]
+                          ) [Term]
+                        ) [PositiveStartTermOnlyExpr]
+                      ) [EMatrixTypeOptional]
+                    ) [EArrayTypeOptional]
+                  ) [DesignatorSimple]
+                ) [FactorDesignatorVar]
+                NoMulopFactorList(
+                ) [NoMulopFactorList]
+              ) [Term]
+            ) [PositiveStartTermOnlyExpr]
+          ) [MatchedPrintSimple]
+        ) [StatementMatched]
+      ) [EStatementList]
+    ) [MethodDecl]
+  ) [EMethodDeclList]
+) [Program]
+INFO  16:07:19,978 - ===================================
+INFO  16:07:19,982 -  PrintSimple = 12
+INFO  16:07:19,982 -  VarDecl = 6
+INFO  16:07:19,982 - Program = 1
+INFO  16:07:19,982 - NegativeStartExpr = 1
+INFO  16:07:19,982 - PositiveStartExpr = 8
+INFO  16:07:19,982 - DesignatorStatementEQUAL = 21
+INFO  16:07:19,982 - DesignatorStatementINCREMENT = 1
+INFO  16:07:19,982 - DesignatorStatementDECREMENT = 1
+INFO  16:07:19,982 - NumConst = 56
+INFO  16:07:19,982 - BoolConst = 0
+INFO  16:07:19,982 - CharConst = 3
+INFO  16:07:19,982 - Namespace = 0
+INFO  16:07:19,982 - ===================================
+INFO  16:07:19,984 - Deklarisana promenljiva niz na liniji 9
+INFO  16:07:19,984 - Deklarisana promenljiva nizch na liniji 10
+INFO  16:07:19,984 - mat type: 3 na liniji 11
+INFO  16:07:19,984 - Deklarisana promenljiva mat na liniji 11
+INFO  16:07:19,984 - Deklarisana promenljiva a na liniji 13
+INFO  16:07:19,984 - Obradjuje se funkcija main na liniji 16
+INFO  16:07:19,985 - Deklarisana promenljiva bodovi na liniji 17
+INFO  16:07:19,985 - Deklarisana promenljiva bt na liniji 18
+INFO  16:07:19,985 - ===================================
+INFO  16:07:19,992 - Parsiranje uspesno zavrseno

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MNN - Ucenik Nastavnici</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body style="width: 100vw;">
+    <div class="container">
+
+        <div class="row">
+            <header style="display: flex; justify-content: center; height: 10vh; align-items: center; font-size: x-large; color: cadetblue;">
+                <b>OBAVESTENJA</b>
+            </header>
+            <br>
+        </div>
+
+        <div class="row" style="color: aliceblue;">
+
+            <div class="col-sm-2">
+                <input type="checkbox" id="check">
+                <label for="check">
+                    <i class="fas fa-bars" id="btn">Meni</i>
+                    <i class="fas fa-times" id="cancel">Zatvori</i>
+                </label>
+                <div class="sidebar">
+                    <header>Meni</header>
+                    <ul>
+                        <li><a href="" (click)="profilStr($event)"><i class="fas fa-qrcode"></i>Profil</a></li>
+                        <li><a href="" (click)="nastavniciStr($event)"><i class="fas fa-link"></i>Nastavnici</a></li>
+                        <li><a href="" (click)="casoviStr($event)"><i class="fas fa-link"></i>Casovi</a></li>
+                        <li><a href="" (click)="obavestenjaStr($event)"><i class="fas fa-link"></i>Obavestenja</a></li>
+                        <li><a href="" (click)="odjava($event)"><i class="fas fa-link"></i>Odjava</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-sm-10">
+                <table>
+                    <tr *ngFor="let obavestenje of ucenikObavestenja">
+                        <td style="width: 20px;" [style.color]="(obavestenje.status) ? 'aqua' : 'maroon'">****</td>
+                        <td style="color: aqua;">posiljalac : {{obavestenje.posiljalac}}</td>
+                        <td>{{obavestenje.sadrzaj}}</td>
+                        <td><input type="checkbox" [(ngModel)]="obavestenje.status" (change)="promeniStatusObavestenjaUBazi(obavestenje)"></td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+
+        
+        <div class="row">
+            <div class="col-sm-12">
+                <div style="display: flex; justify-content: center; color: cadetblue; margin-top: 30px;">
+                    Copyright - Ana Bojovic
+                </div>
+            </div>
+        </div>
+    
+    </div>
+</body>
+        
+</html>

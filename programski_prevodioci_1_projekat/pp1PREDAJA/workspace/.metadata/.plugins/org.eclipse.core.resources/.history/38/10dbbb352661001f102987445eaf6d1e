@@ -1,0 +1,48 @@
+package rs.ac.bg.etf.pp1;
+
+import rs.ac.bg.etf.pp1.CounterVisitor.FormParamCounter;
+import rs.ac.bg.etf.pp1.CounterVisitor.VarCounter;
+import rs.ac.bg.etf.pp1.ast.*;
+import rs.etf.pp1.mj.runtime.Code;
+import rs.etf.pp1.symboltable.Tab;
+import rs.etf.pp1.symboltable.concepts.*;
+
+public class CodeGenerator extends VisitorAdaptor {
+	
+	private int mainPC;
+	
+	public int getMainPC() {
+		return mainPC;
+	}
+	
+	// **** METHODS **********************************************************************************************
+	
+	public void visit(EMethodTypeName eMethodTypeName) {
+		if ("main".equalsIgnoreCase(eMethodTypeName.getMethName())) {
+			mainPC = Code.pc;
+		}
+		
+		eMethodTypeName.obj.setAdr(Code.pc);
+		SyntaxNode methodNode = eMethodTypeName.getParent();
+		
+		// Brojimo argumente i lokalne promenljive u Parent-u od EMethodTypeName sto je MethDecl odnosno u deklaraciji metode
+		VarCounter varCnt = new VarCounter();
+		methodNode.traverseTopDown(varCnt);
+		
+		FormParamCounter formParamCnt = new FormParamCounter();
+		methodNode.traverseTopDown(formParamCnt);
+		
+		// Enter u metodu
+		Code.put(Code.enter);
+		Code.put(formParamCnt.getCount());
+		Code.put(formParamCnt.getCount() + varCnt.getCount());
+	}
+	
+	public void visit(MethodDecl methodDecl) {
+		Code.put(Code.exit);
+		Code.put(Code.return_);
+	}
+	
+	// ***********************************************************************************************************
+
+}

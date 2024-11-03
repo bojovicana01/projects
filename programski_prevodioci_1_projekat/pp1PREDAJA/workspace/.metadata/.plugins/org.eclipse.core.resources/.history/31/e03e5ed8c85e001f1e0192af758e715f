@@ -1,0 +1,24 @@
+package rs.ac.bg.etf.pp1;
+
+import org.apache.log4j.Logger;
+
+import rs.ac.bg.etf.pp1.ast.MatchedPrintSimple;
+import rs.ac.bg.etf.pp1.ast.VarDeclSimple;
+import rs.ac.bg.etf.pp1.ast.VisitorAdaptor;
+
+public class SemanticAnalyzer extends VisitorAdaptor {
+	
+	int printSimpleCallCount = 0;
+	int VarDeclSimpleCount = 0;
+	
+	Logger log = Logger.getLogger(getClass());
+
+	public void visit(VarDeclSimple varDeclSimple){
+		VarDeclSimpleCount++;
+	}
+	
+    public void visit(MatchedPrintSimple printSimple) {
+		printSimpleCallCount++;
+	}
+
+}

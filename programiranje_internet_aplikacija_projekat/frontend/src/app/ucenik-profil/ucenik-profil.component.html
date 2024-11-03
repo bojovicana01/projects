@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MNN - Ucenik Profil</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body style="width: 100vw;">
+    <div class="container">
+
+        <div class="row">
+            <header style="display: flex; justify-content: center; height: 10vh; align-items: center; font-size: x-large; color: cadetblue;">
+                <b>MOJ PROFIL</b>
+            </header>
+            <br>
+        </div>
+
+        <div class="row" style="color: aliceblue;">
+
+            <div class="col-sm-2">
+                <input type="checkbox" id="check">
+                <label for="check">
+                    <i class="fas fa-bars" id="btn">Meni</i>
+                    <i class="fas fa-times" id="cancel">Zatvori</i>
+                </label>
+                <div class="sidebar">
+                    <header>Meni</header>
+                    <ul>
+                        <li><a href="" (click)="profilStr($event)"><i class="fas fa-qrcode"></i>Profil</a></li>
+                        <li><a href="" (click)="nastavniciStr($event)"><i class="fas fa-link"></i>Nastavnici</a></li>
+                        <li><a href="" (click)="casoviStr($event)"><i class="fas fa-link"></i>Casovi</a></li>
+                        <li><a href="" (click)="obavestenjaStr($event)"><i class="fas fa-link"></i>Obavestenja</a></li>
+                        <li><a href="" (click)="odjava($event)"><i class="fas fa-link"></i>Odjava</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-sm-10">
+
+                <div class="row">
+
+                    <div class="col-sm-8">
+                        <div>
+                            <table>
+                                <tr>
+                                    <td><b>Ime :</b></td> 
+                                    <td>{{ucenik.ime}}</td> 
+                                    <td>
+                                        <input type="text" name="uIme" [(ngModel)]="uIme" style="margin-bottom: 5px;">
+                                        <button type="button" class="btn customDarkBtn" (click)='izmeniIme()'>Izmeni</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><b>Prezime :</b></td> 
+                                    <td>{{ucenik.prezime}}</td> 
+                                    <td>
+                                        <input type="text" name="uPrezime" [(ngModel)]="uPrezime" style="margin-bottom: 5px;">
+                                        <button type="button" class="btn customDarkBtn" (click)='izmeniPrezime()'>Izmeni</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><b>Adresa :</b></td> 
+                                    <td>{{ucenik.adresa}}</td> 
+                                    <td>
+                                        <input type="text" name="uAdresa" [(ngModel)]="uAdresa" style="margin-bottom: 5px;">
+                                        <button type="button" class="btn customDarkBtn" (click)='izmeniAdresu()'>Izmeni</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><b>Telefon :</b></td> 
+                                    <td>{{ucenik.telefon}}</td> 
+                                    <td>
+                                        <input type="text" name="uTelefon" [(ngModel)]="uTelefon" style="margin-bottom: 5px;">
+                                        <button type="button" class="btn customDarkBtn" (click)='izmeniTelefon()'>Izmeni</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><b>E-mail :</b></td> 
+                                    <td>{{ucenik.email}}</td> 
+                                    <td>
+                                        <input type="text" name="uEmail" [(ngModel)]="uEmail" style="margin-bottom: 5px;">
+                                        <button type="button" class="btn customDarkBtn" (click)='izmeniEmail()'>Izmeni</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><b>Slika :</b></td> <td>{{ucenik.slika}}</td> <td><button type="button" class="btn customDarkBtn" (click)='izmeniSliku()'>Izmeni</button></td>
+                                </tr>
+                                <tr>
+                                    <td><b>Tip skole :</b></td> 
+                                    <td>{{ucenik.tipSkole}}</td> 
+                                    <td>
+                                        <select name="uTipSkole" [(ngModel)]="uTipSkole">
+                                            <option value="osnovna">osnovna</option>
+                                            <option value="srednja - gimnazija">srednja - gimnazija</option>
+                                            <option value="srednja - strucna">srednja - strucna</option>
+                                            <option value="srednja - umetnicka">srednja - umetnicka</option>
+                                        </select>
+                                        <br>
+                                        <button type="button" class="btn customDarkBtn" (click)='izmeniTipSkole()'>Izmeni</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><b>Razred :</b></td> <td>{{ucenik.razred}}</td> <td><button type="button" class="btn customDarkBtn" (click)='izmeniRazred()'>Izmeni</button></td>
+                                </tr>
+        
+                            </table>
+        
+                        </div>
+
+                    </div>
+
+                    <div class="col-sm-4" style="display: flex; justify-content: center; align-items: center;">
+                        <div>
+                            <img [src]="uSlikaPrikaz" style="margin-bottom: 40px;"> <br>
+                            <input type="file" accept="image/jpg, image/png" style="margin-bottom: 5px;" (change)="izabranaSlika($event)">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        
+        <div class="row">
+            <div class="col-sm-12">
+                <div style="display: flex; justify-content: center; color: cadetblue; margin-top: 30px;">
+                    Copyright - Ana Bojovic
+                </div>
+            </div>
+        </div>
+    
+    </div>
+</body>
+        
+</html>

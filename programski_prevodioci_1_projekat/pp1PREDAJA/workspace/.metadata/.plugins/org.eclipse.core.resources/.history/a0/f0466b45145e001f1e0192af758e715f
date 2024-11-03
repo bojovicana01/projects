@@ -1,0 +1,14 @@
+program MJProgram
+	int x; int y;
+{
+	int main() {
+		
+		print(1);
+		
+		y = -1 + 4*5 + 9/7 - 2;
+		
+		x = y + 5;
+		
+		print(2);
+	}
+}

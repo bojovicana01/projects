@@ -1,0 +1,14 @@
+package rs.ac.bg.etf.pp1;
+
+import rs.etf.pp1.symboltable.concepts.Obj;
+import rs.etf.pp1.symboltable.concepts.Struct;
+
+public class SymbolTable extends Obj {
+	
+	public static final int Namespace = 7;
+	
+	public SymbolTable(int kind, String name, Struct type) {
+		super(kind, name, type, NO_VALUE, NO_VALUE);
+	}
+
+}

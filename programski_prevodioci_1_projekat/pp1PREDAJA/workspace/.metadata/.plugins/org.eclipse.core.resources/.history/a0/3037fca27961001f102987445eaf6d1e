@@ -1,0 +1,20 @@
+program MJProgram
+	const bool w = true;
+	const char z = 'z';
+	int x; int y;
+{
+
+	int main() {
+		x = 3;
+		
+		print(1);
+		
+		y = 4 + 9;
+		
+		print(x);
+		
+		print(y);
+		
+		return 1;
+	}
+}

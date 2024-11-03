@@ -1,0 +1,543 @@
+INFO  15:10:16,896 - Compiling source file: C:\pp1_domaci_avg\workspace\MJCompiler\test\program3.mj
+INFO  15:10:16,929 - #2 program
+INFO  15:10:16,929 - #37 test301
+INFO  15:10:16,929 - #9 namespace
+INFO  15:10:16,930 - #37 sizes
+INFO  15:10:16,930 - #15 {
+INFO  15:10:16,930 - #7 const
+INFO  15:10:16,931 - #37 int
+INFO  15:10:16,931 - #37 tableSize
+INFO  15:10:16,931 - #21 =
+INFO  15:10:16,931 - #38 10
+INFO  15:10:16,931 - #13 ;
+INFO  15:10:16,932 - #15 {
+INFO  15:10:16,932 - #16 }
+INFO  15:10:16,932 - #16 }
+INFO  15:10:16,932 - #9 namespace
+INFO  15:10:16,933 - #37 sizes
+INFO  15:10:16,933 - #15 {
+INFO  15:10:16,933 - #7 const
+INFO  15:10:16,933 - #37 int
+INFO  15:10:16,933 - #37 tableSize2
+INFO  15:10:16,933 - #21 =
+INFO  15:10:16,935 - #38 10
+INFO  15:10:16,935 - #13 ;
+INFO  15:10:16,935 - #15 {
+INFO  15:10:16,935 - #16 }
+INFO  15:10:16,935 - #16 }
+INFO  15:10:16,935 - #7 const
+INFO  15:10:16,935 - #37 int
+INFO  15:10:16,935 - #37 p
+INFO  15:10:16,935 - #21 =
+INFO  15:10:16,936 - #40 a
+INFO  15:10:16,936 - #12 ,
+INFO  15:10:16,936 - #37 q
+INFO  15:10:16,936 - #21 =
+INFO  15:10:16,936 - #38 2
+INFO  15:10:16,937 - #13 ;
+INFO  15:10:16,937 - #37 bool
+INFO  15:10:16,937 - #37 boolVar
+INFO  15:10:16,937 - #13 ;
+INFO  15:10:16,938 - #37 int
+INFO  15:10:16,938 - #37 mat
+INFO  15:10:16,938 - #19 [
+INFO  15:10:16,938 - #20 ]
+INFO  15:10:16,938 - #19 [
+INFO  15:10:16,938 - #20 ]
+INFO  15:10:16,938 - #13 ;
+INFO  15:10:16,939 - #37 int
+INFO  15:10:16,939 - #37 nizErr
+INFO  15:10:16,939 - #19 [
+INFO  15:10:16,939 - #20 ]
+INFO  15:10:16,939 - #13 ;
+INFO  15:10:16,940 - #37 int
+INFO  15:10:16,940 - #37 a
+INFO  15:10:16,940 - #13 ;
+INFO  15:10:16,940 - #37 int
+INFO  15:10:16,940 - #37 a
+INFO  15:10:16,940 - #13 ;
+INFO  15:10:16,940 - #15 {
+INFO  15:10:16,940 - #6 void
+INFO  15:10:16,940 - #37 main
+INFO  15:10:16,940 - #17 (
+INFO  15:10:16,940 - #18 )
+INFO  15:10:16,941 - #37 int
+INFO  15:10:16,942 - #37 bodovi
+INFO  15:10:16,942 - #13 ;
+INFO  15:10:16,942 - #37 bool
+INFO  15:10:16,942 - #37 bt
+INFO  15:10:16,942 - #13 ;
+INFO  15:10:16,942 - #15 {
+INFO  15:10:16,942 - #37 bodovi
+INFO  15:10:16,942 - #21 =
+INFO  15:10:16,943 - #38 0
+INFO  15:10:16,943 - #13 ;
+INFO  15:10:16,944 - #4 print
+INFO  15:10:16,944 - #17 (
+INFO  15:10:16,944 - #37 bodovi
+INFO  15:10:16,944 - #18 )
+INFO  15:10:16,944 - #13 ;
+INFO  15:10:16,944 - #37 a
+INFO  15:10:16,944 - #21 =
+INFO  15:10:16,945 - #38 1
+INFO  15:10:16,945 - #13 ;
+INFO  15:10:16,945 - #5 read
+INFO  15:10:16,945 - #17 (
+INFO  15:10:16,945 - #38 1
+ERROR 15:10:16,945 - 
+Sintaksna greska na liniji 34
+INFO  15:10:16,945 - #18 )
+INFO  15:10:16,945 - #13 ;
+INFO  15:10:16,945 - #4 print
+INFO  15:10:16,945 - #17 (
+INFO  15:10:16,945 - #37 bodovi
+ERROR 15:10:16,946 - Konstrukcija iskaza dodele - Izvrsen oporavak do ; u liniji 34
+INFO  15:10:16,946 - #18 )
+INFO  15:10:16,946 - #13 ;
+INFO  15:10:16,946 - #37 boolVar
+INFO  15:10:16,946 - #21 =
+INFO  15:10:16,946 - #40 a
+INFO  15:10:16,946 - #13 ;
+INFO  15:10:16,947 - #4 print
+INFO  15:10:16,947 - #17 (
+INFO  15:10:16,947 - #37 boolVar
+INFO  15:10:16,947 - #18 )
+INFO  15:10:16,947 - #13 ;
+INFO  15:10:16,947 - #4 print
+INFO  15:10:16,947 - #17 (
+INFO  15:10:16,947 - #37 sizes
+INFO  15:10:16,947 - #14 :
+INFO  15:10:16,947 - #14 :
+INFO  15:10:16,947 - #37 tableSize
+INFO  15:10:16,947 - #18 )
+INFO  15:10:16,947 - #13 ;
+INFO  15:10:16,947 - #16 }
+INFO  15:10:16,947 - #16 }
+INFO  15:10:16,953 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  ENamespaceList(
+    ENamespaceList(
+      NoNamespaceList(
+      ) [NoNamespaceList]
+      Namespace(
+        NamespaceName(
+         sizes
+        ) [NamespaceName]
+        EDeclList(
+          NoDeclList(
+          ) [NoDeclList]
+          DeclConst(
+            EConstDecl(
+              ConstantTypeName(
+                TypeSimple(
+                 int
+                ) [TypeSimple]
+               tableSize
+              ) [ConstantTypeName]
+              CNumConst(
+               10
+              ) [CNumConst]
+              NoConstDeclListSingleType(
+              ) [NoConstDeclListSingleType]
+            ) [EConstDecl]
+          ) [DeclConst]
+        ) [EDeclList]
+        NoMethodDeclList(
+        ) [NoMethodDeclList]
+      ) [Namespace]
+    ) [ENamespaceList]
+    Namespace(
+      NamespaceName(
+       sizes
+      ) [NamespaceName]
+      EDeclList(
+        NoDeclList(
+        ) [NoDeclList]
+        DeclConst(
+          EConstDecl(
+            ConstantTypeName(
+              TypeSimple(
+               int
+              ) [TypeSimple]
+             tableSize2
+            ) [ConstantTypeName]
+            CNumConst(
+             10
+            ) [CNumConst]
+            NoConstDeclListSingleType(
+            ) [NoConstDeclListSingleType]
+          ) [EConstDecl]
+        ) [DeclConst]
+      ) [EDeclList]
+      NoMethodDeclList(
+      ) [NoMethodDeclList]
+    ) [Namespace]
+  ) [ENamespaceList]
+  EDeclList(
+    EDeclList(
+      EDeclList(
+        EDeclList(
+          EDeclList(
+            EDeclList(
+              NoDeclList(
+              ) [NoDeclList]
+              DeclConst(
+                EConstDecl(
+                  ConstantTypeName(
+                    TypeSimple(
+                     int
+                    ) [TypeSimple]
+                   p
+                  ) [ConstantTypeName]
+                  CCharConst(
+                   a
+                  ) [CCharConst]
+                  EConstDeclListSingleType(
+                    NoConstDeclListSingleType(
+                    ) [NoConstDeclListSingleType]
+                    CName(
+                     q
+                    ) [CName]
+                    CNumConst(
+                     2
+                    ) [CNumConst]
+                  ) [EConstDeclListSingleType]
+                ) [EConstDecl]
+              ) [DeclConst]
+            ) [EDeclList]
+            DeclVar(
+              EVarDecl(
+                EVarTypeName(
+                  TypeSimple(
+                   bool
+                  ) [TypeSimple]
+                 boolVar
+                  NoOptSquareBrackets(
+                  ) [NoOptSquareBrackets]
+                ) [EVarTypeName]
+                NoVarDeclListSingleType(
+                ) [NoVarDeclListSingleType]
+              ) [EVarDecl]
+            ) [DeclVar]
+          ) [EDeclList]
+          DeclVar(
+            EVarDecl(
+              EVarTypeName(
+                TypeSimple(
+                 int
+                ) [TypeSimple]
+               mat
+                EOptSquareBrackets(
+                  EOptSquareBracketsMatrix(
+                  ) [EOptSquareBracketsMatrix]
+                ) [EOptSquareBrackets]
+              ) [EVarTypeName]
+              NoVarDeclListSingleType(
+              ) [NoVarDeclListSingleType]
+            ) [EVarDecl]
+          ) [DeclVar]
+        ) [EDeclList]
+        DeclVar(
+          EVarDecl(
+            EVarTypeName(
+              TypeSimple(
+               int
+              ) [TypeSimple]
+             nizErr
+              EOptSquareBrackets(
+                NoOptSquareBracketsMatrix(
+                ) [NoOptSquareBracketsMatrix]
+              ) [EOptSquareBrackets]
+            ) [EVarTypeName]
+            NoVarDeclListSingleType(
+            ) [NoVarDeclListSingleType]
+          ) [EVarDecl]
+        ) [DeclVar]
+      ) [EDeclList]
+      DeclVar(
+        EVarDecl(
+          EVarTypeName(
+            TypeSimple(
+             int
+            ) [TypeSimple]
+           a
+            NoOptSquareBrackets(
+            ) [NoOptSquareBrackets]
+          ) [EVarTypeName]
+          NoVarDeclListSingleType(
+          ) [NoVarDeclListSingleType]
+        ) [EVarDecl]
+      ) [DeclVar]
+    ) [EDeclList]
+    DeclVar(
+      EVarDecl(
+        EVarTypeName(
+          TypeSimple(
+           int
+          ) [TypeSimple]
+         a
+          NoOptSquareBrackets(
+          ) [NoOptSquareBrackets]
+        ) [EVarTypeName]
+        NoVarDeclListSingleType(
+        ) [NoVarDeclListSingleType]
+      ) [EVarDecl]
+    ) [DeclVar]
+  ) [EDeclList]
+  EMethodDeclList(
+    NoMethodDeclList(
+    ) [NoMethodDeclList]
+    MethodDecl(
+      VoidMethodTypeName(
+       main
+      ) [VoidMethodTypeName]
+      NoFormPars(
+      ) [NoFormPars]
+      EVarDeclList(
+        EVarDeclList(
+          NoVarDeclList(
+          ) [NoVarDeclList]
+          EVarDecl(
+            EVarTypeName(
+              TypeSimple(
+               int
+              ) [TypeSimple]
+             bodovi
+              NoOptSquareBrackets(
+              ) [NoOptSquareBrackets]
+            ) [EVarTypeName]
+            NoVarDeclListSingleType(
+            ) [NoVarDeclListSingleType]
+          ) [EVarDecl]
+        ) [EVarDeclList]
+        EVarDecl(
+          EVarTypeName(
+            TypeSimple(
+             bool
+            ) [TypeSimple]
+           bt
+            NoOptSquareBrackets(
+            ) [NoOptSquareBrackets]
+          ) [EVarTypeName]
+          NoVarDeclListSingleType(
+          ) [NoVarDeclListSingleType]
+        ) [EVarDecl]
+      ) [EVarDeclList]
+      EStatementList(
+        EStatementList(
+          EStatementList(
+            EStatementList(
+              EStatementList(
+                EStatementList(
+                  EStatementList(
+                    EStatementList(
+                      NoStatementList(
+                      ) [NoStatementList]
+                      StatementMatched(
+                        MatchedDesignatorStatement(
+                          DesignatorStatementEQUAL(
+                            EDesignatorStatementAssigment(
+                              DesignatorSimple(
+                                DesignatorName(
+                                 bodovi
+                                ) [DesignatorName]
+                                NoArrayTypeOptional(
+                                ) [NoArrayTypeOptional]
+                              ) [DesignatorSimple]
+                              PositiveStartTermOnlyExpr(
+                                Term(
+                                  FactorNumConst(
+                                    NumConst(
+                                     0
+                                    ) [NumConst]
+                                  ) [FactorNumConst]
+                                  NoMulopFactorList(
+                                  ) [NoMulopFactorList]
+                                ) [Term]
+                              ) [PositiveStartTermOnlyExpr]
+                            ) [EDesignatorStatementAssigment]
+                          ) [DesignatorStatementEQUAL]
+                        ) [MatchedDesignatorStatement]
+                      ) [StatementMatched]
+                    ) [EStatementList]
+                    StatementMatched(
+                      MatchedPrintSimple(
+                        PositiveStartTermOnlyExpr(
+                          Term(
+                            FactorDesignatorVar(
+                              DesignatorSimple(
+                                DesignatorName(
+                                 bodovi
+                                ) [DesignatorName]
+                                NoArrayTypeOptional(
+                                ) [NoArrayTypeOptional]
+                              ) [DesignatorSimple]
+                            ) [FactorDesignatorVar]
+                            NoMulopFactorList(
+                            ) [NoMulopFactorList]
+                          ) [Term]
+                        ) [PositiveStartTermOnlyExpr]
+                      ) [MatchedPrintSimple]
+                    ) [StatementMatched]
+                  ) [EStatementList]
+                  StatementMatched(
+                    MatchedDesignatorStatement(
+                      DesignatorStatementEQUAL(
+                        EDesignatorStatementAssigment(
+                          DesignatorSimple(
+                            DesignatorName(
+                             a
+                            ) [DesignatorName]
+                            NoArrayTypeOptional(
+                            ) [NoArrayTypeOptional]
+                          ) [DesignatorSimple]
+                          PositiveStartTermOnlyExpr(
+                            Term(
+                              FactorNumConst(
+                                NumConst(
+                                 1
+                                ) [NumConst]
+                              ) [FactorNumConst]
+                              NoMulopFactorList(
+                              ) [NoMulopFactorList]
+                            ) [Term]
+                          ) [PositiveStartTermOnlyExpr]
+                        ) [EDesignatorStatementAssigment]
+                      ) [DesignatorStatementEQUAL]
+                    ) [MatchedDesignatorStatement]
+                  ) [StatementMatched]
+                ) [EStatementList]
+                StatementMatched(
+                  MatchedDesignatorStatement(
+                    DesignatorStatementEQUAL(
+                      ErrorDesignatorStatementAssigmentToSemi(
+                      ) [ErrorDesignatorStatementAssigmentToSemi]
+                    ) [DesignatorStatementEQUAL]
+                  ) [MatchedDesignatorStatement]
+                ) [StatementMatched]
+              ) [EStatementList]
+              StatementMatched(
+                MatchedPrintSimple(
+                  PositiveStartTermOnlyExpr(
+                    Term(
+                      FactorDesignatorVar(
+                        DesignatorSimple(
+                          DesignatorName(
+                           bodovi
+                          ) [DesignatorName]
+                          NoArrayTypeOptional(
+                          ) [NoArrayTypeOptional]
+                        ) [DesignatorSimple]
+                      ) [FactorDesignatorVar]
+                      NoMulopFactorList(
+                      ) [NoMulopFactorList]
+                    ) [Term]
+                  ) [PositiveStartTermOnlyExpr]
+                ) [MatchedPrintSimple]
+              ) [StatementMatched]
+            ) [EStatementList]
+            StatementMatched(
+              MatchedDesignatorStatement(
+                DesignatorStatementEQUAL(
+                  EDesignatorStatementAssigment(
+                    DesignatorSimple(
+                      DesignatorName(
+                       boolVar
+                      ) [DesignatorName]
+                      NoArrayTypeOptional(
+                      ) [NoArrayTypeOptional]
+                    ) [DesignatorSimple]
+                    PositiveStartTermOnlyExpr(
+                      Term(
+                        FactorCharConst(
+                          CharConst(
+                           a
+                          ) [CharConst]
+                        ) [FactorCharConst]
+                        NoMulopFactorList(
+                        ) [NoMulopFactorList]
+                      ) [Term]
+                    ) [PositiveStartTermOnlyExpr]
+                  ) [EDesignatorStatementAssigment]
+                ) [DesignatorStatementEQUAL]
+              ) [MatchedDesignatorStatement]
+            ) [StatementMatched]
+          ) [EStatementList]
+          StatementMatched(
+            MatchedPrintSimple(
+              PositiveStartTermOnlyExpr(
+                Term(
+                  FactorDesignatorVar(
+                    DesignatorSimple(
+                      DesignatorName(
+                       boolVar
+                      ) [DesignatorName]
+                      NoArrayTypeOptional(
+                      ) [NoArrayTypeOptional]
+                    ) [DesignatorSimple]
+                  ) [FactorDesignatorVar]
+                  NoMulopFactorList(
+                  ) [NoMulopFactorList]
+                ) [Term]
+              ) [PositiveStartTermOnlyExpr]
+            ) [MatchedPrintSimple]
+          ) [StatementMatched]
+        ) [EStatementList]
+        StatementMatched(
+          MatchedPrintSimple(
+            PositiveStartTermOnlyExpr(
+              Term(
+                FactorDesignatorVar(
+                  DesignatorNSR(
+                   sizes
+                    DesignatorName(
+                     tableSize
+                    ) [DesignatorName]
+                    NoArrayTypeOptional(
+                    ) [NoArrayTypeOptional]
+                  ) [DesignatorNSR]
+                ) [FactorDesignatorVar]
+                NoMulopFactorList(
+                ) [NoMulopFactorList]
+              ) [Term]
+            ) [PositiveStartTermOnlyExpr]
+          ) [MatchedPrintSimple]
+        ) [StatementMatched]
+      ) [EStatementList]
+    ) [MethodDecl]
+  ) [EMethodDeclList]
+) [Program]
+INFO  15:10:16,953 - ===================================
+INFO  15:10:16,955 -  PrintSimple = 4
+INFO  15:10:16,955 -  VarDecl = 7
+INFO  15:10:16,955 - Program = 1
+INFO  15:10:16,955 - NegativeStartExpr = 0
+INFO  15:10:16,955 - PositiveStartExpr = 0
+INFO  15:10:16,955 - DesignatorStatementEQUAL = 4
+INFO  15:10:16,955 - DesignatorStatementINCREMENT = 0
+INFO  15:10:16,956 - DesignatorStatementDECREMENT = 0
+INFO  15:10:16,956 - NumConst = 2
+INFO  15:10:16,956 - BoolConst = 0
+INFO  15:10:16,956 - CharConst = 1
+INFO  15:10:16,956 - Namespace = 2
+INFO  15:10:16,956 - ===================================
+INFO  15:10:16,957 - Deklarisana konstanta sizes::tableSize na liniji 6
+ERROR 15:10:16,957 - Greska: Namespace sa imenom - sizes - vec postoji! na liniji 10
+INFO  15:10:16,957 - Deklarisana konstanta tableSize2 na liniji 11
+INFO  15:10:16,957 - Deklarisana konstanta p na liniji 15
+INFO  15:10:16,957 - Deklarisana konstanta q na liniji 15
+INFO  15:10:16,957 - Deklarisana promenljiva boolVar na liniji 16
+INFO  15:10:16,957 - Deklarisana promenljiva mat na liniji 18
+INFO  15:10:16,957 - Deklarisana promenljiva nizErr na liniji 19
+INFO  15:10:16,957 - Deklarisana promenljiva a na liniji 21
+ERROR 15:10:16,957 - Greska: Promenljiva - a - vec postoji!
+INFO  15:10:16,957 - Obradjuje se funkcija main na liniji 25
+INFO  15:10:16,957 - Deklarisana promenljiva bodovi na liniji 26
+INFO  15:10:16,957 - Deklarisana promenljiva bt na liniji 27
+ERROR 15:10:16,957 - Greska pri dodeli, na liniji: 39, Designator mora biti kompatibilnog tipa sa Expr! na liniji 39
+INFO  15:10:16,957 - eDesignatorStatementAssigment.getDesignator().obj.getType(): 5 na liniji 39
+INFO  15:10:16,957 - eDesignatorStatementAssigment.getExpr().struct: 2 na liniji 39
+INFO  15:10:16,958 - ===================================
+ERROR 15:10:16,958 - Parsiranje NIJE uspesno zavrseno

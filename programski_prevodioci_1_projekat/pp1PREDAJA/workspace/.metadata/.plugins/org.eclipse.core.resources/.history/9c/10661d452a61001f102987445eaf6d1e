@@ -1,0 +1,100 @@
+package rs.ac.bg.etf.pp1;
+
+import rs.ac.bg.etf.pp1.CounterVisitor.FormParamCounter;
+import rs.ac.bg.etf.pp1.CounterVisitor.VarCounter;
+import rs.ac.bg.etf.pp1.ast.*;
+import rs.etf.pp1.mj.runtime.Code;
+import rs.etf.pp1.symboltable.Tab;
+import rs.etf.pp1.symboltable.concepts.*;
+
+public class CodeGenerator extends VisitorAdaptor {
+	
+	private int mainPC;
+	
+	public int getMainPC() {
+		return mainPC;
+	}
+	
+	// **** METHODS **********************************************************************************************
+	
+	public void visit(EMethodTypeName eMethodTypeName) {
+		if ("main".equalsIgnoreCase(eMethodTypeName.getMethName())) {
+			mainPC = Code.pc;
+		}
+		
+		eMethodTypeName.obj.setAdr(Code.pc);
+		SyntaxNode methodNode = eMethodTypeName.getParent();
+		
+		// Brojimo argumente i lokalne promenljive u Parent-u od EMethodTypeName sto je MethDecl odnosno u deklaraciji metode
+		VarCounter varCnt = new VarCounter();
+		methodNode.traverseTopDown(varCnt);
+		
+		FormParamCounter formParamCnt = new FormParamCounter();
+		methodNode.traverseTopDown(formParamCnt);
+		
+		// Enter u metodu
+		Code.put(Code.enter);
+		Code.put(formParamCnt.getCount());
+		Code.put(formParamCnt.getCount() + varCnt.getCount());
+	}
+	
+	public void visit(MethodDecl methodDecl) {
+		Code.put(Code.exit);
+		Code.put(Code.return_);
+	}
+	
+	// ***********************************************************************************************************
+	
+	
+	
+	
+	// **** EXPR *************************************************************************************************
+	
+	public void visit(NegativeStartExpr negativeStartExpr) {
+		Code.put(Code.neg);
+	}
+	
+	public void visit(MultipleAddopTermList multipleAddopTermList) {
+		if (multipleAddopTermList.getAddop() instanceof Plus) Code.put(Code.add);
+		else Code.put(Code.sub);
+	}
+	
+	public void visit(MultipleMulopFactorList multipleMulopFactorList) {
+		if (multipleMulopFactorList.getMulop() instanceof Times) Code.put(Code.mul);
+		else if (multipleMulopFactorList.getMulop() instanceof Slash) Code.put(Code.div);
+		else Code.put(Code.rem);
+	}
+	
+	// ***********************************************************************************************************
+	
+	
+	
+	
+	// **** OPERATIONS *******************************************************************************************
+	
+	// NE TREBA POJEDINACNO DA SE RAZMATRAJU NEGO U IZRAZU
+	
+	/*
+	public void visit(Plus plus) {
+		Code.put(Code.add);
+	}
+	
+	public void visit(Minus minus) {
+		// Code.put(Code.sub); // moze da bude i Code.neg -> IMPLEENTIRAJ
+	}
+	
+	public void visit(Times times) {
+		Code.put(Code.mul);
+	}
+	
+	public void visit(Slash slash) {
+		Code.put(Code.div);
+	}
+	
+	public void visit(Percent percent) {
+		Code.put(Code.rem);
+	}
+	*/
+	// ***********************************************************************************************************
+
+}

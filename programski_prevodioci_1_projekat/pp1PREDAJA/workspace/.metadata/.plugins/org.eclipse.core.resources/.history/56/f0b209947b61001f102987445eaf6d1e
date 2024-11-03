@@ -1,0 +1,25 @@
+program MJProgram
+	const bool w = true;
+	const char z = 'z';
+	const int q = 4;
+	int x; int y;
+{
+
+	int main() {
+	
+		int arr[];
+		arr = new int[3];
+	
+		x = 3;
+		
+		print(1 * q);
+		
+		y = 4 + 9;
+		
+		print(x);
+		
+		print(y);
+		
+		return 1;
+	}
+}

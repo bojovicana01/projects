@@ -1,0 +1,444 @@
+package rs.ac.bg.etf.pp1;
+
+import org.apache.log4j.Logger;
+
+import rs.ac.bg.etf.pp1.ast.*;
+import rs.etf.pp1.symboltable.*;
+import rs.etf.pp1.symboltable.concepts.*;
+
+public class SemanticAnalyzer extends VisitorAdaptor {
+	
+	Obj currentMethod = null;
+	boolean returnFound = false;
+	
+	Obj currentConstant = null;
+	Struct currentConstantType = null;
+	
+	Struct currentVarType = null;
+	
+	boolean errorDetected = false;
+	int nVars;
+	
+	Logger log = Logger.getLogger(getClass());
+	
+	public void report_error(String message, SyntaxNode info) {
+		errorDetected = true;
+		StringBuilder msg = new StringBuilder(message);
+		int line = (info == null) ? 0: info.getLine();
+		if (line != 0)
+			msg.append (" na liniji ").append(line);
+		log.error(msg.toString());
+	}
+
+	public void report_info(String message, SyntaxNode info) {
+		StringBuilder msg = new StringBuilder(message); 
+		int line = (info == null) ? 0: info.getLine();
+		if (line != 0)
+			msg.append (" na liniji ").append(line);
+		log.info(msg.toString());
+	}
+	
+	//------------------------------------------------------------------------------------------------VISIT METODE
+	
+	
+	
+	
+	// **** PRINT / READ *****************************************************************************************
+	
+	public void visit(MatchedRead matchedRead) {
+		
+		if (matchedRead.getDesignator().obj.getKind() == SymbolTableObject.Var 
+				|| 
+			matchedRead.getDesignator().obj.getKind() == SymbolTableObject.Elem) 
+		{
+			if (matchedRead.getDesignator().obj.getType() != SymbolTableTab.intType && 
+				matchedRead.getDesignator().obj.getType() != SymbolTableTab.charType && 
+				matchedRead.getDesignator().obj.getType() != SymbolTableTab.boolType) 
+			{
+				report_error("Greska na liniji:  " + matchedRead.getLine() + ", READ ne prihvata dati tip", matchedRead);
+			}
+		}
+		else {
+			report_error("Greska na liniji:  " + matchedRead.getLine() + ", READ prihvata samo promenljive i elemente niza", matchedRead);
+		}
+	}
+	
+	public void visit(MatchedPrintSimple matchedPrintSimple) {
+		if (matchedPrintSimple.getExpr().struct != SymbolTableTab.intType && 
+			matchedPrintSimple.getExpr().struct != SymbolTableTab.charType && 
+			matchedPrintSimple.getExpr().struct != SymbolTableTab.boolType)
+		{
+			report_error("Greska na liniji:  " + matchedPrintSimple.getLine() + ", PRINT ne prihvata dati tip", matchedPrintSimple);
+		}
+	}
+	
+	public void visit(MathchedPrint matchedPrint) {
+		if (matchedPrint.getExpr().struct != SymbolTableTab.intType && 
+			matchedPrint.getExpr().struct != SymbolTableTab.charType && 
+			matchedPrint.getExpr().struct != SymbolTableTab.boolType)
+		{
+			report_error("Greska na liniji:  " + matchedPrint.getLine() + ", PRINT ne prihvata dati tip", matchedPrint);
+		}
+	}
+	
+	// ***********************************************************************************************************
+	
+	
+	
+	
+	// **** PROGRAM **********************************************************************************************
+	
+	public void visit(ProgramName programName) {
+		programName.obj = SymbolTableTab.insert(Obj.Prog, programName.getProgramName(), SymbolTableTab.noType); 
+		SymbolTableTab.openScope(); 
+		// otvara se Scope i vezuje se kasnije za programName objekat koji smo sad kreirali
+	}
+	
+	public void visit(Program program) {
+		nVars = SymbolTableTab.currentScope.getnVars();
+		SymbolTableTab.chainLocalSymbols(program.getProgramName().obj); 
+		// vezujemo za programName objekat koji iz programa koji je i sam objekat dohvatamo kao objekat
+		SymbolTableTab.closeScope();
+	}
+	
+	// ***********************************************************************************************************
+	
+	
+	
+	
+	// **** TYPE *************************************************************************************************
+	
+	public void visit(TypeSimple typeSimple) {
+		
+		Obj typeNode = SymbolTableTab.find(typeSimple.getTypeNameSimple());
+		
+		if (typeNode == Tab.noObj) { 
+			report_error("Nije pronadjen tip " + typeSimple.getTypeNameSimple() + " u tabeli simbola! ", null);
+			typeSimple.struct = Tab.noType;
+		}
+		else {
+			if (Obj.Type == typeNode.getKind()) {
+				typeSimple.struct = typeNode.getType();
+			}
+			else {
+				report_error("Greska: Ime " + typeSimple.getTypeNameSimple() + " ne predstavlja tip!", typeSimple);
+    			typeSimple.struct = Tab.noType;
+			}
+		}
+		
+	}
+	
+	public void visit(TypeNamespaceResolution typeNamespaceResolution) {
+		
+		Obj typeNode = SymbolTableTab.find(typeNamespaceResolution.getTypeNameNSR());
+		
+		if (typeNode == Tab.noObj) { 
+			report_error("Nije pronadjen tip " + typeNamespaceResolution.getTypeNameNSR() + " u tabeli simbola! ", null);
+			typeNamespaceResolution.struct = Tab.noType;
+		}
+		else {
+			if (Obj.Type == typeNode.getKind()) {
+				typeNamespaceResolution.struct = typeNode.getType();
+			}
+			else {
+				report_error("Greska: Ime " + typeNamespaceResolution.getTypeNameNSR() + " ne predstavlja tip!", typeNamespaceResolution);
+				typeNamespaceResolution.struct = Tab.noType;
+			}
+		}
+		
+	}
+	
+	// ***********************************************************************************************************
+	
+	
+	
+	
+	// **** CONSTANTS ********************************************************************************************
+	
+	public void visit(ConstantTypeName constantTypeName) {
+		currentConstantType = constantTypeName.getType().struct;
+		currentConstant = SymbolTableTab.insert(Obj.Con, constantTypeName.getConstantName(), constantTypeName.getType().struct);
+	}
+	
+	public void visit(EConstDeclListSingleType eConstDeclListSingleType) {
+		currentConstant = SymbolTableTab.insert(Obj.Con, eConstDeclListSingleType.getConstantName(), currentConstantType);
+	}
+	
+	public void visit(CNumConst cNumConst) {
+		if (currentConstant != null) currentConstant.setAdr(cNumConst.getValue());
+	}
+	
+	public void visit(CBoolConst cBoolConst) {
+		if (currentConstant != null) currentConstant.setAdr(cBoolConst.getValue() == true ? 1 : 0);
+	}
+	
+	public void visit(CCharConst cCharConst) {
+		if (currentConstant != null) currentConstant.setAdr(cCharConst.getValue());
+	}
+	
+	public void visit(EConstDecl eConstDecl) {
+		currentConstantType = null;
+		currentConstant = null;
+	}
+	
+	// ***********************************************************************************************************
+	
+	
+	
+	
+	// **** VARS *************************************************************************************************
+	
+	// proveri da li postoji vec objeka tsa istim imenom -> find
+	
+	public void visit(VarTypeName varTypeName) {
+		currentVarType = varTypeName.getType().struct;
+		varTypeName.obj = SymbolTableTab.insert(Obj.Var, varTypeName.getVarName(), varTypeName.getType().struct);
+		report_info("Deklarisana promenljiva "+ varTypeName.getVarName(), varTypeName);
+	}
+	
+	public void visit(VarName varName) {
+		SymbolTableTab.insert(Obj.Var, varName.getVarName(), currentVarType);
+	}
+	
+	public void visit(VarDeclSimple varDeclSimple) {
+		currentVarType = null;
+	}
+	
+	public void visit(VarDeclArr varDeclArr) {
+		currentVarType = null;
+	}
+	
+	// ***********************************************************************************************************
+	
+	
+	
+	
+	// **** METHODS **********************************************************************************************
+	
+	public void visit(EMethodTypeName eMethodTypeName) {
+		currentMethod = SymbolTableTab.insert(Obj.Meth, eMethodTypeName.getMethName(), eMethodTypeName.getType().struct); 
+		eMethodTypeName.obj = currentMethod;
+		SymbolTableTab.openScope();
+		report_info("Obradjuje se funkcija " + eMethodTypeName.getMethName(), eMethodTypeName);
+	}
+	
+	public void visit(VoidMethodTypeName voidMethodTypeName) {
+		currentMethod = SymbolTableTab.insert(Obj.Meth, voidMethodTypeName.getVmethName(), Tab.noType); 
+		voidMethodTypeName.obj = currentMethod;
+		SymbolTableTab.openScope();
+		report_info("Obradjuje se funkcija " + voidMethodTypeName.getVmethName(), voidMethodTypeName);
+	}
+	
+	public void visit(MethodDecl methodDecl) {
+		if (!returnFound && currentMethod.getType() != SymbolTableTab.noType) // ako metoda treba nesto da vraca a ne vraca
+			report_error("Semanticka greska na liniji " + methodDecl.getLine() + ": funkcija " + currentMethod.getName() + " nema return iskaz!", null);
+		
+		SymbolTableTab.chainLocalSymbols(currentMethod); // sve koje su na currentScope-u uvezuje u locals niz
+		SymbolTableTab.closeScope();
+		
+		returnFound = false;
+    	currentMethod = null;
+	}
+	
+	// ***********************************************************************************************************
+	
+	
+	
+	
+	// **** EXPR *************************************************************************************************
+	
+	// expr
+	
+	public void visit(NegativeStartExpr negativeStartExpr) {
+		Struct structTerm = negativeStartExpr.getTerm().struct;
+		Struct structAddopTermList = negativeStartExpr.getAddopTermList().struct;
+		
+		if ((structTerm.equals(structAddopTermList) || structAddopTermList == SymbolTableTab.noType) && structTerm == SymbolTableTab.intType) {
+			negativeStartExpr.struct = structTerm;
+		}
+		else{
+			report_error("Greska na liniji "+ negativeStartExpr.getLine()+" : nekompatibilni tipovi u izrazu.", null);
+			negativeStartExpr.struct = SymbolTableTab.noType;
+    	}
+	}
+	
+	public void visit(PositiveStartExpr positiveStartExpr) {
+		Struct structTerm = positiveStartExpr.getTerm().struct;
+		Struct structAddopTermList = positiveStartExpr.getAddopTermList().struct;
+		
+		if ((structTerm.equals(structAddopTermList) || structAddopTermList == SymbolTableTab.noType) && structTerm == SymbolTableTab.intType) {
+			positiveStartExpr.struct = structTerm;
+		}
+		else{
+			report_error("Greska na liniji "+ positiveStartExpr.getLine()+" : nekompatibilni tipovi u izrazu.", null);
+			positiveStartExpr.struct = SymbolTableTab.noType;
+    	}
+	}
+	
+	public void visit(MultipleAddopTermList multipleAddopTermList) {
+		Struct structTerm = multipleAddopTermList.getTerm().struct;
+		Struct structAddopTermList = multipleAddopTermList.getAddopTermList().struct;
+		
+		if ((structTerm.equals(structAddopTermList) || structAddopTermList == SymbolTableTab.noType) && structTerm == SymbolTableTab.intType) {
+			multipleAddopTermList.struct = structTerm;
+		}
+		else{
+			report_error("Greska na liniji "+ multipleAddopTermList.getLine()+" : nekompatibilni tipovi u izrazu.", null);
+			multipleAddopTermList.struct = SymbolTableTab.noType;
+    	}
+	}
+	
+	public void visit(NoAddopTermList noAddopTermList) {
+		noAddopTermList.struct = SymbolTableTab.noType;
+	}
+	
+	// term
+	
+	public void visit(Term term) {
+		Struct structFactor = term.getFactor().struct;
+		Struct structMulopFactorList = term.getMulopFactorList().struct;
+		
+		if ((structFactor.equals(structMulopFactorList) || structMulopFactorList == SymbolTableTab.noType) && structFactor == SymbolTableTab.intType) {
+			term.struct = structFactor;
+		}
+		else{
+			report_error("Greska na liniji "+ term.getLine()+" : nekompatibilni tipovi u izrazu.", null);
+			term.struct = SymbolTableTab.noType;
+    	}
+	}
+	
+	public void visit(MultipleMulopFactorList mulopFactorList) {
+		Struct structFactor = mulopFactorList.getFactor().struct;
+		Struct structMulopFactorList = mulopFactorList.getMulopFactorList().struct;
+		
+		if ((structFactor.equals(structMulopFactorList) || structMulopFactorList == SymbolTableTab.noType) && structFactor == SymbolTableTab.intType) {
+			mulopFactorList.struct = structFactor;
+		}
+		else{
+			report_error("Greska na liniji "+ mulopFactorList.getLine()+" : nekompatibilni tipovi u izrazu.", null);
+			mulopFactorList.struct = SymbolTableTab.noType;
+    	}
+	}
+	
+	public void visit(NoMulopFactorList noMulopFactorList) {
+		noMulopFactorList.struct = SymbolTableTab.noType;
+	}
+	
+	
+	// factor
+	
+	public void visit(FactorNumConst factorNumConst) {
+		factorNumConst.struct = SymbolTableTab.intType;
+	}
+	
+	public void visit(FactorCharConst factorCharConst) {
+		factorCharConst.struct = SymbolTableTab.charType;
+	}
+
+	public void visit(FactorBoolConst factorBoolConst) {
+		factorBoolConst.struct = SymbolTableTab.boolType;
+	}
+	
+	public void visit(FactorExprInParens factorExprInParens) {
+		factorExprInParens.struct = factorExprInParens.getExpr().struct;
+	}
+	
+	public void visit(FactorDesignatorVar factorDesignatorVar) {
+		factorDesignatorVar.struct = factorDesignatorVar.getDesignator().obj.getType();
+	}
+	
+	public void visit(FactorDesignatorFunc factorDesignatorFunc) {
+		Obj func = factorDesignatorFunc.getDesignator().obj;
+		
+		if (Obj.Meth == func.getKind()) {
+			report_info("Pronadjen poziv funkcije " + func.getName() + " na liniji " + factorDesignatorFunc.getLine(), null);
+			factorDesignatorFunc.struct = func.getType();
+		}
+		else {
+			report_error("Greska na liniji " + factorDesignatorFunc.getLine()  +" : ime " + func.getName() + " nije funkcija!", null);
+			factorDesignatorFunc.struct = Tab.noType;
+		}
+	}
+	
+	public void visit(FactorNew factorNew) {
+		if (factorNew.getType().struct == SymbolTableTab.intType) {
+			factorNew.struct = new Struct(Struct.Array, factorNew.getType().struct);
+		}
+		else {
+			report_error("Greska na liniji: " + factorNew.getLine() + ", Velicina niza koja se zadaje mora biti tipa int!", factorNew);
+		}
+	}
+	
+	// ***********************************************************************************************************
+	
+	
+	
+	
+	// **** STATEMENT ********************************************************************************************
+	
+	public void visit(MatchedReturn matchedReturn) {
+		returnFound = true;
+		Struct currentMethodType = currentMethod.getType();
+		if (!currentMethodType.compatibleWith(matchedReturn.getExpr().struct)) {
+			report_error("Greska na liniji " + matchedReturn.getLine() + " : " + "tip izraza u return naredbi ne slaze se sa tipom povratne vrednosti funkcije " + currentMethod.getName(), null);
+		}
+		else report_info("Linija: " + matchedReturn.getLine() + " : " + "tip izraza u return naredbi se SLAZE sa tipom povratne vrednosti funkcije " + currentMethod.getName(), null);
+	}
+	
+	// ***********************************************************************************************************
+	
+	
+	
+	
+	// **** DESIGNATOR *******************************************************************************************
+	
+	public void visit(DesignatorSimple designatorSimple) {
+		Obj obj = SymbolTableTab.find(designatorSimple.getName());
+		if (obj == SymbolTableTab.noObj) 
+			report_error("Greska na liniji " + designatorSimple.getLine()+ " : ime "+ designatorSimple.getName()+" nije deklarisano! ", null);
+		
+		designatorSimple.obj = obj;
+	}
+	
+	public void visit(DesignatorStatementINCREMENT designatorStatementINCREMENT) {
+		
+	}
+	
+	public void visit(DesignatorStatementDECREMENT designatorStatementDECREMENT) {
+		
+	}
+	
+	public void visit(EDesignatorStatementAssigment eDesignatorStatementAssigment) {
+		if (eDesignatorStatementAssigment.getDesignator().obj.getKind() == SymbolTableObject.Var || 
+			eDesignatorStatementAssigment.getDesignator().obj.getKind() == SymbolTableObject.Elem) {
+			
+		}
+		else {
+			report_error("Greska na liniji: " + eDesignatorStatementAssigment.getLine() + 
+					", Assignment: Designator mora oznacavati ili promenljivu ili element niza!", eDesignatorStatementAssigment);
+		}
+	}
+	
+	// ***********************************************************************************************************
+	
+	
+	// **** NAMESPACE ********************************************************************************************
+	/*
+	public void visit(NamespaceName namespaceName) {
+		SymbolTableTab.insert(SymbolTableObject.Namespace, namespaceName.getNamespaceName(), Tab.noType);
+		SymbolTableTab.openScope();
+	}
+	
+	public void visit(Namespace namespace) {
+		SymbolTableTab.chainLocalSymbols(namespace.getNamespaceName().obj);
+		SymbolTableTab.closeScope();
+	}
+	*/
+	// ***********************************************************************************************************
+    
+    
+    public boolean passed(){
+    	return !errorDetected;
+    }
+
+}

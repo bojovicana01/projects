@@ -1,0 +1,258 @@
+package rs.ac.bg.etf.pp1;
+
+import org.apache.log4j.Logger;
+
+import rs.ac.bg.etf.pp1.ast.*;
+import rs.etf.pp1.symboltable.*;
+import rs.etf.pp1.symboltable.concepts.*;
+
+public class SemanticAnalyzer extends VisitorAdaptor {
+	
+	Obj currentMethod = null;
+	boolean returnFound = false;
+	
+	Obj currentConstant = null;
+	Struct currentConstantType = null;
+	
+	Struct currentVarType = null;
+	
+	boolean errorDetected = false;
+	int nVars;
+	
+	Logger log = Logger.getLogger(getClass());
+	
+	public void report_error(String message, SyntaxNode info) {
+		errorDetected = true;
+		StringBuilder msg = new StringBuilder(message);
+		int line = (info == null) ? 0: info.getLine();
+		if (line != 0)
+			msg.append (" na liniji ").append(line);
+		log.error(msg.toString());
+	}
+
+	public void report_info(String message, SyntaxNode info) {
+		StringBuilder msg = new StringBuilder(message); 
+		int line = (info == null) ? 0: info.getLine();
+		if (line != 0)
+			msg.append (" na liniji ").append(line);
+		log.info(msg.toString());
+	}
+	
+	//------------------------------------------------------------------------------------------------VISIT METODE
+	
+	
+	
+	
+	// **** PROGRAM **********************************************************************************************
+	
+	public void visit(ProgramName programName) {
+		Tab.insert(Obj.Prog, programName.getProgramName(), Tab.noType); 
+		Tab.openScope(); 
+		// otvara se Scope i vezuje se kasnije za programName objekat koji smo sad kreirali
+	}
+	
+	public void visit(Program program) {
+		nVars = Tab.currentScope.getnVars();
+		Tab.chainLocalSymbols(program.getProgramName().obj); 
+		// vezujemo za programName objekat koji iz programa koji je i sam objekat dohvatamo kao objekat
+		Tab.closeScope();
+	}
+	
+	// ***********************************************************************************************************
+	
+	
+	
+	
+	// **** TYPE *************************************************************************************************
+	
+	public void visit(TypeSimple typeSimple) {
+		
+		Obj typeNode = SymbolTableTab.find(typeSimple.getTypeNameSimple());
+		
+		if (typeNode == Tab.noObj) { 
+			report_error("Nije pronadjen tip " + typeSimple.getTypeNameSimple() + " u tabeli simbola! ", null);
+			typeSimple.struct = Tab.noType;
+		}
+		else {
+			if (Obj.Type == typeNode.getKind()) {
+				typeSimple.struct = typeNode.getType();
+			}
+			else {
+				report_error("Greska: Ime " + typeSimple.getTypeNameSimple() + " ne predstavlja tip!", typeSimple);
+    			typeSimple.struct = Tab.noType;
+			}
+		}
+		
+	}
+	
+	public void visit(TypeNamespaceResolution typeNamespaceResolution) {
+		
+		Obj typeNode = Tab.find(typeNamespaceResolution.getTypeNameNSR());
+		
+		if (typeNode == Tab.noObj) { 
+			report_error("Nije pronadjen tip " + typeNamespaceResolution.getTypeNameNSR() + " u tabeli simbola! ", null);
+			typeNamespaceResolution.struct = Tab.noType;
+		}
+		else {
+			if (Obj.Type == typeNode.getKind()) {
+				typeNamespaceResolution.struct = typeNode.getType();
+			}
+			else {
+				report_error("Greska: Ime " + typeNamespaceResolution.getTypeNameNSR() + " ne predstavlja tip!", typeNamespaceResolution);
+				typeNamespaceResolution.struct = Tab.noType;
+			}
+		}
+		
+	}
+	
+	// ***********************************************************************************************************
+	
+	
+	
+	
+	// **** CONSTANTS ********************************************************************************************
+	
+	public void visit(ConstantTypeName constantTypeName) {
+		currentConstantType = constantTypeName.getType().struct;
+		currentConstant = Tab.insert(Obj.Con, constantTypeName.getConstantName(), constantTypeName.getType().struct);
+	}
+	
+	public void visit(EConstDeclListSingleType eConstDeclListSingleType) {
+		currentConstant = Tab.insert(Obj.Con, eConstDeclListSingleType.getConstantName(), currentConstantType);
+	}
+	
+	public void visit(CNumConst cNumConst) {
+		if (currentConstant != null) currentConstant.setAdr(cNumConst.getValue());
+	}
+	
+	public void visit(CBoolConst cBoolConst) {
+		if (currentConstant != null) currentConstant.setAdr(cBoolConst.getValue() == true ? 1 : 0);
+	}
+	
+	public void visit(CCharConst cCharConst) {
+		if (currentConstant != null) currentConstant.setAdr(cCharConst.getValue());
+	}
+	
+	public void visit(EConstDecl eConstDecl) {
+		currentConstantType = null;
+		currentConstant = null;
+	}
+	
+	// ***********************************************************************************************************
+	
+	
+	
+	
+	// **** VARS *************************************************************************************************
+	
+	public void visit(VarTypeName varTypeName) {
+		currentVarType = varTypeName.getType().struct;
+		varTypeName.obj = Tab.insert(Obj.Var, varTypeName.getVarName(), varTypeName.getType().struct);
+		report_info("Deklarisana promenljiva "+ varTypeName.getVarName(), varTypeName);
+	}
+	
+	public void visit(VarName varName) {
+		Tab.insert(Obj.Var, varName.getVarName(), currentVarType);
+	}
+	
+	public void visit(VarDeclSimple varDeclSimple) {
+		currentVarType = null;
+	}
+	
+	public void visit(VarDeclArr varDeclArr) {
+		currentVarType = null;
+	}
+	
+	// ***********************************************************************************************************
+	
+	
+	
+	
+	// **** METHODS **********************************************************************************************
+	
+	public void visit(EMethodTypeName eMethodTypeName) {
+		currentMethod = Tab.insert(Obj.Meth, eMethodTypeName.getMethName(), eMethodTypeName.getType().struct); 
+		eMethodTypeName.obj = currentMethod;
+		Tab.openScope();
+		report_info("Obradjuje se funkcija " + eMethodTypeName.getMethName(), eMethodTypeName);
+	}
+	
+	public void visit(VoidMethodTypeName voidMethodTypeName) {
+		currentMethod = Tab.insert(Obj.Meth, voidMethodTypeName.getVmethName(), Tab.noType); 
+		voidMethodTypeName.obj = currentMethod;
+		Tab.openScope();
+		report_info("Obradjuje se funkcija " + voidMethodTypeName.getVmethName(), voidMethodTypeName);
+	}
+	
+	public void visit(MethodDecl methodDecl) {
+		if (currentMethod.getType() != Tab.noType && !returnFound) // ako metoda treba nesto da vraca a ne vraca
+			report_error("Semanticka greska na liniji " + methodDecl.getLine() + ": funkcija " + currentMethod.getName() + " nema return iskaz!", null);
+		
+		Tab.chainLocalSymbols(currentMethod); // sve koje su na currentScope-u uvezuje u locals niz
+		Tab.closeScope();
+		
+		returnFound = false;
+    	currentMethod = null;
+	}
+	
+	// ***********************************************************************************************************
+	
+	
+	
+	
+	// **** EXPR *************************************************************************************************
+	
+	public void visit(FactorNumConst factorNumConst) {
+		factorNumConst.struct = Tab.intType;
+	}
+	
+	public void visit(FactorCharConst factorCharConst) {
+		factorCharConst.struct = Tab.charType;
+	}
+
+	public void visit(FactorBoolConst factorBoolConst) {
+		factorBoolConst.struct = SymbolTableTab.boolType;
+	}
+	
+	public void visit(FactorDesignatorVar factorDesignatorVar) {
+		factorDesignatorVar.struct = factorDesignatorVar.getDesignator().obj.getType();
+	}
+	
+	// ***********************************************************************************************************
+	
+	
+	
+	
+	// **** DESIGNATOR *******************************************************************************************
+	
+	public void visit(DesignatorSimple designatorSimple) {
+		Obj obj = Tab.find(designatorSimple.getName());
+		if (obj == Tab.noObj) 
+			report_error("Greska na liniji " + designatorSimple.getLine()+ " : ime "+ designatorSimple.getName()+" nije deklarisano! ", null);
+		
+		designatorSimple.obj = obj;
+	}
+	
+	// ***********************************************************************************************************
+	
+	
+	// **** NAMESPACE ********************************************************************************************
+	/*
+	public void visit(NamespaceName namespaceName) {
+		Tab.insert(SymbolTableObject.Namespace, namespaceName.getNamespaceName(), Tab.noType);
+		Tab.openScope();
+	}
+	
+	public void visit(Namespace namespace) {
+		Tab.chainLocalSymbols(namespace.getNamespaceName().obj);
+		Tab.closeScope();
+	}
+	*/
+	// ***********************************************************************************************************
+    
+    
+    public boolean passed(){
+    	return !errorDetected;
+    }
+
+}

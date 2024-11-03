@@ -1,0 +1,315 @@
+h1 {
+    color:#615a4e;
+    height: 100px;
+    width: 100%;
+    background-color:#CFBFA5 ;
+    text-align:center;
+    letter-spacing: 3px;
+    font-size: 58px;
+    font-family: monospace;
+    
+    
+}
+
+
+/*
+h1 { color: #615a4e; 
+    font-family: 'Droid serif', serif; 
+    font-size: 36px; font-weight: 400; 
+    font-style: italic; 
+    line-height: 44px; 
+    margin: 0 0 12px; 
+    text-align: center;
+    background-color:#CFBFA5 ;
+ }
+*/
+
+html{
+    background-color:#413c33;
+}
+.forma {
+    border-radius: 1%;
+    text-align: center;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 10px;
+    background-image: url("slikaSarenaPozadina.jpeg");
+    padding: 20px;
+    height: 500px;
+    
+}
+.telo{
+    
+    border-radius: 1%;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-image: url("slikaBraonPozadina.jpeg");
+    padding: 20px;
+    height: 600px;
+}
+a:link,a:visited{
+    text-decoration:none;
+    text-shadow: #413c33;
+    color: white;
+
+}
+a:hover{
+    font-size: 20px;
+    text-decoration:none;
+    text-shadow: #413c33;
+    color: wheat;
+
+}
+.slika{
+    width: 350px;
+    height: 450px;
+    margin: 20px
+}
+.galerija{
+    
+    border-radius: 1%;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 10px;
+    background-image: url("slikaBraonPozadinaSmanjena.jpeg");
+    padding: 20px;
+    height: 800px;
+}
+.slikaG{
+    
+    width: 250px;
+    height: 350px;
+    margin: 30px
+
+}
+.slikaP{
+    width: 350px;
+    height: 350px;
+    margin: 30px
+}
+
+
+
+.proizvodi{
+    
+    border-radius: 1%;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 10px;
+    background-image: url("slikaBraonPozadinaSmanjena.jpeg");
+    padding: 20px;
+    height: 600px;
+}
+.slikaGot{
+    width: 350px;
+    height: 250px;
+    margin: 30px
+}
+.boja{
+    color: wheat;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/*-----------------------------------------------------------------------*/
+
+.dugmeA {
+    background-color: #C98B5B;
+    border: none;
+    text-align: center;
+    padding: 20px;
+}
+
+.dugmeA:hover {
+    background-color: #9A7356;
+}
+
+.flex-containerA {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("slikaSarenaPozadina.jpeg");
+    border-radius: 1%;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 10px;
+    padding: 20px;
+    height: 600px;
+}
+
+.flex-containerA > div {
+    padding: 15px;
+    margin: 25px;
+    font-size: 40;
+}
+
+.textareaA {
+    resize: none;
+}
+
+
+body {
+    background: hsl(220deg, 10%, 97%);
+    margin: 0;
+    padding: 0;
+  }
+  
+  .buttons-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  button {
+    background: white;
+    /*border: solid 2px black;*/
+    border: none;
+    padding: .375em 1.125em;
+    font-size: large;
+  }
+  
+  .button-arounder {
+    font-size: large;
+    background: hsl(190deg, 30%, 15%);
+    color: hsl(190deg, 10%, 95%);
+    
+    box-shadow: 0 0px 0px hsla(190deg, 15%, 5%, .2);
+    transfrom: translateY(0);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    
+    --dur: .15s;
+    --delay: .15s;
+    --radius: 16px;
+    
+    transition:
+      border-top-left-radius var(--dur) var(--delay) ease-out,
+      border-top-right-radius var(--dur) calc(var(--delay) * 2) ease-out,
+      border-bottom-right-radius var(--dur) calc(var(--delay) * 3) ease-out,
+      border-bottom-left-radius var(--dur) calc(var(--delay) * 4) ease-out,
+      box-shadow calc(var(--dur) * 4) ease-out,
+      transform calc(var(--dur) * 4) ease-out,
+      background calc(var(--dur) * 4) steps(4, jump-end);
+  }
+  
+  .button-arounder:hover,
+  .button-arounder:focus {
+    box-shadow: 0 4px 8px hsla(190deg, 15%, 5%, .2);
+    transform: translateY(-4px);
+    background: #C98B5B;
+    border-top-left-radius: var(--radius);
+    border-top-right-radius: var(--radius);
+    border-bottom-left-radius: var(--radius);
+    border-bottom-right-radius: var(--radius);
+  }
+
+  /*-------------------------------------------------------------*/
+
+
+  .dugme{
+    width: 15%;
+    height: 10%;
+    color:chocolate;
+    background-color: #413c33;
+}
+
+
+
+
+.polje{
+  background-color: #615a4e;
+}
+
+#idT{
+  background-color: aqua;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  .centered {
+    position: absolute;
+    color: black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .telo1{
+    color: aliceblue;
+    font-size: 20px;
+    border-radius: 1%;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 200px;
+    margin-right: 200px;
+    background-image: url("slikaBraonPozadina.jpeg");
+    padding: 20px;
+    height: 600px;
+  }
+  
+  
+  .divic{
+    color:black;
+    text-align: left;
+    margin-bottom: 1px;
+    font-size: larger;
+    background-color: #CFBFA5;
+  }
+  
+  
+  .cont{
+    display: flex;
+    list-style-type: none;
+    border-left: auto;
+    justify-content: center;
+  }
+  
+  .cont>*{
+    text-align: center;
+    padding-left: 50px;
+    flex-grow: 1;
+  }
+  
+  .cont>li{
+    padding: 20px;
+  }
+  
+  .lista{
+    background-color: bisque;
+  }
+  
+  #listaP{
+    background-color: #CFBFA5;
+    margin-bottom: 1px;
+  }
+  
+  .pod{
+    background-color: #CFBFA5;
+  }
+
+  .slikaVit{
+    width: 150px;
+    height: 250px;
+    margin:30px;
+
+  }
+
+  .slikaL{
+    width: 350px;
+    height: 450px;
+    margin:30px;
+
+  }
+  

@@ -1,0 +1,40 @@
+program MJProgram
+
+	namespace sizes{
+		const int tableSize = 10;
+		{}
+	}
+
+	const bool w = true;
+	const char z = 'z';
+	const int n = 4;
+	const int q = 4, l = 3, m = 7;
+	int x; int y;
+{
+
+	int main() bool t; int niz[]; {
+	
+		print('a');
+		
+		print(sizes::tableSize);
+	
+		niz = new int [3];
+		niz[0] = 2;
+		print(niz[0]);
+		
+		t = true;
+	 
+		x = 3;
+		x--;
+		
+		print(x * q);
+		
+		y = -4 + 9 * 5;
+		
+		print(x);
+		
+		print(y);
+		
+		return 1;
+	}
+}

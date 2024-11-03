@@ -1,0 +1,189 @@
+INFO  21:47:13,851 - Compiling source file: C:\pp1_domaci_avg\workspace\MJCompiler\test\program.mj
+INFO  21:47:13,896 - #2 program
+INFO  21:47:13,897 - #37 MJProgram
+INFO  21:47:13,897 - #9 namespace
+INFO  21:47:13,898 - #37 sizes
+INFO  21:47:13,898 - #15 {
+INFO  21:47:13,898 - #7 const
+INFO  21:47:13,899 - #37 int
+INFO  21:47:13,899 - #37 tableSize
+INFO  21:47:13,899 - #21 =
+INFO  21:47:13,900 - #38 10
+INFO  21:47:13,900 - #13 ;
+INFO  21:47:13,901 - #15 {
+INFO  21:47:13,901 - #16 }
+INFO  21:47:13,903 - #16 }
+INFO  21:47:13,903 - #37 int
+INFO  21:47:13,906 - #37 x
+INFO  21:47:13,906 - #13 ;
+INFO  21:47:13,909 - #37 int
+INFO  21:47:13,909 - #37 y
+INFO  21:47:13,909 - #13 ;
+INFO  21:47:13,909 - #37 char
+INFO  21:47:13,911 - #37 z
+INFO  21:47:13,911 - #13 ;
+INFO  21:47:13,911 - #37 boolean
+INFO  21:47:13,912 - #37 w
+INFO  21:47:13,912 - #13 ;
+INFO  21:47:13,912 - #15 {
+INFO  21:47:13,912 - #37 int
+INFO  21:47:13,912 - #37 main
+INFO  21:47:13,912 - #17 (
+INFO  21:47:13,913 - #18 )
+INFO  21:47:13,915 - #15 {
+INFO  21:47:13,915 - #3 return
+INFO  21:47:13,917 - #38 1
+INFO  21:47:13,917 - #13 ;
+INFO  21:47:13,922 - #16 }
+INFO  21:47:13,923 - #16 }
+INFO  21:47:13,930 - Program(
+  ProgramName(
+   MJProgram
+  ) [ProgramName]
+  ENamespaceList(
+    NoNamespaceList(
+    ) [NoNamespaceList]
+    Namespace(
+      NamespaceName(
+       sizes
+      ) [NamespaceName]
+      EDeclList(
+        NoDeclList(
+        ) [NoDeclList]
+        DeclConst(
+          EConstDecl(
+            ConstantTypeName(
+              TypeSimple(
+               int
+              ) [TypeSimple]
+             tableSize
+            ) [ConstantTypeName]
+            CNumConst(
+             10
+            ) [CNumConst]
+            NoConstDeclListSingleType(
+            ) [NoConstDeclListSingleType]
+          ) [EConstDecl]
+        ) [DeclConst]
+      ) [EDeclList]
+      NoMethodDeclList(
+      ) [NoMethodDeclList]
+    ) [Namespace]
+  ) [ENamespaceList]
+  EDeclList(
+    EDeclList(
+      EDeclList(
+        EDeclList(
+          NoDeclList(
+          ) [NoDeclList]
+          DeclVar(
+            VarDeclSimple(
+              VarTypeName(
+                TypeSimple(
+                 int
+                ) [TypeSimple]
+               x
+              ) [VarTypeName]
+              NoVarDeclListSingleType(
+              ) [NoVarDeclListSingleType]
+            ) [VarDeclSimple]
+          ) [DeclVar]
+        ) [EDeclList]
+        DeclVar(
+          VarDeclSimple(
+            VarTypeName(
+              TypeSimple(
+               int
+              ) [TypeSimple]
+             y
+            ) [VarTypeName]
+            NoVarDeclListSingleType(
+            ) [NoVarDeclListSingleType]
+          ) [VarDeclSimple]
+        ) [DeclVar]
+      ) [EDeclList]
+      DeclVar(
+        VarDeclSimple(
+          VarTypeName(
+            TypeSimple(
+             char
+            ) [TypeSimple]
+           z
+          ) [VarTypeName]
+          NoVarDeclListSingleType(
+          ) [NoVarDeclListSingleType]
+        ) [VarDeclSimple]
+      ) [DeclVar]
+    ) [EDeclList]
+    DeclVar(
+      VarDeclSimple(
+        VarTypeName(
+          TypeSimple(
+           boolean
+          ) [TypeSimple]
+         w
+        ) [VarTypeName]
+        NoVarDeclListSingleType(
+        ) [NoVarDeclListSingleType]
+      ) [VarDeclSimple]
+    ) [DeclVar]
+  ) [EDeclList]
+  EMethodDeclList(
+    NoMethodDeclList(
+    ) [NoMethodDeclList]
+    MethodDecl(
+      EMethodTypeName(
+        TypeSimple(
+         int
+        ) [TypeSimple]
+       main
+      ) [EMethodTypeName]
+      NoFormPars(
+      ) [NoFormPars]
+      NoVarDeclList(
+      ) [NoVarDeclList]
+      EStatementList(
+        NoStatementList(
+        ) [NoStatementList]
+        StatementMatched(
+          MatchedReturn(
+            PositiveStartExpr(
+              Term(
+                FactorNumConst(
+                  NumConst(
+                   1
+                  ) [NumConst]
+                ) [FactorNumConst]
+                NoMulopFactorList(
+                ) [NoMulopFactorList]
+              ) [Term]
+              NoAddopTermList(
+              ) [NoAddopTermList]
+            ) [PositiveStartExpr]
+          ) [MatchedReturn]
+        ) [StatementMatched]
+      ) [EStatementList]
+    ) [MethodDecl]
+  ) [EMethodDeclList]
+) [Program]
+INFO  21:47:13,930 - ===================================
+INFO  21:47:13,934 -  PrintSimple = 0
+INFO  21:47:13,935 -  VarDecl = 4
+INFO  21:47:13,935 - Program = 1
+INFO  21:47:13,935 - NegativeStartExpr = 0
+INFO  21:47:13,935 - PositiveStartExpr = 1
+INFO  21:47:13,935 - DesignatorStatementEQUAL = 0
+INFO  21:47:13,935 - DesignatorStatementINCREMENT = 0
+INFO  21:47:13,935 - DesignatorStatementDECREMENT = 0
+INFO  21:47:13,935 - NumConst = 1
+INFO  21:47:13,935 - BoolConst = 0
+INFO  21:47:13,936 - CharConst = 0
+INFO  21:47:13,936 - Namespace = 1
+INFO  21:47:13,936 - ===================================
+INFO  21:47:13,937 - Deklarisana promenljiva x na liniji 8
+INFO  21:47:13,938 - Deklarisana promenljiva y na liniji 8
+INFO  21:47:13,938 - Deklarisana promenljiva z na liniji 9
+INFO  21:47:13,938 - Deklarisana promenljiva w na liniji 9
+INFO  21:47:13,938 - Obradjuje se funkcija main na liniji 11
+INFO  21:47:13,938 - currentMethodType rs.etf.pp1.symboltable.concepts.Struct@11e21d0e
+ERROR 21:47:13,938 - Greska na liniji 15 : tip izraza u return naredbi ne slaze se sa tipom povratne vrednosti funkcije main

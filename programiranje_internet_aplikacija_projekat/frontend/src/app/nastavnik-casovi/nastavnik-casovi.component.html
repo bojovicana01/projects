@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MNN - Nastavnik Casovi</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body style="width: 100vw;">
+    <div class="container">
+
+        <div class="row">
+            <header style="display: flex; justify-content: center; height: 10vh; align-items: center; font-size: x-large; color: cadetblue;">
+                <b>CASOVI</b>
+            </header>
+            <br>
+        </div>
+
+        <div class="row" style="color: aliceblue;">
+
+            <div class="col-sm-2">
+                <input type="checkbox" id="check">
+                <label for="check">
+                    <i class="fas fa-bars" id="btn">Meni</i>
+                    <i class="fas fa-times" id="cancel">Zatvori</i>
+                </label>
+                <div class="sidebar">
+                    <header>Meni</header>
+                    <ul>
+                        <li><a href="" (click)="profilStr($event)"><i class="fas fa-qrcode"></i>Profil</a></li>
+                        <li><a href="" (click)="casoviStr($event)"><i class="fas fa-link"></i>Casovi</a></li>
+                        <li><a href="" (click)="mojiUceniciStr($event)"><i class="fas fa-link"></i>Moji ucenici</a></li>
+                        <li><a href="" (click)="odjava($event)"><i class="fas fa-link"></i>Odjava</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-sm-10">
+
+                <div class="row">
+                    <div class="col-sm-12">
+
+                        <div class="row">
+                            <div class="col-sm-12" style="display: flex; justify-content: end; margin-right: 50px;">
+                                <button style="margin-top: 30px;"  type="button" class="btn customDarkBtn" (click)="prikaziPetCasova()">Pet narednih</button> &nbsp;
+                                <button style="margin-top: 30px;"  type="button" class="btn customDarkBtn" (click)="prikaziDesetCasova()" >Deset narednih</button> &nbsp;
+                                <button style="margin-top: 30px; margin-right: 50px;"  type="button" class="btn customDarkBtn" (click)="prikaziSveCasove()" >Svi naredni</button>
+                            </div>
+                        </div>
+
+                        <table>
+                            <b>CASOVI KOJI SLEDE</b>
+                            <tr>
+                                <th>Predmet: </th>
+                                <th>Ime: </th>
+                                <th>Prezime: </th>
+                            </tr>
+                            <tr *ngFor="let i of range((brojPrikazanihCasova>casoviNarednaTriDana.length) ? casoviNarednaTriDana.length : brojPrikazanihCasova)">
+                                <td>{{casoviNarednaTriDana[i].predmet}}</td>
+                                <td>{{uceniciCasoviNarednaTriDanaObjekti[i].ime}}</td>
+                                <td>{{uceniciCasoviNarednaTriDanaObjekti[i].prezime}}</td>
+                                <td style="border: none;">
+                                    <button style="font-size: small;"  type="button" class="btn customDarkBtn" (click)="otkaziCas(casoviNarednaTriDana[i])">OTKAZI</button>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <table>
+                            <b>LISTA ZAHTEVA ZA CASOVIMA</b>
+                            <tr>
+                                <th>Predmet: </th>
+                                <th>Ime: </th>
+                                <th>Prezime: </th>
+                                <th>Pocetak: </th>
+                                <th>Kraj: </th>
+                                <th>Tema: </th>
+                            </tr>
+                            <tr *ngFor="let i of range(listaZahtevaCasovi.length)">
+                                <td>{{listaZahtevaCasovi[i].predmet}}</td>
+                                <td>{{uceniciListaZahtevaCasoviObjekti[i].ime}}</td>
+                                <td>{{uceniciListaZahtevaCasoviObjekti[i].prezime}}</td>
+
+                                <td>
+                                    {{listaZahtevaCasovi[i].datumVreme.getFullYear() + "-" 
+                                    + (listaZahtevaCasovi[i].datumVreme.getMonth() + 1) + "-" 
+                                    + listaZahtevaCasovi[i].datumVreme.getDate() + "  " 
+                                    + listaZahtevaCasovi[i].datumVreme.getHours().toString().padStart(2, '0') + ":" 
+                                    + listaZahtevaCasovi[i].datumVreme.getMinutes().toString().padStart(2, '0')}}
+                                </td>
+
+                                <td>
+                                    {{listaZahtevaCasovi[i].datumVremePlus.getFullYear() + "-" 
+                                    + (listaZahtevaCasovi[i].datumVremePlus.getMonth() + 1) + "-" 
+                                    + listaZahtevaCasovi[i].datumVremePlus.getDate() + "  " 
+                                    + listaZahtevaCasovi[i].datumVremePlus.getHours().toString().padStart(2, '0') + ":" 
+                                    + listaZahtevaCasovi[i].datumVremePlus.getMinutes().toString().padStart(2, '0')}}
+                                </td>
+
+                                <td style="font-size: small; width: 100px;">{{listaZahtevaCasovi[i].opisTemeCasa}}</td>
+
+                                <td style="border: none;">
+                                    <button style="font-size: small;"  type="button" class="btn customDarkBtn" (click)="prihvatiCas(listaZahtevaCasovi[i])">PRIHVATI</button>
+                                </td>
+                                <td style="border: none;">
+                                    <button style="font-size: small;"  type="button" class="btn customDarkBtn" (click)="odbijCas(listaZahtevaCasovi[i], i)">ODBIJ</button>
+                                </td>
+                                <td style="border: none;">
+                                    Obrazlozenje odbijanja: <br>
+                                    <input type="text" name="obrazlozenjeOdbijanja" [(ngModel)]="obrazlozenjeOdbijanja[i]">
+                                </td>
+                            </tr>
+                        </table>
+
+                        Definisanje nedostupnosti: <br>
+                        <form>
+                            Od: <input type="datetime-local" name="odNedostupan" [(ngModel)]="odNedostupan">
+                            Do: <input type="datetime-local" name="doNedostupan" [(ngModel)]="doNedostupan">
+                            <button style="margin-left: 20px;" type="button" class="btn customDarkBtn" (click)='definisiNedostupnost()'>Definisi nedostupnost</button>
+                        </form>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        
+        <div class="row">
+            <div class="col-sm-12">
+                <div style="display: flex; justify-content: center; color: cadetblue; margin-top: 30px;">
+                    Copyright - Ana Bojovic
+                </div>
+            </div>
+        </div>
+    
+    </div>
+</body>
+        
+</html>

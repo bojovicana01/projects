@@ -1,0 +1,345 @@
+INFO  12:53:12,323 - Compiling source file: C:\pp1_domaci_avg\workspace\MJCompiler\test\program.mj
+INFO  12:53:12,352 - #2 program
+INFO  12:53:12,352 - #36 MJProgram
+INFO  12:53:12,352 - #36 int
+INFO  12:53:12,353 - #36 x
+INFO  12:53:12,353 - #12 ;
+INFO  12:53:12,353 - #36 int
+INFO  12:53:12,354 - #36 y
+INFO  12:53:12,354 - #12 ;
+INFO  12:53:12,354 - #36 char
+INFO  12:53:12,354 - #36 z
+INFO  12:53:12,354 - #12 ;
+INFO  12:53:12,354 - #36 boolean
+INFO  12:53:12,354 - #36 w
+INFO  12:53:12,354 - #12 ;
+INFO  12:53:12,354 - #14 {
+INFO  12:53:12,354 - #36 int
+INFO  12:53:12,356 - #36 main
+INFO  12:53:12,356 - #16 (
+INFO  12:53:12,356 - #17 )
+INFO  12:53:12,357 - #14 {
+INFO  12:53:12,358 - #4 print
+INFO  12:53:12,358 - #16 (
+INFO  12:53:12,359 - #37 1
+INFO  12:53:12,359 - #17 )
+INFO  12:53:12,361 - #12 ;
+INFO  12:53:12,361 - #36 z
+INFO  12:53:12,361 - #20 =
+INFO  12:53:12,362 - #39 z
+INFO  12:53:12,362 - #12 ;
+INFO  12:53:12,363 - #36 w
+INFO  12:53:12,363 - #20 =
+INFO  12:53:12,363 - #38 true
+INFO  12:53:12,363 - #12 ;
+INFO  12:53:12,364 - #36 y
+INFO  12:53:12,364 - #20 =
+INFO  12:53:12,364 - #22 -
+INFO  12:53:12,364 - #37 1
+INFO  12:53:12,364 - #21 +
+INFO  12:53:12,364 - #37 4
+INFO  12:53:12,365 - #23 *
+INFO  12:53:12,365 - #37 5
+INFO  12:53:12,366 - #21 +
+INFO  12:53:12,366 - #37 9
+INFO  12:53:12,366 - #24 /
+INFO  12:53:12,366 - #37 7
+INFO  12:53:12,367 - #22 -
+INFO  12:53:12,367 - #37 2
+INFO  12:53:12,367 - #12 ;
+INFO  12:53:12,367 - #36 y
+INFO  12:53:12,368 - #28 ++
+INFO  12:53:12,368 - #12 ;
+INFO  12:53:12,368 - #36 x
+INFO  12:53:12,368 - #20 =
+INFO  12:53:12,368 - #36 y
+INFO  12:53:12,368 - #21 +
+INFO  12:53:12,368 - #37 5
+INFO  12:53:12,368 - #12 ;
+INFO  12:53:12,368 - #4 print
+INFO  12:53:12,368 - #16 (
+INFO  12:53:12,368 - #37 2
+INFO  12:53:12,368 - #17 )
+INFO  12:53:12,368 - #12 ;
+INFO  12:53:12,368 - #15 }
+INFO  12:53:12,369 - #15 }
+INFO  12:53:12,370 - Program(
+ MJProgram
+  VarDeclListDerived1(
+    VarDeclListDerived1(
+      VarDeclListDerived1(
+        VarDeclListDerived1(
+          VarDeclListDerived2(
+          ) [VarDeclListDerived2]
+          VarDecl(
+            TypeDerived1(
+             int
+            ) [TypeDerived1]
+           x
+          ) [VarDecl]
+        ) [VarDeclListDerived1]
+        VarDecl(
+          TypeDerived1(
+           int
+          ) [TypeDerived1]
+         y
+        ) [VarDecl]
+      ) [VarDeclListDerived1]
+      VarDecl(
+        TypeDerived1(
+         char
+        ) [TypeDerived1]
+       z
+      ) [VarDecl]
+    ) [VarDeclListDerived1]
+    VarDecl(
+      TypeDerived1(
+       boolean
+      ) [TypeDerived1]
+     w
+    ) [VarDecl]
+  ) [VarDeclListDerived1]
+  MethodDeclListDerived1(
+    MethodDeclListDerived2(
+    ) [MethodDeclListDerived2]
+    MethodDeclDerived1(
+      TypeDerived1(
+       int
+      ) [TypeDerived1]
+     main
+      FormParsDerived2(
+      ) [FormParsDerived2]
+      VarDeclListDerived2(
+      ) [VarDeclListDerived2]
+      StatementListDerived1(
+        StatementListDerived1(
+          StatementListDerived1(
+            StatementListDerived1(
+              StatementListDerived1(
+                StatementListDerived1(
+                  StatementListDerived1(
+                    StatementListDerived2(
+                    ) [StatementListDerived2]
+                    StatementDerived1(
+                      PrintStmt(
+                        PositiveStartExpr(
+                          TermDerived1(
+                            FactorDerived1(
+                              NumConst(
+                               1
+                              ) [NumConst]
+                            ) [FactorDerived1]
+                            MulopFactorListDerived2(
+                            ) [MulopFactorListDerived2]
+                          ) [TermDerived1]
+                          AddopTermListDerived2(
+                          ) [AddopTermListDerived2]
+                        ) [PositiveStartExpr]
+                      ) [PrintStmt]
+                    ) [StatementDerived1]
+                  ) [StatementListDerived1]
+                  StatementDerived1(
+                    MatchedDerived1(
+                      DesignatorStatementEQUAL(
+                        DesignatorDerived1(
+                         z
+                        ) [DesignatorDerived1]
+                        PositiveStartExpr(
+                          TermDerived1(
+                            FactorDerived2(
+                              CharConst(
+                               z
+                              ) [CharConst]
+                            ) [FactorDerived2]
+                            MulopFactorListDerived2(
+                            ) [MulopFactorListDerived2]
+                          ) [TermDerived1]
+                          AddopTermListDerived2(
+                          ) [AddopTermListDerived2]
+                        ) [PositiveStartExpr]
+                      ) [DesignatorStatementEQUAL]
+                    ) [MatchedDerived1]
+                  ) [StatementDerived1]
+                ) [StatementListDerived1]
+                StatementDerived1(
+                  MatchedDerived1(
+                    DesignatorStatementEQUAL(
+                      DesignatorDerived1(
+                       w
+                      ) [DesignatorDerived1]
+                      PositiveStartExpr(
+                        TermDerived1(
+                          FactorDerived3(
+                            BoolConst(
+                             true
+                            ) [BoolConst]
+                          ) [FactorDerived3]
+                          MulopFactorListDerived2(
+                          ) [MulopFactorListDerived2]
+                        ) [TermDerived1]
+                        AddopTermListDerived2(
+                        ) [AddopTermListDerived2]
+                      ) [PositiveStartExpr]
+                    ) [DesignatorStatementEQUAL]
+                  ) [MatchedDerived1]
+                ) [StatementDerived1]
+              ) [StatementListDerived1]
+              StatementDerived1(
+                MatchedDerived1(
+                  DesignatorStatementEQUAL(
+                    DesignatorDerived1(
+                     y
+                    ) [DesignatorDerived1]
+                    NegativeStartExpr(
+                      TermDerived1(
+                        FactorDerived1(
+                          NumConst(
+                           1
+                          ) [NumConst]
+                        ) [FactorDerived1]
+                        MulopFactorListDerived2(
+                        ) [MulopFactorListDerived2]
+                      ) [TermDerived1]
+                      AddopTermListDerived1(
+                        AddopTermListDerived1(
+                          AddopTermListDerived1(
+                            AddopTermListDerived2(
+                            ) [AddopTermListDerived2]
+                            AddopDerived1(
+                            ) [AddopDerived1]
+                            TermDerived1(
+                              FactorDerived1(
+                                NumConst(
+                                 4
+                                ) [NumConst]
+                              ) [FactorDerived1]
+                              MulopFactorListDerived1(
+                                MulopFactorListDerived2(
+                                ) [MulopFactorListDerived2]
+                                MulopDerived1(
+                                ) [MulopDerived1]
+                                FactorDerived1(
+                                  NumConst(
+                                   5
+                                  ) [NumConst]
+                                ) [FactorDerived1]
+                              ) [MulopFactorListDerived1]
+                            ) [TermDerived1]
+                          ) [AddopTermListDerived1]
+                          AddopDerived1(
+                          ) [AddopDerived1]
+                          TermDerived1(
+                            FactorDerived1(
+                              NumConst(
+                               9
+                              ) [NumConst]
+                            ) [FactorDerived1]
+                            MulopFactorListDerived1(
+                              MulopFactorListDerived2(
+                              ) [MulopFactorListDerived2]
+                              MulopDerived2(
+                              ) [MulopDerived2]
+                              FactorDerived1(
+                                NumConst(
+                                 7
+                                ) [NumConst]
+                              ) [FactorDerived1]
+                            ) [MulopFactorListDerived1]
+                          ) [TermDerived1]
+                        ) [AddopTermListDerived1]
+                        AddopDerived2(
+                        ) [AddopDerived2]
+                        TermDerived1(
+                          FactorDerived1(
+                            NumConst(
+                             2
+                            ) [NumConst]
+                          ) [FactorDerived1]
+                          MulopFactorListDerived2(
+                          ) [MulopFactorListDerived2]
+                        ) [TermDerived1]
+                      ) [AddopTermListDerived1]
+                    ) [NegativeStartExpr]
+                  ) [DesignatorStatementEQUAL]
+                ) [MatchedDerived1]
+              ) [StatementDerived1]
+            ) [StatementListDerived1]
+            StatementDerived1(
+              MatchedDerived1(
+                DesignatorStatementINCREMENT(
+                  DesignatorDerived1(
+                   y
+                  ) [DesignatorDerived1]
+                ) [DesignatorStatementINCREMENT]
+              ) [MatchedDerived1]
+            ) [StatementDerived1]
+          ) [StatementListDerived1]
+          StatementDerived1(
+            MatchedDerived1(
+              DesignatorStatementEQUAL(
+                DesignatorDerived1(
+                 x
+                ) [DesignatorDerived1]
+                PositiveStartExpr(
+                  TermDerived1(
+                    FactorDerived5(
+                      DesignatorDerived1(
+                       y
+                      ) [DesignatorDerived1]
+                    ) [FactorDerived5]
+                    MulopFactorListDerived2(
+                    ) [MulopFactorListDerived2]
+                  ) [TermDerived1]
+                  AddopTermListDerived1(
+                    AddopTermListDerived2(
+                    ) [AddopTermListDerived2]
+                    AddopDerived1(
+                    ) [AddopDerived1]
+                    TermDerived1(
+                      FactorDerived1(
+                        NumConst(
+                         5
+                        ) [NumConst]
+                      ) [FactorDerived1]
+                      MulopFactorListDerived2(
+                      ) [MulopFactorListDerived2]
+                    ) [TermDerived1]
+                  ) [AddopTermListDerived1]
+                ) [PositiveStartExpr]
+              ) [DesignatorStatementEQUAL]
+            ) [MatchedDerived1]
+          ) [StatementDerived1]
+        ) [StatementListDerived1]
+        StatementDerived1(
+          PrintStmt(
+            PositiveStartExpr(
+              TermDerived1(
+                FactorDerived1(
+                  NumConst(
+                   2
+                  ) [NumConst]
+                ) [FactorDerived1]
+                MulopFactorListDerived2(
+                ) [MulopFactorListDerived2]
+              ) [TermDerived1]
+              AddopTermListDerived2(
+              ) [AddopTermListDerived2]
+            ) [PositiveStartExpr]
+          ) [PrintStmt]
+        ) [StatementDerived1]
+      ) [StatementListDerived1]
+    ) [MethodDeclDerived1]
+  ) [MethodDeclListDerived1]
+) [Program]
+INFO  12:53:12,371 - ===================================
+INFO  12:53:12,386 -  Print count calls = 2
+INFO  12:53:12,387 -  Deklarisanih promenljivih ima = 4
+INFO  12:53:12,387 - Program = 1
+INFO  12:53:12,387 - NegativeStartExpr = 1
+INFO  12:53:12,387 - PositiveStartExpr = 5
+INFO  12:53:12,387 - DesignatorStatementEQUAL = 4
+INFO  12:53:12,387 - DesignatorStatementINCREMENT = 1
+INFO  12:53:12,387 - DesignatorStatementDECREMENT = 0
+INFO  12:53:12,387 - NumConst = 9
+INFO  12:53:12,387 - BoolConst = 1
+INFO  12:53:12,387 - CharConst = 1

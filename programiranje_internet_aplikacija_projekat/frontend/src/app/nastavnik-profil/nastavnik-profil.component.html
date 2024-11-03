@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MNN - Nastavnik Profil</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body style="width: 100vw;">
+    <div class="container">
+
+        <div class="row">
+            <header style="display: flex; justify-content: center; height: 10vh; align-items: center; font-size: x-large; color: cadetblue;">
+                <b>MOJ PROFIL</b>
+            </header>
+            <br>
+        </div>
+
+        <div class="row" style="color: aliceblue;">
+
+            <div class="col-sm-2">
+                <input type="checkbox" id="check">
+                <label for="check">
+                    <i class="fas fa-bars" id="btn">Meni</i>
+                    <i class="fas fa-times" id="cancel">Zatvori</i>
+                </label>
+                <div class="sidebar">
+                    <header>Meni</header>
+                    <ul>
+                        <li><a href="" (click)="profilStr($event)"><i class="fas fa-qrcode"></i>Profil</a></li>
+                        <li><a href="" (click)="casoviStr($event)"><i class="fas fa-link"></i>Casovi</a></li>
+                        <li><a href="" (click)="mojiUceniciStr($event)"><i class="fas fa-link"></i>Moji ucenici</a></li>
+                        <li><a href="" (click)="odjava($event)"><i class="fas fa-link"></i>Odjava</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-sm-10">
+
+                <div class="row">
+
+                    <div class="col-sm-8">
+                        <div>
+                            <table>
+                                <tr>
+                                    <td><b>Ime :</b></td> 
+                                    <td>{{nastavnik.ime}}</td> 
+                                    <td>
+                                        <input type="text" name="nIme" [(ngModel)]="nIme" style="margin-bottom: 5px;">
+                                        <button type="button" class="btn customDarkBtn" (click)='izmeniIme()'>Izmeni</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><b>Prezime :</b></td> 
+                                    <td>{{nastavnik.prezime}}</td> 
+                                    <td>
+                                        <input type="text" name="nPrezime" [(ngModel)]="nPrezime" style="margin-bottom: 5px;">
+                                        <button type="button" class="btn customDarkBtn" (click)='izmeniPrezime()'>Izmeni</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><b>Adresa :</b></td> 
+                                    <td>{{nastavnik.adresa}}</td> 
+                                    <td>
+                                        <input type="text" name="nAdresa" [(ngModel)]="nAdresa" style="margin-bottom: 5px;">
+                                        <button type="button" class="btn customDarkBtn" (click)='izmeniAdresu()'>Izmeni</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><b>Telefon :</b></td> 
+                                    <td>{{nastavnik.telefon}}</td> 
+                                    <td>
+                                        <input type="text" name="nTelefon" [(ngModel)]="nTelefon" style="margin-bottom: 5px;">
+                                        <button type="button" class="btn customDarkBtn" (click)='izmeniTelefon()'>Izmeni</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><b>E-mail :</b></td> 
+                                    <td>{{nastavnik.email}}</td> 
+                                    <td>
+                                        <input type="text" name="nEmail" [(ngModel)]="nEmail" style="margin-bottom: 5px;">
+                                        <button type="button" class="btn customDarkBtn" (click)='izmeniEmail()'>Izmeni</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><b>Slika :</b></td> <td>{{nastavnik.slika}}</td> <td><button type="button" class="btn customDarkBtn" (click)='izmeniSliku()'>Izmeni</button></td>
+                                </tr>
+
+                                <tr>
+                                    <td><b>Predmeti :</b></td> 
+                                    
+                                    <td>
+                                        <p *ngFor="let p of sviPredmeti">
+                                            <input type="checkbox" [(ngModel)]="predmetiCheckFlag[p.index]" [value]="p.naziv" (change)="checkUncheckPredmet(p.index, $event)"> {{p.naziv}} 
+                                        </p>
+                                    </td>
+
+                                    <td>
+                                        <i *ngFor="let predmet of nastavnik.predmeti">{{predmet.naziv}} <br> </i>
+                                    </td> 
+
+                                    <td><button type="button" class="btn customDarkBtn" (click)='izmeniPredmete()'>Izmeni</button></td>
+                                </tr>
+
+                                <tr>
+                                    <td><b>Uzrasti kojima predajem :</b></td> 
+                                    <td>
+                                        <i *ngFor="let uzrast of nastavnik.uzrast">{{uzrast}} <br> </i>
+                                    </td> 
+                                    <td>
+                                        <label>
+                                            <input type="checkbox" [(ngModel)]="uzrastCheckFlag[0]" value="osnovna14" (change)="checkUncheckUzrast(0, $event)"> Osnovna 1-4
+                                        </label>
+                                        <br>
+                                        <label>
+                                            <input type="checkbox" [(ngModel)]="uzrastCheckFlag[1]" value="osnovna58" (change)="checkUncheckUzrast(1, $event)"> Osnovna 5-8
+                                        </label>
+                                        <br>
+                                        <label>
+                                            <input type="checkbox" [(ngModel)]="uzrastCheckFlag[2]" value="srednja" (change)="checkUncheckUzrast(2, $event)"> Srednja
+                                        </label> <br>
+                                        {{errUzrast}}
+                                    </td>
+                                    <td><button type="button" class="btn customDarkBtn" (click)='izmeniUzraste()'>Izmeni</button></td>
+                                </tr>
+        
+                            </table>
+        
+                        </div>
+
+                    </div>
+
+                    <div class="col-sm-4" style="display: flex; justify-content: center; align-items: center;">
+                        <div>
+                            <img [src]="nSlikaPrikaz" style="margin-bottom: 40px;"> <br>
+                            <input type="file" accept="image/jpg, image/png" style="margin-bottom: 5px;" (change)="izabranaSlika($event)">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        
+        <div class="row">
+            <div class="col-sm-12">
+                <div style="display: flex; justify-content: center; color: cadetblue; margin-top: 30px;">
+                    Copyright - Ana Bojovic
+                </div>
+            </div>
+        </div>
+    
+    </div>
+</body>
+        
+</html>

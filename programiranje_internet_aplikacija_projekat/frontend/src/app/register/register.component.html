@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MNN - Registracija</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body style="width: 100vw;">
+    <div class="container" style="display: flex; justify-content: center;">
+
+        <div class="row" style="padding: 40px; color: aliceblue;">
+            <div>
+                <p style="color: cadetblue; padding: 0%; height: 5%; font-size: x-large;" >Zelim da se registrujem kao: </p>
+                <hr>
+                <table>
+                    <tr>
+                        <td><button style="margin-top: 10px;"  type="button" class="btn customDarkBtn" (click)="ucenikReg()">Ucenik</button></td>
+                        <td><img src="../../assets/studentIcon2.jpg"></td>
+                    </tr>
+                    <tr>
+                        <td><button style="margin-top: 10px;"  type="button" class="btn customDarkBtn" (click)="nastavnikReg()">Nastavnik</button></td>
+                        <td><img src="../../assets/teacherIcon.png"></td>
+                    </tr>
+                </table>
+
+                <hr>
+                <a href="" (change)="nazad($event)" style="margin-top: 30px;">Nazad</a>
+            </div>
+        </div>
+
+        
+        <div class="row">
+            <div class="col-sm-12">
+                <div style="display: flex; justify-content: center; color: cadetblue; margin-top: 30px;">
+                    Copyright - Ana Bojovic
+                </div>
+            </div>
+        </div>
+    
+    </div>
+</body>
+        
+</html>

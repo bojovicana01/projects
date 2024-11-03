@@ -1,0 +1,200 @@
+/*vm-----------------------------------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+.sidebar {
+  position: fixed;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background: #042331;
+  transition: all .5s ease;
+}
+.sidebar header {
+  font-size: 22px;
+  color: white;
+  line-height: 70px;
+  text-align: center;
+  background: #063146;
+  user-select: none;
+}
+.sidebar ul a{
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 65px;
+  font-size: 20px;
+  color: white;
+  padding-left: 40px;
+  box-sizing: border-box;
+  border-bottom: 1px solid black;
+  border-top: 1px solid rgba(255,255,255,.1);
+  transition: .4s;
+}
+ul li:hover a{
+  padding-left: 50px;
+}
+.sidebar ul a i{
+  margin-right: 16px;
+}
+#check{
+  display: none;
+}
+label #btn,label #cancel{
+  position: absolute;
+  background: #042331;
+  border-radius: 3px;
+  cursor: pointer;
+}
+label #btn{
+  left: 40px;
+  top: 25px;
+  font-size: smaller;
+  color: white;
+  padding: 6px 12px;
+  transition: all .5s;
+}
+label #cancel{
+  z-index: 1111;
+  left: -195px;
+  top: 17px;
+  font-size: small;
+  color: #0a5275;
+  padding: 4px 9px;
+  transition: all .5s ease;
+}
+#check:checked ~ .sidebar{
+  left: 0;
+}
+#check:checked ~ label #btn{
+  left: 250px;
+  opacity: 0;
+  pointer-events: none;
+}
+#check:checked ~ label #cancel{
+  left: 195px;
+}
+#check:checked ~ section{
+  margin-left: 250px;
+}
+
+/*vm-kraj-------------------------------------------------------------------------------------*/
+
+header {
+  background-image: url("../../assets/headerImg2.jpg");
+  background-size: cover; 
+  background-position: center; 
+}
+
+body, html {
+    height: 3000px;
+    width: 100%;
+    max-height: 5000px;
+    max-width: 5000px;
+    display: flex;
+
+    margin-left: 0%;
+    margin-right: 0%;
+    padding-left: 0%;
+    padding-right: 0%;
+
+    background-size: cover;
+}
+
+.tdCustom {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 0%;
+  padding-bottom: 0%;
+  width: 20%;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    max-height: 5000px;
+    max-width: 5000px;
+    background-color: #063146;
+    background-size: cover;
+
+    margin: auto;
+
+    font-family: 'Courier New', Courier, monospace;
+}
+  
+.bg {
+    /* The image used */
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*--------------------------------------------------------------------------------------------------------STILIZOVANJE DUGMADI*/
+
+.customDarkBtn {
+  color:rgb(200, 200, 236);
+  background-color:#0a5275; /* Dark color for the button */
+  border-color:cornflowerblue; /* Border color for the button */
+}
+
+.customDarkBtn:hover {
+  color: rgb(200, 200, 236);
+  background-color: #031c35; /* Darker color on hover */
+  border-color: #031c35; /* Border color on hover */
+}
+
+/*--------------------------------------------------------------------------------------------------------KRAJ STILIZOVANJA DUGMADI*/
+
+.dark-navy-border {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid cadetblue; 
+}
+
+.dark-navy-border td {
+  padding: 10px;
+}
+
+img {
+  height: 80px;
+  width: 80px;
+}
+
+/*--------------------------------------------------------------------------------------------------------RADIO DUGMAD*/
+
+input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  
+  width: 20px;
+  height: 20px;
+  
+  background-color: #031c35;
+  border-radius: 50%;
+  padding: 5px;
+  border: 2px solid #0a5275;
+
+  display: inline-block;
+  vertical-align: middle;
+
+  cursor: pointer;
+}
+
+input[type="radio"]:checked {
+  background-color: cadetblue;
+  background-clip: content-box;
+}

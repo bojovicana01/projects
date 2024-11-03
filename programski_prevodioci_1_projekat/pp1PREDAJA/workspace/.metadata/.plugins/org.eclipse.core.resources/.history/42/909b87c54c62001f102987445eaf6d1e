@@ -1,0 +1,31 @@
+program MJProgram
+	const bool w = true;
+	const char z = 'z';
+	const int n = 4;
+	const int q = 4, l = 3, m = 7;
+	int x; int y;
+{
+
+	int main() bool t; int niz[]; {
+	
+		niz = new int [3];
+		niz[0] = 1;
+		print(niz[1]);
+		
+		t = true;
+	 
+		x = 3;
+		x--;
+		
+		print('a');
+		print(1 * q);
+		
+		y = -4 + 9 * 5;
+		
+		print(x);
+		
+		print(y);
+		
+		return 1;
+	}
+}
